@@ -1,0 +1,23 @@
+{
+  "hf_documents": 751194,
+  "hf_cases": 233718,
+  "criminal_appeal_cases_any_year": 16747,
+  "criminal_appeal_cases_with_final_judgment_2010_2020": 5768,
+  "homicide_cases": 617,
+  "homicide_defendant_appeals": 586,
+  "homicide_defendant_appeals_anonymous_excluded": 85,
+  "homicide_defendant_appeals_named": 501,
+  "study_corpus": 497,
+  "study_corpus_found_in_reconstruction": 496,
+  "reconstruction_not_in_study": 90,
+  "note_anonymous": "82 cases with 'פלוני' in CaseName + 3 cases with empty CaseName whose party line reads 'פלוני' (9817/16, 10025/16, 8242/15). is_anonymous_name() did not catch them automatically; counted by reading the texts.",
+  "named_not_in_study_corpus": 5,
+  "study_case_classified_differently_in_reconstruction": 1,
+  "note_reconciliation": "501 named = 496 study cases + 5 not in study (370/10, 105/17, 8328/17, 2255/15, 5855/15); plus 1 study case (4908/18) classified as a State appeal by the reconstruction -> 497.",
+  "paper_table": {
+    "anonymous_excluded": 85,
+    "study_corpus": 497,
+    "non_merits_excluded": 19,
+    "analysis_sample": 478
+  }
+}

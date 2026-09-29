@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>כלי נתוני הסמינריון</title>
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home" title="מסך הבית">
+    <span class="brand-mark" aria-hidden="true">§</span>
+    <span>
+      <strong>כלי נתוני הסמינריון</strong>
+      <small>בולטות תקשורתית והתערבות ערעורית — ערעורי רצח והמתה 2010–2020</small>
+    </span>
+  </a>
+  <nav class="nav" aria-label="ניווט ראשי">
+    <a href="#home" data-nav="home">בית</a>
+    <a href="#cases" data-nav="cases">צפייה בנתונים</a>
+    <a href="#stats" data-nav="stats">שחזור הניתוח</a>
+    <a href="#reimport" data-nav="reimport">ייבוא מהמקורות</a>
+    <a href="#upload" data-nav="upload">קובץ משלך</a>
+  </nav>
+  <button id="closeApp" class="btn btn-close" type="button" title="סגירת התוכנה">סגירה</button>
+</header>
+
+<main id="view" tabindex="-1"><p class="loading">טוען…</p></main>
+
+<footer class="footer" id="footer"></footer>
+
+<div id="overlay" class="overlay" hidden>
+  <div class="overlay-box">
+    <h2 id="overlayTitle">התוכנה נסגרה</h2>
+    <p id="overlayText">אפשר לסגור את הלשונית הזו. כדי לפתוח שוב — לחצו פעמיים על „הפעלה.bat”.</p>
+  </div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2057 @@
+{
+ "_source": "03_ניתוח/results_master.md (SPSS 27 output, identical to analysis_core.py; version of 25.9.2026, 15:58). Each value is compared after a single rounding of the exact result to the number of decimals reported. expected '<.001' means p < .0005.",
+ "items": [
+  {
+   "key": "desc.n_main",
+   "label": "גודל המדגם המרכזי",
+   "expected": 478,
+   "decimals": 0
+  },
+  {
+   "key": "desc.n_full",
+   "label": "גודל הקורפוס המלא",
+   "expected": 497,
+   "decimals": 0
+  },
+  {
+   "key": "desc.murder_n",
+   "label": "תיקי רצח או ניסיון לרצח",
+   "expected": 313,
+   "decimals": 0
+  },
+  {
+   "key": "desc.media_n",
+   "label": "תיקים עם בולטות מוקדמת",
+   "expected": 100,
+   "decimals": 0
+  },
+  {
+   "key": "desc.items_total",
+   "label": "סך הידיעות",
+   "expected": 355,
+   "decimals": 0
+  },
+  {
+   "key": "desc.items_mean",
+   "label": "ממוצע ידיעות לתיק",
+   "expected": 0.74,
+   "decimals": 2
+  },
+  {
+   "key": "desc.items_sd",
+   "label": "סטיית תקן ידיעות",
+   "expected": 2.56,
+   "decimals": 2
+  },
+  {
+   "key": "desc.items_max",
+   "label": "מקסימום ידיעות",
+   "expected": 30,
+   "decimals": 0
+  },
+  {
+   "key": "desc.items_district",
+   "label": "ידיעות בשלב הערכאה הדיונית",
+   "expected": 234,
+   "decimals": 0
+  },
+  {
+   "key": "desc.items_appeal",
+   "label": "ידיעות בשלב הערעור",
+   "expected": 121,
+   "decimals": 0
+  },
+  {
+   "key": "desc.bucket_1",
+   "label": "תיקים עם ידיעה אחת",
+   "expected": 41,
+   "decimals": 0
+  },
+  {
+   "key": "desc.bucket_2",
+   "label": "תיקים עם 2–4 ידיעות",
+   "expected": 38,
+   "decimals": 0
+  },
+  {
+   "key": "desc.bucket_3",
+   "label": "תיקים עם 5+ ידיעות",
+   "expected": 21,
+   "decimals": 0
+  },
+  {
+   "key": "desc.intervention_n",
+   "label": "מספר התערבויות",
+   "expected": 115,
+   "decimals": 0
+  },
+  {
+   "key": "desc.relief_1",
+   "label": "הקלה בעונש",
+   "expected": 99,
+   "decimals": 0
+  },
+  {
+   "key": "desc.relief_2",
+   "label": "המרה לעבירה קלה",
+   "expected": 5,
+   "decimals": 0
+  },
+  {
+   "key": "desc.relief_3",
+   "label": "זיכוי",
+   "expected": 9,
+   "decimals": 0
+  },
+  {
+   "key": "desc.relief_5",
+   "label": "החמרה",
+   "expected": 2,
+   "decimals": 0
+  },
+  {
+   "key": "balance.offense.chi2",
+   "label": "איזון: סוג עבירה χ²",
+   "expected": 0.68,
+   "decimals": 2
+  },
+  {
+   "key": "balance.offense.p",
+   "label": "איזון: סוג עבירה p",
+   "expected": 0.41,
+   "decimals": 3
+  },
+  {
+   "key": "balance.timeline.chi2",
+   "label": "איזון: ציר זמן χ²",
+   "expected": 0.19,
+   "decimals": 2
+  },
+  {
+   "key": "balance.timeline.p",
+   "label": "איזון: ציר זמן p",
+   "expected": 0.66,
+   "decimals": 3
+  },
+  {
+   "key": "balance.year.chi2",
+   "label": "איזון: שנה χ²",
+   "expected": 21.18,
+   "decimals": 2
+  },
+  {
+   "key": "balance.year.p",
+   "label": "איזון: שנה p",
+   "expected": 0.02,
+   "decimals": 3
+  },
+  {
+   "key": "main.a",
+   "label": "התערבויות בתיקים בולטים",
+   "expected": 29,
+   "decimals": 0
+  },
+  {
+   "key": "main.n1",
+   "label": "תיקים בולטים",
+   "expected": 100,
+   "decimals": 0
+  },
+  {
+   "key": "main.c",
+   "label": "התערבויות בתיקים לא בולטים",
+   "expected": 86,
+   "decimals": 0
+  },
+  {
+   "key": "main.n0",
+   "label": "תיקים לא בולטים",
+   "expected": 378,
+   "decimals": 0
+  },
+  {
+   "key": "main.rate1_pct",
+   "label": "שיעור התערבות — עם בולטות (%)",
+   "expected": 29.0,
+   "decimals": 1
+  },
+  {
+   "key": "main.rate1_lo_pct",
+   "label": "רווח סמך תחתון — עם בולטות",
+   "expected": 21.0,
+   "decimals": 1
+  },
+  {
+   "key": "main.rate1_hi_pct",
+   "label": "רווח סמך עליון — עם בולטות",
+   "expected": 38.5,
+   "decimals": 1
+  },
+  {
+   "key": "main.rate0_pct",
+   "label": "שיעור התערבות — ללא בולטות (%)",
+   "expected": 22.8,
+   "decimals": 1
+  },
+  {
+   "key": "main.rate0_lo_pct",
+   "label": "רווח סמך תחתון — ללא בולטות",
+   "expected": 18.8,
+   "decimals": 1
+  },
+  {
+   "key": "main.rate0_hi_pct",
+   "label": "רווח סמך עליון — ללא בולטות",
+   "expected": 27.2,
+   "decimals": 1
+  },
+  {
+   "key": "main.rd_pct",
+   "label": "הפרש שיעורים (נק' אחוז)",
+   "expected": 6.2,
+   "decimals": 1
+  },
+  {
+   "key": "main.rd_lo_pct",
+   "label": "הפרש — גבול תחתון",
+   "expected": -2.9,
+   "decimals": 1
+  },
+  {
+   "key": "main.rd_hi_pct",
+   "label": "הפרש — גבול עליון",
+   "expected": 16.6,
+   "decimals": 1
+  },
+  {
+   "key": "main.chi2",
+   "label": "Pearson χ²",
+   "expected": 1.69,
+   "decimals": 3
+  },
+  {
+   "key": "main.p_chi2",
+   "label": "p של χ²",
+   "expected": 0.194,
+   "decimals": 3
+  },
+  {
+   "key": "main.yates",
+   "label": "χ² עם תיקון רציפות (Yates)",
+   "expected": 1.37,
+   "decimals": 2
+  },
+  {
+   "key": "main.p_yates",
+   "label": "p של Yates",
+   "expected": 0.243,
+   "decimals": 3
+  },
+  {
+   "key": "main.fisher2",
+   "label": "Fisher דו-צדדי",
+   "expected": 0.192,
+   "decimals": 3
+  },
+  {
+   "key": "main.fisher1",
+   "label": "Fisher חד-צדדי",
+   "expected": 0.122,
+   "decimals": 3
+  },
+  {
+   "key": "main.phi",
+   "label": "φ",
+   "expected": 0.06,
+   "decimals": 2
+  },
+  {
+   "key": "main.or",
+   "label": "יחס סיכויים (OR)",
+   "expected": 1.387,
+   "decimals": 3
+  },
+  {
+   "key": "main.or_lo",
+   "label": "OR — גבול תחתון",
+   "expected": 0.846,
+   "decimals": 3
+  },
+  {
+   "key": "main.or_hi",
+   "label": "OR — גבול עליון",
+   "expected": 2.274,
+   "decimals": 3
+  },
+  {
+   "key": "main.rr",
+   "label": "סיכון יחסי (RR)",
+   "expected": 1.27,
+   "decimals": 2
+  },
+  {
+   "key": "main.rr_lo",
+   "label": "RR — גבול תחתון",
+   "expected": 0.89,
+   "decimals": 2
+  },
+  {
+   "key": "main.rr_hi",
+   "label": "RR — גבול עליון",
+   "expected": 1.82,
+   "decimals": 2
+  },
+  {
+   "key": "main.min_expected",
+   "label": "שכיחות צפויה מינימלית",
+   "expected": 24.06,
+   "decimals": 2
+  },
+  {
+   "key": "logit.unadj.b",
+   "label": "לוגיסטית לא מתוקננת: B",
+   "expected": 0.327,
+   "decimals": 3
+  },
+  {
+   "key": "logit.unadj.se",
+   "label": "לוגיסטית לא מתוקננת: SE",
+   "expected": 0.252,
+   "decimals": 3
+  },
+  {
+   "key": "logit.unadj.wald",
+   "label": "לוגיסטית לא מתוקננת: Wald",
+   "expected": 1.68,
+   "decimals": 2
+  },
+  {
+   "key": "logit.unadj.p",
+   "label": "לוגיסטית לא מתוקננת: p",
+   "expected": 0.195,
+   "decimals": 3
+  },
+  {
+   "key": "logit.unadj.or",
+   "label": "לוגיסטית לא מתוקננת: OR",
+   "expected": 1.39,
+   "decimals": 2
+  },
+  {
+   "key": "logit.unadj.nagelkerke",
+   "label": "לוגיסטית לא מתוקננת: Nagelkerke R²",
+   "expected": 0.005,
+   "decimals": 3
+  },
+  {
+   "key": "logit.adj.b",
+   "label": "לוגיסטית מתוקננת: B",
+   "expected": 0.254,
+   "decimals": 3
+  },
+  {
+   "key": "logit.adj.se",
+   "label": "לוגיסטית מתוקננת: SE",
+   "expected": 0.256,
+   "decimals": 3
+  },
+  {
+   "key": "logit.adj.wald",
+   "label": "לוגיסטית מתוקננת: Wald",
+   "expected": 0.98,
+   "decimals": 2
+  },
+  {
+   "key": "logit.adj.p",
+   "label": "לוגיסטית מתוקננת: p",
+   "expected": 0.322,
+   "decimals": 3
+  },
+  {
+   "key": "logit.adj.or",
+   "label": "לוגיסטית מתוקננת: OR",
+   "expected": 1.289,
+   "decimals": 3
+  },
+  {
+   "key": "logit.adj.or_lo",
+   "label": "לוגיסטית מתוקננת: OR גבול תחתון",
+   "expected": 0.78,
+   "decimals": 2
+  },
+  {
+   "key": "logit.adj.or_hi",
+   "label": "לוגיסטית מתוקננת: OR גבול עליון",
+   "expected": 2.13,
+   "decimals": 2
+  },
+  {
+   "key": "logit.adj.year_or",
+   "label": "לוגיסטית מתוקננת: שנה OR",
+   "expected": 1.07,
+   "decimals": 2
+  },
+  {
+   "key": "logit.adj.year_p",
+   "label": "לוגיסטית מתוקננת: שנה p",
+   "expected": 0.065,
+   "decimals": 3
+  },
+  {
+   "key": "logit.adj.murder_or",
+   "label": "לוגיסטית מתוקננת: רצח או ניסיון לרצח OR",
+   "expected": 0.77,
+   "decimals": 2
+  },
+  {
+   "key": "logit.adj.murder_p",
+   "label": "לוגיסטית מתוקננת: רצח או ניסיון לרצח p",
+   "expected": 0.23,
+   "decimals": 3
+  },
+  {
+   "key": "logit.adj.model_chi2",
+   "label": "לוגיסטית מתוקננת: χ² המודל",
+   "expected": 6.35,
+   "decimals": 2
+  },
+  {
+   "key": "logit.adj.model_p",
+   "label": "לוגיסטית מתוקננת: p המודל",
+   "expected": 0.096,
+   "decimals": 3
+  },
+  {
+   "key": "logit.adj.nagelkerke",
+   "label": "לוגיסטית מתוקננת: Nagelkerke R²",
+   "expected": 0.02,
+   "decimals": 3
+  },
+  {
+   "key": "rob.district.a",
+   "label": "ערכאה דיונית בלבד: התערבויות עם בולטות",
+   "expected": 28,
+   "decimals": 0
+  },
+  {
+   "key": "rob.district.n1",
+   "label": "ערכאה דיונית בלבד: תיקים עם בולטות",
+   "expected": 89,
+   "decimals": 0
+  },
+  {
+   "key": "rob.district.n",
+   "label": "ערכאה דיונית בלבד: n (חלון חושב)",
+   "expected": 427,
+   "decimals": 0
+  },
+  {
+   "key": "rob.district.c",
+   "label": "ערכאה דיונית בלבד: התערבויות ללא בולטות",
+   "expected": 79,
+   "decimals": 0
+  },
+  {
+   "key": "rob.district.n0",
+   "label": "ערכאה דיונית בלבד: תיקים ללא בולטות",
+   "expected": 338,
+   "decimals": 0
+  },
+  {
+   "key": "rob.district.chi2",
+   "label": "ערכאה דיונית בלבד: χ²",
+   "expected": 2.45,
+   "decimals": 2
+  },
+  {
+   "key": "rob.district.p",
+   "label": "ערכאה דיונית בלבד: p",
+   "expected": 0.117,
+   "decimals": 3
+  },
+  {
+   "key": "rob.district.fisher2",
+   "label": "ערכאה דיונית בלבד: Fisher דו-צדדי",
+   "expected": 0.131,
+   "decimals": 3
+  },
+  {
+   "key": "rob.district.fisher1",
+   "label": "ערכאה דיונית בלבד: Fisher חד-צדדי",
+   "expected": 0.078,
+   "decimals": 3
+  },
+  {
+   "key": "rob.district.or",
+   "label": "ערכאה דיונית בלבד: OR",
+   "expected": 1.5,
+   "decimals": 2
+  },
+  {
+   "key": "rob.district.or_lo",
+   "label": "ערכאה דיונית בלבד: OR גבול תחתון",
+   "expected": 0.9,
+   "decimals": 2
+  },
+  {
+   "key": "rob.district.or_hi",
+   "label": "ערכאה דיונית בלבד: OR גבול עליון",
+   "expected": 2.51,
+   "decimals": 2
+  },
+  {
+   "key": "rob.appeal.a",
+   "label": "ערעור בלבד: התערבויות עם בולטות",
+   "expected": 9,
+   "decimals": 0
+  },
+  {
+   "key": "rob.appeal.n1",
+   "label": "ערעור בלבד: תיקים עם בולטות",
+   "expected": 38,
+   "decimals": 0
+  },
+  {
+   "key": "rob.appeal.chi2",
+   "label": "ערעור בלבד: χ²",
+   "expected": 0.003,
+   "decimals": 3
+  },
+  {
+   "key": "rob.appeal.p",
+   "label": "ערעור בלבד: p",
+   "expected": 0.955,
+   "decimals": 3
+  },
+  {
+   "key": "rob.appeal.or",
+   "label": "ערעור בלבד: OR",
+   "expected": 0.98,
+   "decimals": 2
+  },
+  {
+   "key": "rob.appeal.or_lo",
+   "label": "ערעור בלבד: OR גבול תחתון",
+   "expected": 0.45,
+   "decimals": 2
+  },
+  {
+   "key": "rob.appeal.or_hi",
+   "label": "ערעור בלבד: OR גבול עליון",
+   "expected": 2.13,
+   "decimals": 2
+  },
+  {
+   "key": "rob.appeal.fisher1",
+   "label": "ערעור בלבד: Fisher חד-צדדי",
+   "expected": 0.589,
+   "decimals": 3
+  },
+  {
+   "key": "rob.primo.a",
+   "label": "Primo: התערבויות עם בולטות",
+   "expected": 7,
+   "decimals": 0
+  },
+  {
+   "key": "rob.primo.n1",
+   "label": "Primo: תיקים עם בולטות",
+   "expected": 24,
+   "decimals": 0
+  },
+  {
+   "key": "rob.primo.fisher2",
+   "label": "Primo: Fisher",
+   "expected": 0.624,
+   "decimals": 3
+  },
+  {
+   "key": "rob.primo.or",
+   "label": "Primo: OR",
+   "expected": 1.32,
+   "decimals": 2
+  },
+  {
+   "key": "rob.primo.or_lo",
+   "label": "Primo: OR גבול תחתון",
+   "expected": 0.53,
+   "decimals": 2
+  },
+  {
+   "key": "rob.primo.or_hi",
+   "label": "Primo: OR גבול עליון",
+   "expected": 3.27,
+   "decimals": 2
+  },
+  {
+   "key": "rob.primo.fisher1",
+   "label": "Primo: Fisher חד-צדדי",
+   "expected": 0.349,
+   "decimals": 3
+  },
+  {
+   "key": "rob.combined.a",
+   "label": "ערעור, Google או Primo: התערבויות עם בולטות",
+   "expected": 14,
+   "decimals": 0
+  },
+  {
+   "key": "rob.combined.n1",
+   "label": "ערעור, Google או Primo: תיקים עם בולטות",
+   "expected": 50,
+   "decimals": 0
+  },
+  {
+   "key": "rob.combined.chi2",
+   "label": "ערעור, Google או Primo: χ²",
+   "expected": 0.47,
+   "decimals": 2
+  },
+  {
+   "key": "rob.combined.p",
+   "label": "ערעור, Google או Primo: p",
+   "expected": 0.491,
+   "decimals": 3
+  },
+  {
+   "key": "rob.combined.or",
+   "label": "ערעור, Google או Primo: OR",
+   "expected": 1.26,
+   "decimals": 2
+  },
+  {
+   "key": "rob.combined.fisher1",
+   "label": "ערעור, Google או Primo: Fisher חד-צדדי",
+   "expected": 0.298,
+   "decimals": 3
+  },
+  {
+   "key": "rob.helped.a",
+   "label": "הקלה עם הנאשם: עם בולטות",
+   "expected": 28,
+   "decimals": 0
+  },
+  {
+   "key": "rob.helped.c",
+   "label": "הקלה עם הנאשם: ללא בולטות",
+   "expected": 85,
+   "decimals": 0
+  },
+  {
+   "key": "rob.helped.chi2",
+   "label": "הקלה עם הנאשם: χ²",
+   "expected": 1.33,
+   "decimals": 2
+  },
+  {
+   "key": "rob.helped.p",
+   "label": "הקלה עם הנאשם: p",
+   "expected": 0.249,
+   "decimals": 3
+  },
+  {
+   "key": "rob.helped.or",
+   "label": "הקלה עם הנאשם: OR",
+   "expected": 1.34,
+   "decimals": 2
+  },
+  {
+   "key": "rob.helped.fisher1",
+   "label": "הקלה עם הנאשם: Fisher חד-צדדי",
+   "expected": 0.154,
+   "decimals": 3
+  },
+  {
+   "key": "rob.timeline.n",
+   "label": "ציר זמן ודאי: n",
+   "expected": 234,
+   "decimals": 0
+  },
+  {
+   "key": "rob.timeline.a",
+   "label": "ציר זמן ודאי: התערבויות עם בולטות",
+   "expected": 13,
+   "decimals": 0
+  },
+  {
+   "key": "rob.timeline.n1",
+   "label": "ציר זמן ודאי: תיקים עם בולטות",
+   "expected": 47,
+   "decimals": 0
+  },
+  {
+   "key": "rob.timeline.chi2",
+   "label": "ציר זמן ודאי: χ²",
+   "expected": 0.7,
+   "decimals": 2
+  },
+  {
+   "key": "rob.timeline.p",
+   "label": "ציר זמן ודאי: p",
+   "expected": 0.404,
+   "decimals": 3
+  },
+  {
+   "key": "rob.timeline.or",
+   "label": "ציר זמן ודאי: OR",
+   "expected": 1.36,
+   "decimals": 2
+  },
+  {
+   "key": "rob.timeline.fisher1",
+   "label": "ציר זמן ודאי: Fisher חד-צדדי",
+   "expected": 0.257,
+   "decimals": 3
+  },
+  {
+   "key": "rob.pre137.n",
+   "label": "לפני תיקון 137: n",
+   "expected": 444,
+   "decimals": 0
+  },
+  {
+   "key": "rob.pre137.a",
+   "label": "לפני תיקון 137: התערבויות עם בולטות",
+   "expected": 24,
+   "decimals": 0
+  },
+  {
+   "key": "rob.pre137.n1",
+   "label": "לפני תיקון 137: תיקים עם בולטות",
+   "expected": 90,
+   "decimals": 0
+  },
+  {
+   "key": "rob.pre137.c",
+   "label": "לפני תיקון 137: התערבויות ללא בולטות",
+   "expected": 80,
+   "decimals": 0
+  },
+  {
+   "key": "rob.pre137.chi2",
+   "label": "לפני תיקון 137: χ²",
+   "expected": 0.66,
+   "decimals": 2
+  },
+  {
+   "key": "rob.pre137.p",
+   "label": "לפני תיקון 137: p",
+   "expected": 0.416,
+   "decimals": 3
+  },
+  {
+   "key": "rob.pre137.fisher2",
+   "label": "לפני תיקון 137: Fisher",
+   "expected": 0.407,
+   "decimals": 3
+  },
+  {
+   "key": "rob.pre137.or",
+   "label": "לפני תיקון 137: OR",
+   "expected": 1.25,
+   "decimals": 2
+  },
+  {
+   "key": "rob.pre137.or_lo",
+   "label": "לפני תיקון 137: OR גבול תחתון",
+   "expected": 0.73,
+   "decimals": 2
+  },
+  {
+   "key": "rob.pre137.or_hi",
+   "label": "לפני תיקון 137: OR גבול עליון",
+   "expected": 2.11,
+   "decimals": 2
+  },
+  {
+   "key": "rob.pre137.fisher1",
+   "label": "לפני תיקון 137: Fisher חד-צדדי",
+   "expected": 0.248,
+   "decimals": 3
+  },
+  {
+   "key": "rob.no_attempt.n",
+   "label": "ללא ניסיון לרצח: n",
+   "expected": 447,
+   "decimals": 0
+  },
+  {
+   "key": "rob.no_attempt.a",
+   "label": "ללא ניסיון לרצח: התערבויות עם בולטות",
+   "expected": 29,
+   "decimals": 0
+  },
+  {
+   "key": "rob.no_attempt.n1",
+   "label": "ללא ניסיון לרצח: תיקים עם בולטות",
+   "expected": 98,
+   "decimals": 0
+  },
+  {
+   "key": "rob.no_attempt.c",
+   "label": "ללא ניסיון לרצח: התערבויות ללא בולטות",
+   "expected": 79,
+   "decimals": 0
+  },
+  {
+   "key": "rob.no_attempt.n0",
+   "label": "ללא ניסיון לרצח: תיקים ללא בולטות",
+   "expected": 349,
+   "decimals": 0
+  },
+  {
+   "key": "rob.no_attempt.chi2",
+   "label": "ללא ניסיון לרצח: χ²",
+   "expected": 2.02,
+   "decimals": 2
+  },
+  {
+   "key": "rob.no_attempt.p",
+   "label": "ללא ניסיון לרצח: p",
+   "expected": 0.155,
+   "decimals": 3
+  },
+  {
+   "key": "rob.no_attempt.fisher2",
+   "label": "ללא ניסיון לרצח: Fisher דו-צדדי",
+   "expected": 0.181,
+   "decimals": 3
+  },
+  {
+   "key": "rob.no_attempt.fisher1",
+   "label": "ללא ניסיון לרצח: Fisher חד-צדדי",
+   "expected": 0.1,
+   "decimals": 3
+  },
+  {
+   "key": "rob.no_attempt.or",
+   "label": "ללא ניסיון לרצח: OR",
+   "expected": 1.44,
+   "decimals": 2
+  },
+  {
+   "key": "rob.no_attempt.or_lo",
+   "label": "ללא ניסיון לרצח: OR גבול תחתון",
+   "expected": 0.87,
+   "decimals": 2
+  },
+  {
+   "key": "rob.no_attempt.or_hi",
+   "label": "ללא ניסיון לרצח: OR גבול עליון",
+   "expected": 2.37,
+   "decimals": 2
+  },
+  {
+   "key": "attempt.main",
+   "label": "ערעורי ניסיון לרצח בלבד (478)",
+   "expected": 31,
+   "decimals": 0
+  },
+  {
+   "key": "attempt.main_salient",
+   "label": "ניסיון לרצח בלבד — בולטים",
+   "expected": 2,
+   "decimals": 0
+  },
+  {
+   "key": "attempt.main_not_salient",
+   "label": "ניסיון לרצח בלבד — לא בולטים",
+   "expected": 29,
+   "decimals": 0
+  },
+  {
+   "key": "attempt.full",
+   "label": "ערעורי ניסיון לרצח בלבד (497)",
+   "expected": 34,
+   "decimals": 0
+  },
+  {
+   "key": "rob.full.a",
+   "label": "קורפוס מלא: התערבויות עם בולטות",
+   "expected": 30,
+   "decimals": 0
+  },
+  {
+   "key": "rob.full.n1",
+   "label": "קורפוס מלא: תיקים עם בולטות",
+   "expected": 102,
+   "decimals": 0
+  },
+  {
+   "key": "rob.full.chi2",
+   "label": "קורפוס מלא: χ²",
+   "expected": 2.28,
+   "decimals": 2
+  },
+  {
+   "key": "rob.full.p",
+   "label": "קורפוס מלא: p",
+   "expected": 0.131,
+   "decimals": 3
+  },
+  {
+   "key": "rob.full.fisher2",
+   "label": "קורפוס מלא: Fisher",
+   "expected": 0.151,
+   "decimals": 3
+  },
+  {
+   "key": "rob.full.or",
+   "label": "קורפוס מלא: OR",
+   "expected": 1.45,
+   "decimals": 2
+  },
+  {
+   "key": "rob.full.or_lo",
+   "label": "קורפוס מלא: OR גבול תחתון",
+   "expected": 0.89,
+   "decimals": 2
+  },
+  {
+   "key": "rob.full.or_hi",
+   "label": "קורפוס מלא: OR גבול עליון",
+   "expected": 2.37,
+   "decimals": 2
+  },
+  {
+   "key": "rob.full.fisher1",
+   "label": "קורפוס מלא: Fisher חד-צדדי",
+   "expected": 0.086,
+   "decimals": 3
+  },
+  {
+   "key": "rob.stratum_other.or",
+   "label": "ריבוד — המתה אחרת: OR",
+   "expected": 1.54,
+   "decimals": 2
+  },
+  {
+   "key": "rob.stratum_other.or_lo",
+   "label": "ריבוד — המתה אחרת: OR גבול תחתון",
+   "expected": 0.71,
+   "decimals": 2
+  },
+  {
+   "key": "rob.stratum_other.or_hi",
+   "label": "ריבוד — המתה אחרת: OR גבול עליון",
+   "expected": 3.37,
+   "decimals": 2
+  },
+  {
+   "key": "rob.stratum_murder.or",
+   "label": "ריבוד — רצח או ניסיון לרצח: OR",
+   "expected": 1.27,
+   "decimals": 2
+  },
+  {
+   "key": "rob.stratum_murder.or_lo",
+   "label": "ריבוד — רצח או ניסיון לרצח: OR גבול תחתון",
+   "expected": 0.67,
+   "decimals": 2
+  },
+  {
+   "key": "rob.stratum_murder.or_hi",
+   "label": "ריבוד — רצח או ניסיון לרצח: OR גבול עליון",
+   "expected": 2.42,
+   "decimals": 2
+  },
+  {
+   "key": "rob.mh.chi2",
+   "label": "Mantel–Haenszel χ²",
+   "expected": 1.26,
+   "decimals": 2
+  },
+  {
+   "key": "rob.mh.p",
+   "label": "Mantel–Haenszel p",
+   "expected": 0.262,
+   "decimals": 3
+  },
+  {
+   "key": "rob.mh.bd_p",
+   "label": "Breslow–Day p",
+   "expected": 0.704,
+   "decimals": 3
+  },
+  {
+   "key": "rob.mh.bd_chi2",
+   "label": "Breslow–Day χ²",
+   "expected": 0.14,
+   "decimals": 2
+  },
+  {
+   "key": "rob.mh.or",
+   "label": "Mantel–Haenszel OR",
+   "expected": 1.37,
+   "decimals": 2
+  },
+  {
+   "key": "rob.mh.or_lo",
+   "label": "Mantel–Haenszel OR גבול תחתון",
+   "expected": 0.84,
+   "decimals": 2
+  },
+  {
+   "key": "rob.mh.or_hi",
+   "label": "Mantel–Haenszel OR גבול עליון",
+   "expected": 2.25,
+   "decimals": 2
+  },
+  {
+   "key": "dose.b0.a",
+   "label": "מינון 0 ידיעות: התערבויות",
+   "expected": 86,
+   "decimals": 0
+  },
+  {
+   "key": "dose.b1.a",
+   "label": "מינון ידיעה אחת: התערבויות",
+   "expected": 7,
+   "decimals": 0
+  },
+  {
+   "key": "dose.b2.a",
+   "label": "מינון 2–4: התערבויות",
+   "expected": 14,
+   "decimals": 0
+  },
+  {
+   "key": "dose.b3.a",
+   "label": "מינון 5+: התערבויות",
+   "expected": 8,
+   "decimals": 0
+  },
+  {
+   "key": "dose.chi2",
+   "label": "מינון: χ²(3)",
+   "expected": 7.11,
+   "decimals": 2
+  },
+  {
+   "key": "dose.p",
+   "label": "מינון: p",
+   "expected": 0.068,
+   "decimals": 3
+  },
+  {
+   "key": "dose.linlin",
+   "label": "מגמה ליניארית χ²(1)",
+   "expected": 4.28,
+   "decimals": 2
+  },
+  {
+   "key": "dose.linlin_p",
+   "label": "מגמה ליניארית p",
+   "expected": 0.039,
+   "decimals": 3
+  },
+  {
+   "key": "dose.spearman",
+   "label": "Spearman ρ (תיקים מסוקרים)",
+   "expected": 0.15,
+   "decimals": 2
+  },
+  {
+   "key": "dose.spearman_p",
+   "label": "Spearman p",
+   "expected": 0.128,
+   "decimals": 3
+  },
+  {
+   "key": "ref.any.a",
+   "label": "אזכור מאומת — עם בולטות",
+   "expected": 28,
+   "decimals": 0
+  },
+  {
+   "key": "ref.any.c",
+   "label": "אזכור מאומת — ללא בולטות",
+   "expected": 35,
+   "decimals": 0
+  },
+  {
+   "key": "ref.any.chi2",
+   "label": "אזכור מאומת: χ²",
+   "expected": 24.27,
+   "decimals": 2
+  },
+  {
+   "key": "ref.any.p",
+   "label": "אזכור מאומת: p",
+   "expected": "<.001",
+   "decimals": 3
+  },
+  {
+   "key": "ref.any.fisher2",
+   "label": "אזכור מאומת: Fisher",
+   "expected": "<.001",
+   "decimals": 3
+  },
+  {
+   "key": "ref.any.phi",
+   "label": "אזכור מאומת: φ",
+   "expected": 0.225,
+   "decimals": 3
+  },
+  {
+   "key": "ref.any.or",
+   "label": "אזכור מאומת: OR",
+   "expected": 3.81,
+   "decimals": 2
+  },
+  {
+   "key": "ref.any.or_lo",
+   "label": "אזכור מאומת: OR גבול תחתון",
+   "expected": 2.18,
+   "decimals": 2
+  },
+  {
+   "key": "ref.any.or_hi",
+   "label": "אזכור מאומת: OR גבול עליון",
+   "expected": 6.66,
+   "decimals": 2
+  },
+  {
+   "key": "ref.reas.a",
+   "label": "אזכור בפרק ההנמקה — עם בולטות",
+   "expected": 22,
+   "decimals": 0
+  },
+  {
+   "key": "ref.reas.c",
+   "label": "אזכור בפרק ההנמקה — ללא בולטות",
+   "expected": 21,
+   "decimals": 0
+  },
+  {
+   "key": "ref.reas.chi2",
+   "label": "אזכור בפרק ההנמקה: χ²",
+   "expected": 26.12,
+   "decimals": 2
+  },
+  {
+   "key": "ref.reas.p",
+   "label": "אזכור בפרק ההנמקה: p",
+   "expected": "<.001",
+   "decimals": 3
+  },
+  {
+   "key": "ref.reas.phi",
+   "label": "אזכור בפרק ההנמקה: φ",
+   "expected": 0.23,
+   "decimals": 2
+  },
+  {
+   "key": "ref.reas.or",
+   "label": "אזכור בפרק ההנמקה: OR",
+   "expected": 4.79,
+   "decimals": 2
+  },
+  {
+   "key": "ref.reas.or_lo",
+   "label": "אזכור בפרק ההנמקה: OR גבול תחתון",
+   "expected": 2.51,
+   "decimals": 2
+  },
+  {
+   "key": "ref.reas.or_hi",
+   "label": "אזכור בפרק ההנמקה: OR גבול עליון",
+   "expected": 9.15,
+   "decimals": 2
+  },
+  {
+   "key": "ref.cov.a",
+   "label": "אזכור סיקור/השפעה — עם בולטות",
+   "expected": 12,
+   "decimals": 0
+  },
+  {
+   "key": "ref.cov.c",
+   "label": "אזכור סיקור/השפעה — ללא בולטות",
+   "expected": 8,
+   "decimals": 0
+  },
+  {
+   "key": "ref.cov.chi2",
+   "label": "אזכור סיקור/השפעה: χ²",
+   "expected": 19.27,
+   "decimals": 2
+  },
+  {
+   "key": "ref.cov.fisher2",
+   "label": "אזכור סיקור/השפעה: Fisher",
+   "expected": "<.001",
+   "decimals": 3
+  },
+  {
+   "key": "ref.cov.phi",
+   "label": "אזכור סיקור/השפעה: φ",
+   "expected": 0.2,
+   "decimals": 2
+  },
+  {
+   "key": "ref.cov.or",
+   "label": "אזכור סיקור/השפעה: OR",
+   "expected": 6.31,
+   "decimals": 2
+  },
+  {
+   "key": "ref.cov.or_lo",
+   "label": "אזכור סיקור/השפעה: OR גבול תחתון",
+   "expected": 2.5,
+   "decimals": 2
+  },
+  {
+   "key": "ref.cov.or_hi",
+   "label": "אזכור סיקור/השפעה: OR גבול עליון",
+   "expected": 15.89,
+   "decimals": 2
+  },
+  {
+   "key": "ref.pressure.a",
+   "label": "טענת השפעה — עם בולטות",
+   "expected": 5,
+   "decimals": 0
+  },
+  {
+   "key": "ref.pressure.c",
+   "label": "טענת השפעה — ללא בולטות",
+   "expected": 2,
+   "decimals": 0
+  },
+  {
+   "key": "ref.pressure.fisher2",
+   "label": "טענת השפעה: Fisher",
+   "expected": 0.005,
+   "decimals": 3
+  },
+  {
+   "key": "ref.pressure.phi",
+   "label": "טענת השפעה בלבד: φ",
+   "expected": 0.15,
+   "decimals": 2
+  },
+  {
+   "key": "ref.pressure.or",
+   "label": "טענת השפעה בלבד: OR",
+   "expected": 9.89,
+   "decimals": 2
+  },
+  {
+   "key": "ref.pressure.or_lo",
+   "label": "טענת השפעה בלבד: OR גבול תחתון",
+   "expected": 1.89,
+   "decimals": 2
+  },
+  {
+   "key": "ref.pressure.or_hi",
+   "label": "טענת השפעה בלבד: OR גבול עליון",
+   "expected": 51.79,
+   "decimals": 2
+  },
+  {
+   "key": "ref.count_full",
+   "label": "אזכורים מאומתים (497)",
+   "expected": 255,
+   "decimals": 0
+  },
+  {
+   "key": "ref.cases_full",
+   "label": "תיקים עם אזכור (497)",
+   "expected": 64,
+   "decimals": 0
+  },
+  {
+   "key": "ref.B_full",
+   "label": "אזכורי מידע (B)",
+   "expected": 143,
+   "decimals": 0
+  },
+  {
+   "key": "ref.A_full",
+   "label": "אזכורי סיקור (A)",
+   "expected": 86,
+   "decimals": 0
+  },
+  {
+   "key": "ref.C_full",
+   "label": "אזכורי השפעה/לחץ (C)",
+   "expected": 26,
+   "decimals": 0
+  },
+  {
+   "key": "ref.reasoning_full",
+   "label": "אזכורים בתוך פרק ההנמקה",
+   "expected": 126,
+   "decimals": 0
+  },
+  {
+   "key": "ref.reasoning_cases_full",
+   "label": "תיקים עם אזכור בפרק ההנמקה",
+   "expected": 44,
+   "decimals": 0
+  },
+  {
+   "key": "ref.count_main",
+   "label": "אזכורים מאומתים (478)",
+   "expected": 248,
+   "decimals": 0
+  },
+  {
+   "key": "ref.cases_main",
+   "label": "תיקים עם אזכור (478)",
+   "expected": 63,
+   "decimals": 0
+  },
+  {
+   "key": "ref.B_main",
+   "label": "אזכורי מידע (478)",
+   "expected": 143,
+   "decimals": 0
+  },
+  {
+   "key": "ref.A_main",
+   "label": "אזכורי סיקור (478)",
+   "expected": 85,
+   "decimals": 0
+  },
+  {
+   "key": "ref.C_main",
+   "label": "אזכורי השפעה/לחץ (478)",
+   "expected": 20,
+   "decimals": 0
+  },
+  {
+   "key": "cx.method.heading_discussion_decision",
+   "label": "חילוץ ההנמקה: כותרת \"דיון והכרעה\"",
+   "expected": 283,
+   "decimals": 0
+  },
+  {
+   "key": "cx.method.heading_discussion_numbered",
+   "label": "חילוץ ההנמקה: כותרת \"דיון\" ממוספרת",
+   "expected": 28,
+   "decimals": 0
+  },
+  {
+   "key": "cx.method.court_turn_phrase",
+   "label": "חילוץ ההנמקה: ביטוי מעבר",
+   "expected": 30,
+   "decimals": 0
+  },
+  {
+   "key": "cx.method.whole_judgment",
+   "label": "חילוץ ההנמקה: כל פסק הדין",
+   "expected": 137,
+   "decimals": 0
+  },
+  {
+   "key": "cx.eigen",
+   "label": "PCA: ערך עצמי",
+   "expected": 2.14,
+   "decimals": 2
+  },
+  {
+   "key": "cx.var_pct",
+   "label": "PCA: % שונות",
+   "expected": 35.6,
+   "decimals": 1
+  },
+  {
+   "key": "cx.kmo",
+   "label": "KMO",
+   "expected": 0.49,
+   "decimals": 2
+  },
+  {
+   "key": "cx.bartlett",
+   "label": "Bartlett χ²",
+   "expected": 963.29,
+   "decimals": 2
+  },
+  {
+   "key": "cx.alpha",
+   "label": "α של קרונבך",
+   "expected": 0.61,
+   "decimals": 2
+  },
+  {
+   "key": "cx.load1",
+   "label": "טעינה: אורך משפט",
+   "expected": 0.72,
+   "decimals": 2
+  },
+  {
+   "key": "cx.load2",
+   "label": "טעינה: אחוזון 90",
+   "expected": 0.8,
+   "decimals": 2
+  },
+  {
+   "key": "cx.load3",
+   "label": "טעינה: אורך מילה",
+   "expected": 0.43,
+   "decimals": 2
+  },
+  {
+   "key": "cx.load4",
+   "label": "טעינה: מילים ארוכות",
+   "expected": 0.65,
+   "decimals": 2
+  },
+  {
+   "key": "cx.load5",
+   "label": "טעינה: מילים ארוכות מאוד",
+   "expected": 0.5,
+   "decimals": 2
+  },
+  {
+   "key": "cx.load6",
+   "label": "טעינה: סוגריים",
+   "expected": 0.35,
+   "decimals": 2
+  },
+  {
+   "key": "cx.w1",
+   "label": "משקל: אורך משפט",
+   "expected": 0.339,
+   "decimals": 3
+  },
+  {
+   "key": "cx.w2",
+   "label": "משקל: אחוזון 90",
+   "expected": 0.372,
+   "decimals": 3
+  },
+  {
+   "key": "cx.w3",
+   "label": "משקל: אורך מילה",
+   "expected": 0.202,
+   "decimals": 3
+  },
+  {
+   "key": "cx.w4",
+   "label": "משקל: מילים ארוכות",
+   "expected": 0.304,
+   "decimals": 3
+  },
+  {
+   "key": "cx.w5",
+   "label": "משקל: מילים ארוכות מאוד",
+   "expected": 0.233,
+   "decimals": 3
+  },
+  {
+   "key": "cx.w6",
+   "label": "משקל: סוגריים",
+   "expected": 0.164,
+   "decimals": 3
+  },
+  {
+   "key": "cx.mean1",
+   "label": "מדד מורכבות: ממוצע עם בולטות",
+   "expected": 0.346,
+   "decimals": 3
+  },
+  {
+   "key": "cx.mean0",
+   "label": "מדד מורכבות: ממוצע ללא בולטות",
+   "expected": -0.092,
+   "decimals": 3
+  },
+  {
+   "key": "cx.sd1",
+   "label": "מדד מורכבות: ס\"ת עם",
+   "expected": 0.97,
+   "decimals": 2
+  },
+  {
+   "key": "cx.sd0",
+   "label": "מדד מורכבות: ס\"ת ללא",
+   "expected": 0.99,
+   "decimals": 2
+  },
+  {
+   "key": "cx.t",
+   "label": "מדד מורכבות: t(476)",
+   "expected": 3.96,
+   "decimals": 2
+  },
+  {
+   "key": "cx.t_p",
+   "label": "מדד מורכבות: p",
+   "expected": "<.001",
+   "decimals": 3
+  },
+  {
+   "key": "cx.d",
+   "label": "d של כהן",
+   "expected": 0.44,
+   "decimals": 2
+  },
+  {
+   "key": "cx.d_lo",
+   "label": "d — גבול תחתון",
+   "expected": 0.22,
+   "decimals": 2
+  },
+  {
+   "key": "cx.d_hi",
+   "label": "d — גבול עליון",
+   "expected": 0.67,
+   "decimals": 2
+  },
+  {
+   "key": "cx.mw_z",
+   "label": "מדד מורכבות: Mann–Whitney z",
+   "expected": -4.16,
+   "decimals": 2
+  },
+  {
+   "key": "cx.mw_r",
+   "label": "מדד מורכבות: r = z/√N",
+   "expected": 0.19,
+   "decimals": 2
+  },
+  {
+   "key": "cx.ols.b",
+   "label": "בקרת אורך: B לבולטות",
+   "expected": 0.27,
+   "decimals": 2
+  },
+  {
+   "key": "cx.ols.b_lo",
+   "label": "בקרת אורך: גבול תחתון",
+   "expected": 0.06,
+   "decimals": 2
+  },
+  {
+   "key": "cx.ols.b_hi",
+   "label": "בקרת אורך: גבול עליון",
+   "expected": 0.49,
+   "decimals": 2
+  },
+  {
+   "key": "cx.ols.beta",
+   "label": "בקרת אורך: β לבולטות",
+   "expected": 0.11,
+   "decimals": 2
+  },
+  {
+   "key": "cx.ols.p",
+   "label": "בקרת אורך: p",
+   "expected": 0.012,
+   "decimals": 3
+  },
+  {
+   "key": "cx.ols.beta_len",
+   "label": "בקרת אורך: β ללוג אורך",
+   "expected": 0.31,
+   "decimals": 2
+  },
+  {
+   "key": "cx.eig1",
+   "label": "PCA: ערך עצמי 1",
+   "expected": 2.137,
+   "decimals": 3
+  },
+  {
+   "key": "cx.eig2",
+   "label": "PCA: ערך עצמי 2",
+   "expected": 1.564,
+   "decimals": 3
+  },
+  {
+   "key": "cx.eig3",
+   "label": "PCA: ערך עצמי 3",
+   "expected": 1.134,
+   "decimals": 3
+  },
+  {
+   "key": "cx.whole_pct1",
+   "label": "הנמקה = פסק הדין כולו: בולטים (%)",
+   "expected": 20.0,
+   "decimals": 1
+  },
+  {
+   "key": "cx.whole_pct0",
+   "label": "הנמקה = פסק הדין כולו: לא בולטים (%)",
+   "expected": 31.0,
+   "decimals": 1
+  },
+  {
+   "key": "mw.r_words.mean1",
+   "label": "אורך ההנמקה: ממוצע עם",
+   "expected": 6368,
+   "decimals": 0
+  },
+  {
+   "key": "mw.r_words.mean0",
+   "label": "אורך ההנמקה: ממוצע ללא",
+   "expected": 3286,
+   "decimals": 0
+  },
+  {
+   "key": "mw.r_words.med1",
+   "label": "אורך ההנמקה: חציון עם",
+   "expected": 3586,
+   "decimals": 0
+  },
+  {
+   "key": "mw.r_words.med0",
+   "label": "אורך ההנמקה: חציון ללא",
+   "expected": 1777,
+   "decimals": 0
+  },
+  {
+   "key": "mw.r_words.z",
+   "label": "אורך ההנמקה: z",
+   "expected": -4.89,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_words.r",
+   "label": "אורך ההנמקה: r = z/√N",
+   "expected": 0.22,
+   "decimals": 2
+  },
+  {
+   "key": "mw.words.mean1",
+   "label": "אורך פסק הדין: ממוצע עם",
+   "expected": 9947,
+   "decimals": 0
+  },
+  {
+   "key": "mw.words.mean0",
+   "label": "אורך פסק הדין: ממוצע ללא",
+   "expected": 4860,
+   "decimals": 0
+  },
+  {
+   "key": "mw.words.med1",
+   "label": "אורך פסק הדין: חציון עם",
+   "expected": 6733,
+   "decimals": 0
+  },
+  {
+   "key": "mw.words.med0",
+   "label": "אורך פסק הדין: חציון ללא",
+   "expected": 3033,
+   "decimals": 0
+  },
+  {
+   "key": "mw.words.U",
+   "label": "אורך פסק הדין: U",
+   "expected": 12175.5,
+   "decimals": 1
+  },
+  {
+   "key": "mw.words.z",
+   "label": "אורך פסק הדין: z",
+   "expected": -5.47,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_sentence_len.mean1",
+   "label": "אורך משפט: ממוצע עם",
+   "expected": 18.9,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_sentence_len.mean0",
+   "label": "אורך משפט: ממוצע ללא",
+   "expected": 17.95,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_sentence_len.z",
+   "label": "אורך משפט: z",
+   "expected": -2.92,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_sentence_len.p",
+   "label": "אורך משפט: p",
+   "expected": 0.003,
+   "decimals": 3
+  },
+  {
+   "key": "mw.r_sentence_len.r",
+   "label": "אורך משפט: r = z/√N",
+   "expected": 0.13,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_sentence_len_p90.mean1",
+   "label": "אחוזון 90: ממוצע עם",
+   "expected": 35.02,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_sentence_len_p90.mean0",
+   "label": "אחוזון 90: ממוצע ללא",
+   "expected": 32.39,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_sentence_len_p90.z",
+   "label": "אחוזון 90: z",
+   "expected": -4.19,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_sentence_len_p90.r",
+   "label": "אחוזון 90: r = z/√N",
+   "expected": 0.19,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_word_len.mean1",
+   "label": "אורך מילה: ממוצע עם",
+   "expected": 4.35,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_word_len.mean0",
+   "label": "אורך מילה: ממוצע ללא",
+   "expected": 4.33,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_word_len.p",
+   "label": "אורך מילה: p",
+   "expected": 0.256,
+   "decimals": 3
+  },
+  {
+   "key": "mw.r_word_len.r",
+   "label": "אורך מילה: r = z/√N",
+   "expected": 0.05,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_long_words_pct.mean1",
+   "label": "מילים ארוכות: ממוצע עם",
+   "expected": 8.62,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_long_words_pct.mean0",
+   "label": "מילים ארוכות: ממוצע ללא",
+   "expected": 8.17,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_long_words_pct.z",
+   "label": "מילים ארוכות: z",
+   "expected": -2.6,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_long_words_pct.p",
+   "label": "מילים ארוכות: p",
+   "expected": 0.009,
+   "decimals": 3
+  },
+  {
+   "key": "mw.r_long_words_pct.r",
+   "label": "מילים ארוכות: r = z/√N",
+   "expected": 0.12,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_very_long_words_pct.mean1",
+   "label": "ארוכות מאוד: ממוצע עם",
+   "expected": 0.96,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_very_long_words_pct.mean0",
+   "label": "ארוכות מאוד: ממוצע ללא",
+   "expected": 0.85,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_very_long_words_pct.z",
+   "label": "ארוכות מאוד: z",
+   "expected": -2.3,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_very_long_words_pct.p",
+   "label": "ארוכות מאוד: p",
+   "expected": 0.021,
+   "decimals": 3
+  },
+  {
+   "key": "mw.r_very_long_words_pct.r",
+   "label": "מילים ארוכות מאוד: r = z/√N",
+   "expected": 0.11,
+   "decimals": 2
+  },
+  {
+   "key": "mw.r_paren_per_1000.mean1",
+   "label": "סוגריים: ממוצע עם",
+   "expected": 17.7,
+   "decimals": 1
+  },
+  {
+   "key": "mw.r_paren_per_1000.mean0",
+   "label": "סוגריים: ממוצע ללא",
+   "expected": 18.4,
+   "decimals": 1
+  },
+  {
+   "key": "mw.r_paren_per_1000.p",
+   "label": "סוגריים: p",
+   "expected": 0.628,
+   "decimals": 3
+  },
+  {
+   "key": "mw.r_paren_per_1000.r",
+   "label": "סוגריים: r = z/√N",
+   "expected": 0.02,
+   "decimals": 2
+  },
+  {
+   "key": "holm.any",
+   "label": "Holm: אזכור מאומת כלשהו",
+   "expected": "<.001",
+   "decimals": 3
+  },
+  {
+   "key": "holm.reas",
+   "label": "Holm: אזכור בפרק ההנמקה",
+   "expected": "<.001",
+   "decimals": 3
+  },
+  {
+   "key": "holm.r_words",
+   "label": "Holm: אורך ההנמקה",
+   "expected": "<.001",
+   "decimals": 3
+  },
+  {
+   "key": "holm.r_sentence_len_p90",
+   "label": "Holm: אחוזון 90",
+   "expected": 0.0003,
+   "decimals": 4
+  },
+  {
+   "key": "holm.cx_mw",
+   "label": "Holm: מדד משולב Mann–Whitney",
+   "expected": 0.0003,
+   "decimals": 4
+  },
+  {
+   "key": "holm.cx_t",
+   "label": "Holm: מדד משולב t",
+   "expected": 0.0008,
+   "decimals": 4
+  },
+  {
+   "key": "holm.cov",
+   "label": "Holm: סיקור / טענת השפעה",
+   "expected": 0.0009,
+   "decimals": 4
+  },
+  {
+   "key": "holm.r_sentence_len",
+   "label": "Holm: אורך משפט",
+   "expected": 0.024,
+   "decimals": 3
+  },
+  {
+   "key": "holm.pressure",
+   "label": "Holm: טענת השפעה בלבד",
+   "expected": 0.032,
+   "decimals": 3
+  },
+  {
+   "key": "holm.r_long_words_pct",
+   "label": "Holm: מילים ארוכות",
+   "expected": 0.046,
+   "decimals": 3
+  },
+  {
+   "key": "holm.cx_ols",
+   "label": "Holm: רגרסיה בבקרת אורך",
+   "expected": 0.047,
+   "decimals": 3
+  },
+  {
+   "key": "holm.r_very_long_words_pct",
+   "label": "Holm: מילים ארוכות מאוד",
+   "expected": 0.064,
+   "decimals": 3
+  },
+  {
+   "key": "holm.r_word_len",
+   "label": "Holm: אורך מילה",
+   "expected": 0.511,
+   "decimals": 3
+  },
+  {
+   "key": "holm.r_paren_per_1000",
+   "label": "Holm: סוגריים",
+   "expected": 0.628,
+   "decimals": 3
+  },
+  {
+   "key": "power.h",
+   "label": "h של כהן",
+   "expected": 0.143,
+   "decimals": 3
+  },
+  {
+   "key": "power.two_sided",
+   "label": "עוצמה דו-צדדית",
+   "expected": 0.25,
+   "decimals": 2
+  },
+  {
+   "key": "power.one_sided",
+   "label": "עוצמה חד-צדדית",
+   "expected": 0.35,
+   "decimals": 2
+  },
+  {
+   "key": "power.mde_rate_pct",
+   "label": "אפקט מינימלי לגילוי (%)",
+   "expected": 37.1,
+   "decimals": 1
+  },
+  {
+   "key": "power.mde_h",
+   "label": "אפקט מינימלי לגילוי (h)",
+   "expected": 0.315,
+   "decimals": 3
+  },
+  {
+   "key": "power.n1_needed",
+   "label": "תיקים מסוקרים נדרשים",
+   "expected": 486,
+   "decimals": 0
+  },
+  {
+   "key": "power.mde_1s_rate_pct",
+   "label": "אפקט מינימלי לגילוי — חד-צדדי (%)",
+   "expected": 35.4,
+   "decimals": 1
+  },
+  {
+   "key": "power.mde_1s_diff_pct",
+   "label": "אפקט מינימלי לגילוי — חד-צדדי (נק' אחוז)",
+   "expected": 12.6,
+   "decimals": 1
+  },
+  {
+   "key": "power.mde_1s_h",
+   "label": "אפקט מינימלי לגילוי — חד-צדדי (h)",
+   "expected": 0.28,
+   "decimals": 3
+  },
+  {
+   "key": "power.n1_needed_1s",
+   "label": "תיקים מסוקרים נדרשים — חד-צדדי",
+   "expected": 383,
+   "decimals": 0
+  },
+  {
+   "key": "quality.google_items",
+   "label": "פריטי Google News שנבדקו",
+   "expected": 528,
+   "decimals": 0
+  },
+  {
+   "key": "quality.google_included",
+   "label": "פריטים שנכללו",
+   "expected": 358,
+   "decimals": 0
+  },
+  {
+   "key": "quality.google_wrong_case",
+   "label": "פריטים — תיק שגוי",
+   "expected": 78,
+   "decimals": 0
+  },
+  {
+   "key": "quality.google_outside",
+   "label": "פריטים — מחוץ לחלון",
+   "expected": 92,
+   "decimals": 0
+  },
+  {
+   "key": "quality.queries",
+   "label": "שאילתות שם מדויק",
+   "expected": 943,
+   "decimals": 0
+  },
+  {
+   "key": "quality.queries_appeal",
+   "label": "שאילתות שלב ערעור",
+   "expected": 497,
+   "decimals": 0
+  },
+  {
+   "key": "quality.queries_district",
+   "label": "שאילתות שלב הערכאה הדיונית",
+   "expected": 446,
+   "decimals": 0
+  },
+  {
+   "key": "quality.primo_records",
+   "label": "רשומות Primo",
+   "expected": 77,
+   "decimals": 0
+  },
+  {
+   "key": "quality.primo_included",
+   "label": "רשומות Primo שנכללו",
+   "expected": 72,
+   "decimals": 0
+  },
+  {
+   "key": "quality.primo_cases",
+   "label": "תיקים עם רשומת Primo",
+   "expected": 24,
+   "decimals": 0
+  },
+  {
+   "key": "quality.primo_and_appeal",
+   "label": "Primo וגם Google News בשלב הערעור",
+   "expected": 12,
+   "decimals": 0
+  },
+  {
+   "key": "quality.primo_and_main",
+   "label": "Primo וגם בולטות בחלון המרכזי",
+   "expected": 19,
+   "decimals": 0
+  },
+  {
+   "key": "quality.outcome_manual_full",
+   "label": "קידוד תוצאה: בדיקות ידניות (497)",
+   "expected": 117,
+   "decimals": 0
+  },
+  {
+   "key": "quality.outcome_manual_main",
+   "label": "קידוד תוצאה: בדיקות ידניות (478)",
+   "expected": 115,
+   "decimals": 0
+  },
+  {
+   "key": "quality.outcome_harsher_main",
+   "label": "קידוד תוצאה: החמרות שנבדקו ידנית",
+   "expected": 2,
+   "decimals": 0
+  },
+  {
+   "key": "quality.outcome_auto_main",
+   "label": "קידוד תוצאה: אוטומטי בלבד (478)",
+   "expected": 361,
+   "decimals": 0
+  }
+ ]
+}

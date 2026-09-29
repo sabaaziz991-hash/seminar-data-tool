@@ -1,0 +1,944 @@
+﻿query_id,case_id,query_text,query_type,window_type,window_start,window_end
+0bbb1c6011ce255990c5dce9,HUGGINGFACE-00ab1bad61ad,"""פרנסואה אבוטבול""",party_name_exact,appeal_stage_pre_decision_media,2009-07-05,2012-02-26
+a52eb87ec513ac883a06c2aa,HUGGINGFACE-00ab1bad61ad,"""פרנסואה אבוטבול""",party_name_exact,district_verdict_stage_media,2009-06-28,2009-08-04
+a11a4f5e07db954a7c10f473,HUGGINGFACE-011716a374c9,"""עוסמאן אחמד""",party_name_exact,appeal_stage_pre_decision_media,2018-06-01,2018-02-12
+d7a96010e0e8d24ffc20394d,HUGGINGFACE-011716a374c9,"""עוסמאן אחמד""",party_name_exact,district_verdict_stage_media,2018-05-25,2018-07-01
+1209e4a72454b36235445e90,HUGGINGFACE-011fd2c73fae,"""קיריל שיחריזייב""",party_name_exact,appeal_stage_pre_decision_media,1010-11-04,2015-05-03
+2f7d8acef2f1b46d5d0f5e85,HUGGINGFACE-011fd2c73fae,"""קיריל שיחריזייב""",party_name_exact,district_verdict_stage_media,1010-10-28,1010-12-04
+a99b1b0b0449e453f0639d90,HUGGINGFACE-01d7e0444b29,"""גיא פיצחדזה""",party_name_exact,appeal_stage_pre_decision_media,2010-05-03,2011-05-18
+3accf5da32374d9464d57260,HUGGINGFACE-01d7e0444b29,"""גיא פיצחדזה""",party_name_exact,district_verdict_stage_media,2010-04-26,2010-06-02
+9f42e3894418a6002a26f4d3,HUGGINGFACE-029159f13383,"""אלי פחימה""",party_name_exact,appeal_stage_pre_decision_media,2014-07-22,2017-01-09
+8d92ddd423b36be2b2f123cd,HUGGINGFACE-029159f13383,"""אלי פחימה""",party_name_exact,district_verdict_stage_media,2014-07-15,2014-08-21
+1bea5e4b31cf098fb7bacb7a,HUGGINGFACE-02a763ded951,"""איימן כורד""",party_name_exact,appeal_stage_pre_decision_media,2018-09-06,2019-04-30
+ef016b9fa5872d40a4589d35,HUGGINGFACE-02a763ded951,"""איימן כורד""",party_name_exact,district_verdict_stage_media,2018-08-30,2018-10-06
+1c5bedac1cacdf7e93e404a5,HUGGINGFACE-047748cb2db9,"""ערפאת וחידי""",party_name_exact,appeal_stage_pre_decision_media,2019-01-14,2020-01-13
+0ca6fc353a25e121b76a4432,HUGGINGFACE-048c1166eeaa,"""יוסף נחמיאס""",party_name_exact,appeal_stage_pre_decision_media,2012-11-05,2016-08-30
+8f44e1c7f5f27e4dce23e651,HUGGINGFACE-048c1166eeaa,"""יוסף נחמיאס""",party_name_exact,district_verdict_stage_media,2012-10-29,2012-12-05
+2a5029fb7411b3d6ea760332,HUGGINGFACE-04b22a1c65fe,"""יאסר אשתיי""",party_name_exact,appeal_stage_pre_decision_media,2011-07-12,2013-03-06
+ea9aa56509efb0ed901b8d43,HUGGINGFACE-04b22a1c65fe,"""יאסר אשתיי""",party_name_exact,district_verdict_stage_media,2011-07-05,2011-08-11
+fa8aca5dc689d9133eb9eb6f,HUGGINGFACE-0602fabdbd9a,"""פריסיליה קשתי""",party_name_exact,appeal_stage_pre_decision_media,2019-07-02,2020-01-20
+5146e1a727b6576c091cc000,HUGGINGFACE-0602fabdbd9a,"""פריסיליה קשתי""",party_name_exact,district_verdict_stage_media,2019-06-25,2019-08-01
+51aa8fd12e6c2070c095604b,HUGGINGFACE-0604dccbb8ec,"""יוסי דוידוב""",party_name_exact,appeal_stage_pre_decision_media,2008-02-21,2010-05-25
+ca18be9ecd88b23600b830fa,HUGGINGFACE-0604dccbb8ec,"""יוסי דוידוב""",party_name_exact,district_verdict_stage_media,2008-02-14,2008-03-22
+acebafb12545af853b68056c,HUGGINGFACE-071795a4aba6,"""מחאמיד מוחמד""",party_name_exact,appeal_stage_pre_decision_media,2012-11-01,2015-06-08
+4ce916b74a454ff1bd490643,HUGGINGFACE-071795a4aba6,"""מחאמיד מוחמד""",party_name_exact,district_verdict_stage_media,2012-10-25,2012-12-01
+489cd3e0d8df11860069d4e8,HUGGINGFACE-07194af5f540,"""האני חסון""",party_name_exact,appeal_stage_pre_decision_media,2007-04-29,2010-09-05
+8b6daac3eb29a94b0e035685,HUGGINGFACE-07194af5f540,"""האני חסון""",party_name_exact,district_verdict_stage_media,2007-04-22,2007-05-29
+228d8e0860d0da6d1fda26c8,HUGGINGFACE-080535609159,"""טל מור""",party_name_exact,appeal_stage_pre_decision_media,2011-10-23,2013-06-30
+071c161e40082f8f1408b6b0,HUGGINGFACE-080535609159,"""טל מור""",party_name_exact,district_verdict_stage_media,2011-10-16,2011-11-22
+4807eb0203a99fca708a2cb8,HUGGINGFACE-084fbf73bd39,"""דוד בוניפד""",party_name_exact,appeal_stage_pre_decision_media,2010-06-30,2012-12-18
+ddd1bee41366577c8de976ea,HUGGINGFACE-084fbf73bd39,"""דוד בוניפד""",party_name_exact,district_verdict_stage_media,2010-06-23,2010-07-30
+07690724e8883a941523493d,HUGGINGFACE-09259c10df28,"""מרדכי משה""",party_name_exact,appeal_stage_pre_decision_media,2008-05-14,2016-02-13
+84e89e6430c1756f59931c11,HUGGINGFACE-09259c10df28,"""מרדכי משה""",party_name_exact,district_verdict_stage_media,2008-05-07,2008-06-13
+47365e32bd82236e591d92b7,HUGGINGFACE-0944e472bb9c,"""אמיר עטאללה""",party_name_exact,appeal_stage_pre_decision_media,2011-07-13,2013-10-05
+ae2fe3855e18a2c5f43b9036,HUGGINGFACE-0944e472bb9c,"""אמיר עטאללה""",party_name_exact,district_verdict_stage_media,2011-07-06,2011-08-12
+edd4ad5a247e511fa7d7f75c,HUGGINGFACE-0974c17a2738,"""יקטרינה חביבולין""",party_name_exact,appeal_stage_pre_decision_media,2008-06-10,2010-01-05
+0e08698f4a1af9a65925f516,HUGGINGFACE-0974c17a2738,"""יקטרינה חביבולין""",party_name_exact,district_verdict_stage_media,2008-06-03,2008-07-10
+e65742243787fb2526339064,HUGGINGFACE-09b2600aa376,"""גורם בחטרזה""",party_name_exact,appeal_stage_pre_decision_media,2010-08-11,2011-08-10
+1b6e5c2096cb2ea3c2a2c2e3,HUGGINGFACE-0b09591fce80,"""רוני רון""",party_name_exact,appeal_stage_pre_decision_media,2011-06-13,2014-12-10
+393712ef9fd96bdca3e9b892,HUGGINGFACE-0b09591fce80,"""רוני רון""",party_name_exact,district_verdict_stage_media,2011-06-06,2011-07-13
+b7928631101a03a4e3ec1cf0,HUGGINGFACE-0b1279db6689,"""עמאר סואעד""",party_name_exact,appeal_stage_pre_decision_media,2014-11-13,2017-01-07
+534fcca16420b0bbb0173b7b,HUGGINGFACE-0b1279db6689,"""עמאר סואעד""",party_name_exact,district_verdict_stage_media,2014-11-06,2014-12-13
+da5b41d1e55321e594014d77,HUGGINGFACE-0b83241cd4f1,"""אילן אדנני""",party_name_exact,appeal_stage_pre_decision_media,2016-06-15,2018-03-05
+d6ba9f9d2ad6fe58ede4d9a2,HUGGINGFACE-0b83241cd4f1,"""אילן אדנני""",party_name_exact,district_verdict_stage_media,2016-06-08,2016-07-15
+cf00e87dcf110d30db536aa8,HUGGINGFACE-0c92f929df6e,"""ולדימיר קים""",party_name_exact,appeal_stage_pre_decision_media,2007-06-27,2010-03-24
+fbdc67d662e0a9d5cf2c0ba2,HUGGINGFACE-0c92f929df6e,"""ולדימיר קים""",party_name_exact,district_verdict_stage_media,2007-06-20,2007-07-27
+6bbf18f62093afa79c6ba207,HUGGINGFACE-0cc0e65d6e4a,"""מוחמד מטר""",party_name_exact,appeal_stage_pre_decision_media,2011-10-02,2015-01-12
+f34a0ac60b9b567924f5aef4,HUGGINGFACE-0cc0e65d6e4a,"""מוחמד מטר""",party_name_exact,district_verdict_stage_media,2011-09-25,2011-11-01
+bdfb41ede7c232ee8ca8595f,HUGGINGFACE-0cc9e938c435,"""עאזם סייף""",party_name_exact,appeal_stage_pre_decision_media,2007-04-12,2010-05-05
+d3becbfbc80ac843daadfb50,HUGGINGFACE-0cc9e938c435,"""עאזם סייף""",party_name_exact,district_verdict_stage_media,2007-04-05,2007-05-12
+669bb32791d2d1b7c19c7e17,HUGGINGFACE-0d39ef6675b2,"""מיכאל לנין""",party_name_exact,appeal_stage_pre_decision_media,2010-06-22,2011-09-14
+4d95ec468a2b7be7e25ccd80,HUGGINGFACE-0d39ef6675b2,"""מיכאל לנין""",party_name_exact,district_verdict_stage_media,2010-06-15,2010-07-22
+173c9acb4d6b34f9a9abe947,HUGGINGFACE-0db75cc8cf13,"""איגור פלדמן""",party_name_exact,appeal_stage_pre_decision_media,2014-06-18,2015-06-17
+330199754d8d73ed7cc126f8,HUGGINGFACE-0db82fe6d11a,"""מעיין קריף""",party_name_exact,appeal_stage_pre_decision_media,2019-11-03,2020-05-05
+c0bad24a1864c07241a38275,HUGGINGFACE-0db82fe6d11a,"""מעיין קריף""",party_name_exact,district_verdict_stage_media,2019-10-27,2019-12-03
+1e4cfb713105e8f5c1e68443,HUGGINGFACE-0de448d9d287,"""אנדרג'או גבריאל צ'אקול""",party_name_exact,appeal_stage_pre_decision_media,2014-02-03,2015-01-12
+b57dd2e76040d268f6fa7c94,HUGGINGFACE-0de448d9d287,"""אנדרג'או גבריאל צ'אקול""",party_name_exact,district_verdict_stage_media,2014-01-27,2014-03-05
+15fb1826d3ee9644b0970594,HUGGINGFACE-0e798a715c64,"""שמעון לוי""",party_name_exact,appeal_stage_pre_decision_media,2010-04-27,2013-03-05
+aa9fe74027ef0dc323f10d9b,HUGGINGFACE-0e798a715c64,"""שמעון לוי""",party_name_exact,district_verdict_stage_media,2010-04-20,2010-05-27
+efed6bdea3e3adda669a4007,HUGGINGFACE-0e80cb429dfc,"""מוחמד בדארנה""",party_name_exact,appeal_stage_pre_decision_media,2013-10-23,2015-05-20
+9629255a194fb1f019505ee7,HUGGINGFACE-0e80cb429dfc,"""מוחמד בדארנה""",party_name_exact,district_verdict_stage_media,2013-10-16,2013-11-22
+145011178943582b34a7f4cb,HUGGINGFACE-0e8d99b1d932,"""עסאם עיד""",party_name_exact,appeal_stage_pre_decision_media,2013-01-27,2014-07-16
+03aee249b2beb728a0c16f9c,HUGGINGFACE-0e8d99b1d932,"""עסאם עיד""",party_name_exact,district_verdict_stage_media,2013-01-20,2013-02-26
+9f3b3b1d8b52d019c1cff657,HUGGINGFACE-0f0b5ed95038,"""נביל פרעוני""",party_name_exact,appeal_stage_pre_decision_media,2011-03-31,2012-11-25
+c155bd52d79ea224c1e13bac,HUGGINGFACE-0f0b5ed95038,"""נביל פרעוני""",party_name_exact,district_verdict_stage_media,2011-03-24,2011-04-30
+97766d3c934f1f77c45daed1,HUGGINGFACE-0f501f4d4e99,"""טלאהון מתוקן""",party_name_exact,appeal_stage_pre_decision_media,2009-06-14,2013-10-26
+723bb086828d0ae591854ca8,HUGGINGFACE-0f501f4d4e99,"""טלאהון מתוקן""",party_name_exact,district_verdict_stage_media,2009-06-07,2009-07-14
+c5fe4e5ff9f84cb03a6f2c60,HUGGINGFACE-0f542538203a,"""גור פינקלשטיין""",party_name_exact,appeal_stage_pre_decision_media,2011-04-30,2015-11-15
+973f9ad71540610de4edd56b,HUGGINGFACE-0f542538203a,"""גור פינקלשטיין""",party_name_exact,district_verdict_stage_media,2011-04-23,2011-05-30
+8c4e0d69db3ddfac3302ca8a,HUGGINGFACE-105dd12eb553,"""פארס טארבין""",party_name_exact,appeal_stage_pre_decision_media,2012-03-04,2014-02-19
+25480b8b2644fec2e19acb21,HUGGINGFACE-105dd12eb553,"""פארס טארבין""",party_name_exact,district_verdict_stage_media,2012-02-26,2012-04-03
+d8dae5412aa85e626d486cb5,HUGGINGFACE-106bc76ca63d,"""מאור כהן""",party_name_exact,appeal_stage_pre_decision_media,2016-04-14,2017-02-21
+408292141b5d82c526019836,HUGGINGFACE-106bc76ca63d,"""מאור כהן""",party_name_exact,district_verdict_stage_media,2016-04-07,2016-05-14
+045ef3d41e33def16c97b4b1,HUGGINGFACE-10a31a6da9bf,"""קונסטנט בוצקרניקוב""",party_name_exact,appeal_stage_pre_decision_media,2009-11-04,2011-07-03
+ef7b9deb3b77a72ec73a0b7a,HUGGINGFACE-10a31a6da9bf,"""קונסטנט בוצקרניקוב""",party_name_exact,district_verdict_stage_media,2009-10-28,2009-12-04
+dd9e5de2e26434cde6dd95b0,HUGGINGFACE-10fbe98b9bc9,"""סאלח בדוי""",party_name_exact,appeal_stage_pre_decision_media,2009-12-21,2014-07-13
+af48e24d92710a06f5723ec7,HUGGINGFACE-10fbe98b9bc9,"""סאלח בדוי""",party_name_exact,district_verdict_stage_media,2009-12-14,2010-01-20
+4721a2bfe057b96ad21e251a,HUGGINGFACE-1134c3043d0b,"""עמר חמאיסה""",party_name_exact,appeal_stage_pre_decision_media,2012-11-12,2014-03-24
+ed2b85ab913ec834e28a4b4c,HUGGINGFACE-1134c3043d0b,"""עמר חמאיסה""",party_name_exact,district_verdict_stage_media,2012-11-05,2012-12-12
+4e65a6d9dea6e867f3672daf,HUGGINGFACE-11fcba5513c8,"""ולדיסלב לברוב""",party_name_exact,appeal_stage_pre_decision_media,2018-11-26,2020-06-05
+cdf09448c08c07b24c737a16,HUGGINGFACE-11fcba5513c8,"""ולדיסלב לברוב""",party_name_exact,district_verdict_stage_media,2018-11-19,2018-12-26
+29cb7f516e0ba76197fcc0f1,HUGGINGFACE-12383460479f,"""אלמה קחסאי""",party_name_exact,appeal_stage_pre_decision_media,2014-06-12,2017-07-10
+a7284ae5163818054a4679f5,HUGGINGFACE-12383460479f,"""אלמה קחסאי""",party_name_exact,district_verdict_stage_media,2014-06-05,2014-07-12
+333f0c3c27adcb6dac2c98d9,HUGGINGFACE-125df4da438d,"""גנדי גלקין""",party_name_exact,appeal_stage_pre_decision_media,2017-01-27,2018-01-26
+312e9e6c6cc3cbc2788de458,HUGGINGFACE-12c1f585de16,"""אחמד מוגרבי""",party_name_exact,appeal_stage_pre_decision_media,2015-03-18,2016-04-19
+08040dd1fbcbb64497cd4687,HUGGINGFACE-12c1f585de16,"""אחמד מוגרבי""",party_name_exact,district_verdict_stage_media,2015-03-11,2015-04-17
+2ff0c994485f394c496f1002,HUGGINGFACE-12c9680d74b2,"""ירון ברכה""",party_name_exact,appeal_stage_pre_decision_media,2008-09-18,2011-10-09
+12c5de622f682302fc79d728,HUGGINGFACE-12c9680d74b2,"""ירון ברכה""",party_name_exact,district_verdict_stage_media,2008-09-11,2008-10-18
+47a7c3a54b69dda2cf687f2b,HUGGINGFACE-12e562673cf2,"""יוסף לוגסי""",party_name_exact,appeal_stage_pre_decision_media,2019-09-10,2020-09-08
+763d365d06e7a5ac79fdc46b,HUGGINGFACE-13b691629698,"""חוסייני עלאא""",party_name_exact,appeal_stage_pre_decision_media,2009-01-15,2010-01-14
+1e0c0817e74f1421a4cdd7c1,HUGGINGFACE-1457ff7b3fec,"""ואסים עאלם""",party_name_exact,appeal_stage_pre_decision_media,2011-05-19,2013-08-19
+da0ff3a7cfe408c5b29c1993,HUGGINGFACE-1457ff7b3fec,"""ואסים עאלם""",party_name_exact,district_verdict_stage_media,2011-05-12,2011-06-18
+503950d2b98eb05534d50499,HUGGINGFACE-14b1a55ca6a7,"""נאצר שוא""",party_name_exact,appeal_stage_pre_decision_media,2018-12-31,2020-12-25
+7b6749d72100125e247df1c2,HUGGINGFACE-14b1a55ca6a7,"""נאצר שוא""",party_name_exact,district_verdict_stage_media,2018-12-24,2019-01-30
+391b497ffcae970000b4bcdd,HUGGINGFACE-171bacc7d00c,"""מוחמד בושקאר""",party_name_exact,appeal_stage_pre_decision_media,2008-11-24,2012-05-07
+713de7a7a66f815d0fd27328,HUGGINGFACE-171bacc7d00c,"""מוחמד בושקאר""",party_name_exact,district_verdict_stage_media,2008-11-17,2008-12-24
+6a9b45470110a0ecd98cba25,HUGGINGFACE-178eef938955,"""עלי אבו חסן""",party_name_exact,appeal_stage_pre_decision_media,2018-04-25,2020-10-16
+36d609fc6ab41b129fdd6c5f,HUGGINGFACE-178eef938955,"""עלי אבו חסן""",party_name_exact,district_verdict_stage_media,2018-04-18,2018-05-25
+244690fed901b23899d2c487,HUGGINGFACE-17cdf128c9f3,"""יבגני סרנצ'וקוב""",party_name_exact,appeal_stage_pre_decision_media,2009-10-13,2010-10-12
+363949bb37df4e2b45c3b80f,HUGGINGFACE-18f2d777f6ed,"""יהושע אליצור""",party_name_exact,appeal_stage_pre_decision_media,2018-05-09,2020-10-26
+c31de5cdad867339faade30d,HUGGINGFACE-18f2d777f6ed,"""יהושע אליצור""",party_name_exact,district_verdict_stage_media,2018-05-02,2018-06-08
+6f3c7e580b65a6373d4ed8a7,HUGGINGFACE-1924b8bf45bc,"""אלישע חייבטוב""",party_name_exact,appeal_stage_pre_decision_media,2011-05-30,2018-07-31
+1dfac360944652450e9df9fa,HUGGINGFACE-1924b8bf45bc,"""אלישע חייבטוב""",party_name_exact,district_verdict_stage_media,2011-05-23,2011-06-29
+0e8c63e9922b2ec76586eeba,HUGGINGFACE-197ff9d68049,"""אלכסיי אופצ'ינר""",party_name_exact,appeal_stage_pre_decision_media,2009-01-14,2010-01-13
+8b5e769af3de69ed6dc8035b,HUGGINGFACE-19a9eb2d4539,"""מאיר אדרי""",party_name_exact,appeal_stage_pre_decision_media,2009-01-14,2013-01-06
+904aacfdf443407a9910d76c,HUGGINGFACE-19a9eb2d4539,"""מאיר אדרי""",party_name_exact,district_verdict_stage_media,2009-01-07,2009-02-13
+08a9250a5bed50ff08475d72,HUGGINGFACE-19ede5814949,"""פרג' עופי""",party_name_exact,appeal_stage_pre_decision_media,2010-04-18,2013-08-18
+ea09f32e22a0a3aac7e027e4,HUGGINGFACE-19ede5814949,"""פרג' עופי""",party_name_exact,district_verdict_stage_media,2010-04-11,2010-05-18
+bea91ef57778e6c457363375,HUGGINGFACE-1a2d693530c7,"""חסן אלגדאמין""",party_name_exact,appeal_stage_pre_decision_media,2016-12-27,2017-01-07
+7dfad73bb660731232c9342a,HUGGINGFACE-1a2d693530c7,"""חסן אלגדאמין""",party_name_exact,district_verdict_stage_media,2016-12-20,2017-01-26
+dff5dfbed3056bd60c2571c1,HUGGINGFACE-1a7eb30e2636,"""כאמל דיאב""",party_name_exact,appeal_stage_pre_decision_media,2019-03-01,2020-02-28
+a360cd1e6d5de22ec35f7520,HUGGINGFACE-1a9416207cec,"""סנד אלקאדי""",party_name_exact,appeal_stage_pre_decision_media,2020-02-04,2020-02-11
+a8e66b4f0fb50d7b582b71c1,HUGGINGFACE-1a9416207cec,"""סנד אלקאדי""",party_name_exact,district_verdict_stage_media,2020-01-28,2020-03-05
+40d62d05ecea2d92400a4ae6,HUGGINGFACE-1b452baff0f6,"""הונצ'יאן לין""",party_name_exact,appeal_stage_pre_decision_media,2007-09-09,2010-11-02
+40e07e895d094897a89b121f,HUGGINGFACE-1b452baff0f6,"""הונצ'יאן לין""",party_name_exact,district_verdict_stage_media,2007-09-02,2007-10-09
+1f5e82f6f43efc8162d1363a,HUGGINGFACE-1c536bed7cbb,"""אכרם אבו סנימה""",party_name_exact,appeal_stage_pre_decision_media,2009-06-16,2010-02-28
+e06ad6ade6d5e171ef05f371,HUGGINGFACE-1c536bed7cbb,"""אכרם אבו סנימה""",party_name_exact,district_verdict_stage_media,2009-06-09,2009-07-16
+d0bb2e733ce4b53c09731125,HUGGINGFACE-1c9b06006563,"""קיריל סטצ'נקו""",party_name_exact,appeal_stage_pre_decision_media,2006-11-28,2010-04-05
+497b57044ba8489ec98454f1,HUGGINGFACE-1c9b06006563,"""קיריל סטצ'נקו""",party_name_exact,district_verdict_stage_media,2006-11-21,2006-12-28
+90c16ba67f3477ce4d4bad7d,HUGGINGFACE-1ce75f87ae31,"""תומס גרוס""",party_name_exact,appeal_stage_pre_decision_media,2018-05-14,2019-02-23
+f6fd5fae6ab8feea0d551715,HUGGINGFACE-1ce75f87ae31,"""תומס גרוס""",party_name_exact,district_verdict_stage_media,2018-05-07,2018-06-13
+fc3000d9a9650e3cf444c35d,HUGGINGFACE-1f3f47fdf707,"""שחר גרידיש""",party_name_exact,appeal_stage_pre_decision_media,2014-06-23,2015-05-12
+f926df79df3e75a40f68afa1,HUGGINGFACE-1f3f47fdf707,"""שחר גרידיש""",party_name_exact,district_verdict_stage_media,2014-06-16,2014-07-23
+56575c8dc72ce065661eed5b,HUGGINGFACE-1f567446e73b,"""מוחמד דיבה""",party_name_exact,appeal_stage_pre_decision_media,2010-04-28,2012-09-02
+f82c6152d8b58b1d711e8b6c,HUGGINGFACE-1f567446e73b,"""מוחמד דיבה""",party_name_exact,district_verdict_stage_media,2010-04-21,2010-05-28
+05f9abcae300cb2a25f07a51,HUGGINGFACE-1f5722ebcb08,"""יורי ליסיאק""",party_name_exact,appeal_stage_pre_decision_media,2016-10-05,2018-02-18
+2757d417777334c2e3830aa9,HUGGINGFACE-1f5722ebcb08,"""יורי ליסיאק""",party_name_exact,district_verdict_stage_media,2016-09-28,2016-11-04
+9ea9645bdb88608b135d1b84,HUGGINGFACE-1f708c0636a5,"""בילאל שאכר""",party_name_exact,appeal_stage_pre_decision_media,2017-08-21,2019-12-09
+ff60b9b5ff2ebf2c57216db2,HUGGINGFACE-1f708c0636a5,"""בילאל שאכר""",party_name_exact,district_verdict_stage_media,2017-08-14,2017-09-20
+14faeba3a49eb6a99e0d6782,HUGGINGFACE-1fd94c5360dd,"""רוי צסן""",party_name_exact,appeal_stage_pre_decision_media,2011-03-14,2012-08-04
+2253324e0f4be129ce1604b1,HUGGINGFACE-1fd94c5360dd,"""רוי צסן""",party_name_exact,district_verdict_stage_media,2011-03-07,2011-04-13
+b2c0702332be0ca395d9442a,HUGGINGFACE-214d9ea2817a,"""גאזי כנען""",party_name_exact,appeal_stage_pre_decision_media,2011-10-31,2013-06-30
+e052c69eeeab219578a96a54,HUGGINGFACE-214d9ea2817a,"""גאזי כנען""",party_name_exact,district_verdict_stage_media,2011-10-24,2011-11-30
+f90b54db8888495bcfd72e75,HUGGINGFACE-2150f58eb147,"""מוטי אברהמי""",party_name_exact,appeal_stage_pre_decision_media,2015-09-02,2017-01-24
+781039653488b378304392b9,HUGGINGFACE-2150f58eb147,"""מוטי אברהמי""",party_name_exact,district_verdict_stage_media,2015-08-26,2015-10-02
+1dfc188dfd82ec6efbc13a0f,HUGGINGFACE-226ffb1b03ea,"""סמיח רגבי""",party_name_exact,appeal_stage_pre_decision_media,2019-06-29,2020-06-27
+f02df4e3c6d05dce3130ba0b,HUGGINGFACE-255a6bf72806,"""דן אוסקר למפל""",party_name_exact,appeal_stage_pre_decision_media,2017-09-27,2018-05-06
+eec1da1fd1841488476227cf,HUGGINGFACE-255a6bf72806,"""דן אוסקר למפל""",party_name_exact,district_verdict_stage_media,2017-09-20,2017-10-27
+5a18dce3431a3ee5e1c26417,HUGGINGFACE-257da275fa5a,"""מוחמד מובארק""",party_name_exact,appeal_stage_pre_decision_media,2009-11-17,2013-04-09
+8d1b94682f2096f50447a18f,HUGGINGFACE-257da275fa5a,"""מוחמד מובארק""",party_name_exact,district_verdict_stage_media,2009-11-10,2009-12-17
+add1b52fbde915ce22b0f3ef,HUGGINGFACE-273acdc3c869,"""מוחמד אגבריה""",party_name_exact,appeal_stage_pre_decision_media,2010-02-14,2012-03-07
+59a564a5456cff1d5c077f29,HUGGINGFACE-273acdc3c869,"""מוחמד אגבריה""",party_name_exact,district_verdict_stage_media,2010-02-07,2010-03-16
+82c5c85127bdef8594cac6f8,HUGGINGFACE-2826f07f84d0,"""וולד גבריאל טסגזשב""",party_name_exact,appeal_stage_pre_decision_media,2012-06-17,2014-03-09
+44d8416fabfaf2880117a70d,HUGGINGFACE-2826f07f84d0,"""וולד גבריאל טסגזשב""",party_name_exact,district_verdict_stage_media,2012-06-10,2012-07-17
+5dc65e1dd71d3866ef8cfe96,HUGGINGFACE-28428c467a93,"""מוחמד אבו סאלח""",party_name_exact,appeal_stage_pre_decision_media,2006-08-06,2010-06-27
+d0a3c1bf8109f7341a6ec6e7,HUGGINGFACE-28428c467a93,"""מוחמד אבו סאלח""",party_name_exact,district_verdict_stage_media,2006-07-30,2006-09-05
+604c677e7df03370ee9a2b0c,HUGGINGFACE-2881a0e73a1c,"""יוסף אבו תיאה""",party_name_exact,appeal_stage_pre_decision_media,2009-12-10,2013-08-05
+375c042fc27cd51397d8c250,HUGGINGFACE-2881a0e73a1c,"""יוסף אבו תיאה""",party_name_exact,district_verdict_stage_media,2009-12-03,2010-01-09
+3cbd3b92b0630c1649f14366,HUGGINGFACE-28f722aa0bf0,"""ויאצסלב מלינובסקי""",party_name_exact,appeal_stage_pre_decision_media,2009-06-15,2011-03-30
+f8b5f69ef968a621653b9116,HUGGINGFACE-28f722aa0bf0,"""ויאצסלב מלינובסקי""",party_name_exact,district_verdict_stage_media,2009-06-08,2009-07-15
+eca5831794c07608140aec9b,HUGGINGFACE-29210ca38a96,"""מוחמד עלקם""",party_name_exact,appeal_stage_pre_decision_media,2018-09-12,2019-04-02
+2e34c0b8373da3d72e17b015,HUGGINGFACE-29210ca38a96,"""מוחמד עלקם""",party_name_exact,district_verdict_stage_media,2018-09-05,2018-10-12
+d001d62ba195a739d86a5dfd,HUGGINGFACE-29baaafddbc9,"""טאדסה גטאהון""",party_name_exact,appeal_stage_pre_decision_media,2015-01-26,2016-05-24
+68bcdb2cf3ce6ff43557409c,HUGGINGFACE-29baaafddbc9,"""טאדסה גטאהון""",party_name_exact,district_verdict_stage_media,2015-01-19,2015-02-25
+f7234446d628b707ecf674bc,HUGGINGFACE-2a8fcaf3a65e,"""איבתור אבשלומוב""",party_name_exact,appeal_stage_pre_decision_media,2008-05-14,2012-07-04
+0f415360dd66067dffa15f6e,HUGGINGFACE-2a8fcaf3a65e,"""איבתור אבשלומוב""",party_name_exact,district_verdict_stage_media,2008-05-07,2008-06-13
+4801475f56284895878f3a7b,HUGGINGFACE-2ab0fccbde2a,"""איברהים טמטאווי""",party_name_exact,appeal_stage_pre_decision_media,2011-06-30,2015-08-23
+a1b7371376ecca459b8c6706,HUGGINGFACE-2ab0fccbde2a,"""איברהים טמטאווי""",party_name_exact,district_verdict_stage_media,2011-06-23,2011-07-30
+c82cebf491e821df2a261128,HUGGINGFACE-2ae13d59f76d,"""ניקולאי דורושב""",party_name_exact,appeal_stage_pre_decision_media,2013-02-27,2014-02-26
+7db262799d75d7f479affbc6,HUGGINGFACE-2b2a9741b6a6,"""איתמר דהן""",party_name_exact,appeal_stage_pre_decision_media,2012-07-04,2013-07-03
+442fa163e308019c512684a5,HUGGINGFACE-2c4e0794f84b,"""מחמד מסעד""",party_name_exact,appeal_stage_pre_decision_media,2017-01-29,2019-08-03
+86521964c015c97897e94948,HUGGINGFACE-2c4e0794f84b,"""מחמד מסעד""",party_name_exact,district_verdict_stage_media,2017-01-22,2017-02-28
+4ed0de9d9236a86a171262a8,HUGGINGFACE-2c6186d24c78,"""ישראל אלבז""",party_name_exact,appeal_stage_pre_decision_media,2017-03-30,2019-03-08
+2e23bdd2d8554e9e51118352,HUGGINGFACE-2c6186d24c78,"""ישראל אלבז""",party_name_exact,district_verdict_stage_media,2017-03-23,2017-04-29
+6ed99efd14531eb4b442494e,HUGGINGFACE-2c681632e407,"""עאסלה פהים""",party_name_exact,appeal_stage_pre_decision_media,2012-07-09,2016-01-19
+305d66d46f49a51b29896ee3,HUGGINGFACE-2c681632e407,"""עאסלה פהים""",party_name_exact,district_verdict_stage_media,2012-07-02,2012-08-08
+43851bda0c67894a5f48e5ec,HUGGINGFACE-2d76be2fa1a6,"""עבד אל רחמן ג'ראדאת""",party_name_exact,appeal_stage_pre_decision_media,2010-05-03,2012-06-17
+bf4f31e318bd343435a0c7de,HUGGINGFACE-2d76be2fa1a6,"""עבד אל רחמן ג'ראדאת""",party_name_exact,district_verdict_stage_media,2010-04-26,2010-06-02
+de9be8b28fc9a0b2fa870a03,HUGGINGFACE-2e816273ed86,"""יונתן ועדיה""",party_name_exact,appeal_stage_pre_decision_media,2016-09-21,2018-10-23
+a37a7f660b05b42199ed9206,HUGGINGFACE-2e816273ed86,"""יונתן ועדיה""",party_name_exact,district_verdict_stage_media,2016-09-14,2016-10-21
+4bc7084e15b878a3fbba678a,HUGGINGFACE-2ea49c56d936,"""מיכאל מיכלאשוילי""",party_name_exact,appeal_stage_pre_decision_media,2016-11-15,2018-11-11
+af6859e61daa5a30103fdafc,HUGGINGFACE-2ea49c56d936,"""מיכאל מיכלאשוילי""",party_name_exact,district_verdict_stage_media,2016-11-08,2016-12-15
+9d02ae6f22ff57375d40d620,HUGGINGFACE-2ececa4f0f1e,"""תאמר טרשה""",party_name_exact,appeal_stage_pre_decision_media,2009-06-10,2011-06-21
+91418f48fb612c146353c8da,HUGGINGFACE-2ececa4f0f1e,"""תאמר טרשה""",party_name_exact,district_verdict_stage_media,2009-06-03,2009-07-10
+2e9265e5df167b130f7ed047,HUGGINGFACE-2ed9c0fd9780,"""שחר מזרחי""",party_name_exact,appeal_stage_pre_decision_media,2009-09-03,2010-07-20
+0f5c77ed995aba3e0dc98878,HUGGINGFACE-2ed9c0fd9780,"""שחר מזרחי""",party_name_exact,district_verdict_stage_media,2009-08-27,2009-10-03
+a29ce829b20d557440cc1ed6,HUGGINGFACE-2fdac57da77e,"""אכרמי חאג' יחיא""",party_name_exact,appeal_stage_pre_decision_media,2010-07-14,2012-07-17
+02eeb2e69c5afff7675528af,HUGGINGFACE-2fdac57da77e,"""אכרמי חאג' יחיא""",party_name_exact,district_verdict_stage_media,2010-07-07,2010-08-13
+eb7c54025bb4478df2998f23,HUGGINGFACE-307e0f213442,"""הרצל מסיכה""",party_name_exact,appeal_stage_pre_decision_media,2011-09-05,2014-07-26
+3ae92a9cd338b0e08d39e8c5,HUGGINGFACE-307e0f213442,"""הרצל מסיכה""",party_name_exact,district_verdict_stage_media,2011-08-29,2011-10-05
+422bcd98a57467a511a862a1,HUGGINGFACE-30e7912f973c,"""חאלד מוסא""",party_name_exact,appeal_stage_pre_decision_media,2011-05-03,2012-05-01
+f797a3cc29486ca0d5c5e6cc,HUGGINGFACE-312e11949c4a,"""שרוק דוויאת""",party_name_exact,appeal_stage_pre_decision_media,2016-12-25,2019-01-11
+3fe3f75970accb889b6ab75f,HUGGINGFACE-312e11949c4a,"""שרוק דוויאת""",party_name_exact,district_verdict_stage_media,2016-12-18,2017-01-24
+d6495e640d5da1f1e0874f04,HUGGINGFACE-31e5baa86760,"""עופר גואטה""",party_name_exact,appeal_stage_pre_decision_media,2014-06-15,2014-07-01
+28b4e1cbbb1b73f376d87706,HUGGINGFACE-31e5baa86760,"""עופר גואטה""",party_name_exact,district_verdict_stage_media,2014-06-08,2014-07-15
+18701f09964bbe0fa1189392,HUGGINGFACE-321f6c5aee0a,"""שאקר אבו מור""",party_name_exact,appeal_stage_pre_decision_media,2011-02-20,2013-02-06
+42772920b0ce3da3c8a7308d,HUGGINGFACE-321f6c5aee0a,"""שאקר אבו מור""",party_name_exact,district_verdict_stage_media,2011-02-13,2011-03-22
+eba4b584dafba9363563aba8,HUGGINGFACE-325619a6f1c2,"""מוראד רג'בי""",party_name_exact,appeal_stage_pre_decision_media,2018-04-17,2019-04-16
+efdb08cb49b44ffcc6cdfe3f,HUGGINGFACE-3277bb71a647,"""כארים חוסיין אל שייח""",party_name_exact,appeal_stage_pre_decision_media,2013-01-14,2015-01-12
+2d998fdfc8a14ea268d75c34,HUGGINGFACE-3277bb71a647,"""כארים חוסיין אל שייח""",party_name_exact,district_verdict_stage_media,2013-01-07,2013-02-13
+24d9a87ff133eb2577cecf01,HUGGINGFACE-339bb0c23418,"""יוסף חיימוב""",party_name_exact,appeal_stage_pre_decision_media,2013-03-17,2015-05-20
+8ce817d49c28bb30694f0403,HUGGINGFACE-339bb0c23418,"""יוסף חיימוב""",party_name_exact,district_verdict_stage_media,2013-03-10,2013-04-16
+7302bbfb0eb828c0e442b558,HUGGINGFACE-339d6320b05c,"""מוחמד הינדאוי""",party_name_exact,appeal_stage_pre_decision_media,2012-02-12,2013-06-22
+e2c04008e4f7acf1e50fe4d2,HUGGINGFACE-339d6320b05c,"""מוחמד הינדאוי""",party_name_exact,district_verdict_stage_media,2012-02-05,2012-03-13
+3d779a7f4ce9efa8470547e4,HUGGINGFACE-33edb928a24f,"""שלום ימיני""",party_name_exact,appeal_stage_pre_decision_media,2010-03-18,2011-01-11
+902192c863db9d39b8145678,HUGGINGFACE-33edb928a24f,"""שלום ימיני""",party_name_exact,district_verdict_stage_media,2010-03-11,2010-04-17
+88c8737a109db63711e47bb6,HUGGINGFACE-33f5f3354124,"""אייל דמסה""",party_name_exact,appeal_stage_pre_decision_media,2012-07-15,2017-01-08
+7037a4ee93366fc858625174,HUGGINGFACE-33f5f3354124,"""אייל דמסה""",party_name_exact,district_verdict_stage_media,2012-07-08,2012-08-14
+3a48fdd5268354988a41ba20,HUGGINGFACE-33f7b7cd6252,"""אמג'ד דענא""",party_name_exact,appeal_stage_pre_decision_media,2009-09-21,2011-06-26
+9058322cb98dfb680c20d66d,HUGGINGFACE-33f7b7cd6252,"""אמג'ד דענא""",party_name_exact,district_verdict_stage_media,2009-09-14,2009-10-21
+4772f1833ca3985b6746a841,HUGGINGFACE-33fd5fb195a1,"""אולגה בוריסוב""",party_name_exact,appeal_stage_pre_decision_media,2009-12-09,2011-04-02
+b196abf3dc7e2e5b92cc6bc7,HUGGINGFACE-33fd5fb195a1,"""אולגה בוריסוב""",party_name_exact,district_verdict_stage_media,2009-12-02,2010-01-08
+3b0e8925059c9378d626cc17,HUGGINGFACE-34d5e1faffbc,"""מוחמד לחאם""",party_name_exact,appeal_stage_pre_decision_media,2011-03-02,2015-07-28
+c0c300e9228575aaddb17948,HUGGINGFACE-34d5e1faffbc,"""מוחמד לחאם""",party_name_exact,district_verdict_stage_media,2011-02-23,2011-04-01
+5d662ecb0beb6ce11fcd0fb6,HUGGINGFACE-350879e0f03d,"""אדוארד ברוד""",party_name_exact,appeal_stage_pre_decision_media,2009-03-25,2010-03-24
+06b479caf05485ed631854e3,HUGGINGFACE-3598b0c47e9d,"""תאיר זועבי""",party_name_exact,appeal_stage_pre_decision_media,2014-03-05,2018-06-05
+c1e67778ca8f500888f41d53,HUGGINGFACE-3598b0c47e9d,"""תאיר זועבי""",party_name_exact,district_verdict_stage_media,2014-02-26,2014-04-04
+ec44c9d44b4c699c99e528ed,HUGGINGFACE-3740f695a927,"""סאמי אבו טהה""",party_name_exact,appeal_stage_pre_decision_media,2014-10-28,2015-10-14
+3fdfb6c0bede5becefb453b9,HUGGINGFACE-3740f695a927,"""סאמי אבו טהה""",party_name_exact,district_verdict_stage_media,2014-10-21,2014-11-27
+cecfea7f1431c18ed61804db,HUGGINGFACE-3761494018dd,"""מיכל אלוני""",party_name_exact,appeal_stage_pre_decision_media,2014-12-29,2017-06-12
+b1ffb03666c3550b98a0ab2b,HUGGINGFACE-3761494018dd,"""מיכל אלוני""",party_name_exact,district_verdict_stage_media,2014-12-22,2015-01-28
+330b6a13d7c24bc13775653c,HUGGINGFACE-37b980eaca08,"""אברהם אשכנזי""",party_name_exact,appeal_stage_pre_decision_media,2009-03-04,2011-04-12
+40364a76fb6efcb53af5b6f1,HUGGINGFACE-37b980eaca08,"""אברהם אשכנזי""",party_name_exact,district_verdict_stage_media,2009-02-25,2009-04-03
+23ea903cd48d180942f6f506,HUGGINGFACE-3878b98c91ad,"""יעקוב אלפידל""",party_name_exact,appeal_stage_pre_decision_media,2010-09-20,2012-10-24
+b03d0a12185452520fb95b2f,HUGGINGFACE-3878b98c91ad,"""יעקוב אלפידל""",party_name_exact,district_verdict_stage_media,2010-09-13,2010-10-20
+cebce338cce4d815e28404da,HUGGINGFACE-389a53382168,"""עפיף עומר""",party_name_exact,appeal_stage_pre_decision_media,2009-07-15,2014-01-25
+ccf83333bce2b55f568714dd,HUGGINGFACE-389a53382168,"""עפיף עומר""",party_name_exact,district_verdict_stage_media,2009-07-08,2009-08-14
+3ee5d3e168325ff549abbe0d,HUGGINGFACE-38a7efab6059,"""אחמד אלעאסם""",party_name_exact,appeal_stage_pre_decision_media,2015-04-12,2017-03-28
+f451e2aa180dd2517f3cf7da,HUGGINGFACE-38a7efab6059,"""אחמד אלעאסם""",party_name_exact,district_verdict_stage_media,2015-04-05,2015-05-12
+1e286cf9d69611ad9d58479c,HUGGINGFACE-38f23955b28e,"""יעקב יעקב""",party_name_exact,appeal_stage_pre_decision_media,2010-01-04,2010-05-08
+e0c5f5c98ebb1345be44ef69,HUGGINGFACE-38f23955b28e,"""יעקב יעקב""",party_name_exact,district_verdict_stage_media,2009-12-28,2010-02-03
+732f5ecb6116e475c4b5bd56,HUGGINGFACE-38f850b887f1,"""עמרי זילברמן""",party_name_exact,appeal_stage_pre_decision_media,2008-12-24,2010-02-01
+d5a6f90b7c289f2a320b25e3,HUGGINGFACE-38f850b887f1,"""עמרי זילברמן""",party_name_exact,district_verdict_stage_media,2008-12-17,2009-01-23
+9d639f0ceb321308c57631b9,HUGGINGFACE-39e34723ef7d,"""עבד אלכרים ג'האלין""",party_name_exact,appeal_stage_pre_decision_media,2011-09-12,2013-09-28
+e0e9f0f9496a91f1febe9010,HUGGINGFACE-39e34723ef7d,"""עבד אלכרים ג'האלין""",party_name_exact,district_verdict_stage_media,2011-09-05,2011-10-12
+0fdff91e5843356a6d7ff593,HUGGINGFACE-3a2e3f133fc5,"""דוד תורג'מן""",party_name_exact,appeal_stage_pre_decision_media,2010-06-14,2012-05-08
+82e28117a7697a63426d880b,HUGGINGFACE-3a2e3f133fc5,"""דוד תורג'מן""",party_name_exact,district_verdict_stage_media,2010-06-07,2010-07-14
+113c2aaee643631df8bc84d2,HUGGINGFACE-3a5f7156703c,"""חמודה כארם""",party_name_exact,appeal_stage_pre_decision_media,2013-02-07,2013-06-26
+a9ec886149fd1dc2e8c9fd57,HUGGINGFACE-3a5f7156703c,"""חמודה כארם""",party_name_exact,district_verdict_stage_media,2013-01-31,2013-03-09
+ae14115c5dd640bf78b307ae,HUGGINGFACE-3b8b41fde77c,"""חאלד צעלוק""",party_name_exact,appeal_stage_pre_decision_media,2013-10-02,2016-12-17
+875544dcdc4e28bfd53733e2,HUGGINGFACE-3b8b41fde77c,"""חאלד צעלוק""",party_name_exact,district_verdict_stage_media,2013-09-25,2013-11-01
+9bb8399c8605450403404cb4,HUGGINGFACE-3d0ab4af6f34,"""לוי וידבסקי""",party_name_exact,appeal_stage_pre_decision_media,2014-04-03,2015-07-04
+b6d360cbeef1136f52024304,HUGGINGFACE-3d0ab4af6f34,"""לוי וידבסקי""",party_name_exact,district_verdict_stage_media,2014-03-27,2014-05-03
+5860f684c68f68c3bab67ce6,HUGGINGFACE-3de7c995f877,"""רדה טיגבה""",party_name_exact,appeal_stage_pre_decision_media,2016-03-07,2016-08-31
+dc154112db6185e95f177e1e,HUGGINGFACE-3de7c995f877,"""רדה טיגבה""",party_name_exact,district_verdict_stage_media,2016-02-29,2016-04-06
+e51edaac5f11bea5bbb0d095,HUGGINGFACE-3debd445e6d8,"""מאיר ז'אנו""",party_name_exact,appeal_stage_pre_decision_media,2011-03-15,2013-06-09
+536f0b0a52ea6771c1707fd4,HUGGINGFACE-3debd445e6d8,"""מאיר ז'אנו""",party_name_exact,district_verdict_stage_media,2011-03-08,2011-04-14
+27315663f00f7d696bdc3eee,HUGGINGFACE-3e45cc20405b,"""ניר סומך""",party_name_exact,appeal_stage_pre_decision_media,2013-05-20,2016-02-17
+15612475c47ef095737b83d6,HUGGINGFACE-3e45cc20405b,"""ניר סומך""",party_name_exact,district_verdict_stage_media,2013-05-13,2013-06-19
+f074d4dabe259cea2d61e0b0,HUGGINGFACE-3e9882a3f5e9,"""אחמד אל צופי""",party_name_exact,appeal_stage_pre_decision_media,2013-03-05,2015-01-05
+b25548a360846fb8936deaa3,HUGGINGFACE-3e9882a3f5e9,"""אחמד אל צופי""",party_name_exact,district_verdict_stage_media,2013-02-26,2013-04-04
+64bb9ea7449a4222a9c2482e,HUGGINGFACE-3ecacc3034bc,"""מוראד עלי חסין""",party_name_exact,appeal_stage_pre_decision_media,2015-03-23,2016-06-25
+652bdcb913b8a7fb7846d12b,HUGGINGFACE-3ecacc3034bc,"""מוראד עלי חסין""",party_name_exact,district_verdict_stage_media,2015-03-16,2015-04-22
+ee9d98593311bccafd9e9c38,HUGGINGFACE-3f412057428f,"""מאהר אלעיסווי""",party_name_exact,appeal_stage_pre_decision_media,2008-11-03,2011-03-06
+3131f77ceaa149abbb6f83dd,HUGGINGFACE-3f412057428f,"""מאהר אלעיסווי""",party_name_exact,district_verdict_stage_media,2008-10-27,2008-12-03
+a8925672b412d8707caadc90,HUGGINGFACE-3f9ed636e1d8,"""תופיק דלו""",party_name_exact,appeal_stage_pre_decision_media,2016-03-27,2018-02-02
+8c01b7f98e758404b32023dd,HUGGINGFACE-3f9ed636e1d8,"""תופיק דלו""",party_name_exact,district_verdict_stage_media,2016-03-20,2016-04-26
+8acc1e6616bc87d304cd5968,HUGGINGFACE-3fc8b3a249bf,"""נוראיר פידיניאן""",party_name_exact,appeal_stage_pre_decision_media,2011-06-30,2014-09-22
+dd1a4e5fc1cabeacc0fb5e2d,HUGGINGFACE-3fc8b3a249bf,"""נוראיר פידיניאן""",party_name_exact,district_verdict_stage_media,2011-06-23,2011-07-30
+e8285102f399653253a80a2e,HUGGINGFACE-404d2fdbd89f,"""יורי טומבק""",party_name_exact,appeal_stage_pre_decision_media,2007-07-15,2014-11-10
+ed873ba4759d704e062969df,HUGGINGFACE-404d2fdbd89f,"""יורי טומבק""",party_name_exact,district_verdict_stage_media,2007-07-08,2007-08-14
+25cf023efe85d914e4171551,HUGGINGFACE-408a64961536,"""חגי נאור דנינו לוי""",party_name_exact,appeal_stage_pre_decision_media,2011-12-04,2012-11-13
+216a1194ddabcb88c4acf174,HUGGINGFACE-408a64961536,"""חגי נאור דנינו לוי""",party_name_exact,district_verdict_stage_media,2011-11-27,2012-01-03
+ab82c7fbf1942268c0a18976,HUGGINGFACE-40ad82df32bf,"""עידן לוי חסדאי""",party_name_exact,appeal_stage_pre_decision_media,2010-01-25,2011-11-07
+30b5a1437d004c63981977b2,HUGGINGFACE-40ad82df32bf,"""עידן לוי חסדאי""",party_name_exact,district_verdict_stage_media,2010-01-18,2010-02-24
+ab4a4d65faf31301f72ec35c,HUGGINGFACE-4145b9ee8e75,"""ולד עזר""",party_name_exact,appeal_stage_pre_decision_media,2010-09-20,2013-09-08
+383e68cf89d22b8dc58ed187,HUGGINGFACE-4145b9ee8e75,"""ולד עזר""",party_name_exact,district_verdict_stage_media,2010-09-13,2010-10-20
+ed62acbee4497b257fe52a98,HUGGINGFACE-41d4c6be4456,"""ארז שמיל""",party_name_exact,appeal_stage_pre_decision_media,2015-09-16,2018-09-03
+b26b910142376d469a08f1d2,HUGGINGFACE-41d4c6be4456,"""ארז שמיל""",party_name_exact,district_verdict_stage_media,2015-09-09,2015-10-16
+c06f5709a7d1ecbe389d2356,HUGGINGFACE-42a1d1735b30,"""מחמוד מחאמיד""",party_name_exact,appeal_stage_pre_decision_media,2009-12-06,2012-10-21
+c71363e07d74ffed3b9df550,HUGGINGFACE-42a1d1735b30,"""מחמוד מחאמיד""",party_name_exact,district_verdict_stage_media,2009-11-29,2010-01-05
+97b6ae88e4fd7935828f809e,HUGGINGFACE-450e8b472d80,"""מארק עמנואלוב""",party_name_exact,appeal_stage_pre_decision_media,2012-06-27,2015-12-05
+10fc760863d2a4b39d50c7e2,HUGGINGFACE-450e8b472d80,"""מארק עמנואלוב""",party_name_exact,district_verdict_stage_media,2012-06-20,2012-07-27
+80619459444e51c1f59e647b,HUGGINGFACE-45304316cc4d,"""יוסף עאיש""",party_name_exact,appeal_stage_pre_decision_media,2015-01-19,2015-12-13
+dc0b5e85902e031bc415dd67,HUGGINGFACE-45304316cc4d,"""יוסף עאיש""",party_name_exact,district_verdict_stage_media,2015-01-12,2015-02-18
+75df9e63e2690be638b295a9,HUGGINGFACE-45e57a8ed4ab,"""ברק נגר""",party_name_exact,appeal_stage_pre_decision_media,2018-05-07,2020-05-10
+106067b9f1ac886357af9f3e,HUGGINGFACE-45e57a8ed4ab,"""ברק נגר""",party_name_exact,district_verdict_stage_media,2018-04-30,2018-06-06
+46fb13d3d2045f1bfcb807bc,HUGGINGFACE-46b423aafcbd,"""גיורא קורצקי""",party_name_exact,appeal_stage_pre_decision_media,2010-01-21,2013-02-17
+9e436f3a9be0862771c2733b,HUGGINGFACE-46b423aafcbd,"""גיורא קורצקי""",party_name_exact,district_verdict_stage_media,2010-01-14,2010-02-20
+129b497f3530015d781ea3eb,HUGGINGFACE-470e04d3e2d4,"""עלאא דאר עאצי""",party_name_exact,appeal_stage_pre_decision_media,2018-04-16,2020-04-20
+de6eb298443cf7e4300abe8b,HUGGINGFACE-470e04d3e2d4,"""עלאא דאר עאצי""",party_name_exact,district_verdict_stage_media,2018-04-09,2018-05-16
+33566fee33d813a6cdc36f51,HUGGINGFACE-473f9ebe47ed,"""בהאא עויסאת""",party_name_exact,appeal_stage_pre_decision_media,2017-03-30,2020-05-19
+c882cf7f686c888c0eea4b5a,HUGGINGFACE-473f9ebe47ed,"""בהאא עויסאת""",party_name_exact,district_verdict_stage_media,2017-03-23,2017-04-29
+abed4971f474379a6f8bda76,HUGGINGFACE-48ee065b90c6,"""אדם איטל""",party_name_exact,appeal_stage_pre_decision_media,2011-07-18,2014-06-25
+a90a3fd88d6b23f4c4da6d40,HUGGINGFACE-48ee065b90c6,"""אדם איטל""",party_name_exact,district_verdict_stage_media,2011-07-11,2011-08-17
+79728ec7814c492c36488c86,HUGGINGFACE-497264861412,"""עלי אבו טראש""",party_name_exact,appeal_stage_pre_decision_media,2011-04-14,2012-09-01
+17de4d5189af5ae8eeb484a5,HUGGINGFACE-497264861412,"""עלי אבו טראש""",party_name_exact,district_verdict_stage_media,2011-04-07,2011-05-14
+16c1654e12ed145520457f25,HUGGINGFACE-4a0f9eb91590,"""משה גדליה""",party_name_exact,appeal_stage_pre_decision_media,2015-10-11,2017-06-11
+596a4b7b2fa6879e91fb9814,HUGGINGFACE-4a0f9eb91590,"""משה גדליה""",party_name_exact,district_verdict_stage_media,2015-10-04,2015-11-10
+bec14e07caf95c7ab32b3358,HUGGINGFACE-4ac8f2bb46d2,"""איציק חזן""",party_name_exact,appeal_stage_pre_decision_media,2014-03-12,2017-01-17
+7330f163ffff091fabe4b328,HUGGINGFACE-4ac8f2bb46d2,"""איציק חזן""",party_name_exact,district_verdict_stage_media,2014-03-05,2014-04-11
+c3db075227ab5243b9b9d542,HUGGINGFACE-4af2f9350dff,"""ג'לאל אבו טהה""",party_name_exact,appeal_stage_pre_decision_media,2013-11-25,2013-12-05
+36a15ef11c760dbbd5b2d57d,HUGGINGFACE-4af2f9350dff,"""ג'לאל אבו טהה""",party_name_exact,district_verdict_stage_media,2013-11-18,2013-12-25
+ea326fbad462cc756c5009ce,HUGGINGFACE-4bac4a8655c1,"""אושרי חבה""",party_name_exact,appeal_stage_pre_decision_media,2012-10-31,2014-06-09
+5ebf4e31648f1de62a0fdf3f,HUGGINGFACE-4bac4a8655c1,"""אושרי חבה""",party_name_exact,district_verdict_stage_media,2012-10-24,2012-11-30
+1fe9b8db958b20746362811e,HUGGINGFACE-4befaab37bb3,"""רווית דוד""",party_name_exact,appeal_stage_pre_decision_media,2014-02-06,2014-08-03
+a40e52cc038b96f2b9014b69,HUGGINGFACE-4befaab37bb3,"""רווית דוד""",party_name_exact,district_verdict_stage_media,2014-01-30,2014-03-08
+be5aca30ad802647328b3248,HUGGINGFACE-4c5a1c8adc1a,"""אריה ריקו שירזי""",party_name_exact,appeal_stage_pre_decision_media,2017-07-18,2018-12-09
+f68a820aba322a80de98496e,HUGGINGFACE-4c5a1c8adc1a,"""אריה ריקו שירזי""",party_name_exact,district_verdict_stage_media,2017-07-11,2017-08-17
+691c3af4fada2863f76c040e,HUGGINGFACE-4ceebca2eeb0,"""שתילה בו עיאדה""",party_name_exact,appeal_stage_pre_decision_media,2017-02-27,2018-10-13
+9b66b175fe4416a8d136b4f7,HUGGINGFACE-4ceebca2eeb0,"""שתילה בו עיאדה""",party_name_exact,district_verdict_stage_media,2017-02-20,2017-03-29
+32eae478d186883dad234d31,HUGGINGFACE-4d421cfbd599,"""פאדי נסראללה""",party_name_exact,appeal_stage_pre_decision_media,2013-10-26,2014-10-25
+99164c049568c412626eca21,HUGGINGFACE-4d67664e1ae7,"""ערן אלמליח""",party_name_exact,appeal_stage_pre_decision_media,2013-10-10,2015-12-21
+6be33f1d63a7ffa4776b39a7,HUGGINGFACE-4d67664e1ae7,"""ערן אלמליח""",party_name_exact,district_verdict_stage_media,2013-10-03,2013-11-09
+61e33a2d3e8ab55f486f5e37,HUGGINGFACE-4de2ae601644,"""עומר ספי""",party_name_exact,appeal_stage_pre_decision_media,2013-06-18,2014-02-05
+71e7f36020eb7c814b302aee,HUGGINGFACE-4de2ae601644,"""עומר ספי""",party_name_exact,district_verdict_stage_media,2013-06-11,2013-07-18
+ba97e04fda9cf0f4d88cd1aa,HUGGINGFACE-4e706b2ad5a6,"""אמיל חנוכייב""",party_name_exact,appeal_stage_pre_decision_media,2018-04-30,2019-03-01
+4e47a2baad625f75f2d33e22,HUGGINGFACE-4e706b2ad5a6,"""אמיל חנוכייב""",party_name_exact,district_verdict_stage_media,2018-04-23,2018-05-30
+b8d53997702c25b6e25ce045,HUGGINGFACE-4ec32755a96f,"""דפאע אבו עאדרה""",party_name_exact,appeal_stage_pre_decision_media,2010-05-26,2012-10-22
+b707303598ff2ef39d8755c8,HUGGINGFACE-4ec32755a96f,"""דפאע אבו עאדרה""",party_name_exact,district_verdict_stage_media,2010-05-19,2010-06-25
+a43cb7c7fd4f9533c223eb49,HUGGINGFACE-4eefdb33e5fc,"""איוונוב ויאצסלב""",party_name_exact,appeal_stage_pre_decision_media,2011-07-19,2013-03-06
+d02ef3ca0745706e89c9443b,HUGGINGFACE-4eefdb33e5fc,"""איוונוב ויאצסלב""",party_name_exact,district_verdict_stage_media,2011-07-12,2011-08-18
+57f8fda0d92da4fcfcd243d3,HUGGINGFACE-4f4c677fc633,"""פרדי וינוקורסקי""",party_name_exact,appeal_stage_pre_decision_media,2015-03-08,2018-10-27
+c63cc42286f508617ab6228a,HUGGINGFACE-4f4c677fc633,"""פרדי וינוקורסקי""",party_name_exact,district_verdict_stage_media,2015-03-01,2015-04-07
+63b2cd8dcc9fbd1065009930,HUGGINGFACE-4f81de02ef51,"""שמעון והבה""",party_name_exact,appeal_stage_pre_decision_media,2010-04-27,2013-03-05
+7da906340923eca8edd7e1a9,HUGGINGFACE-4f81de02ef51,"""שמעון והבה""",party_name_exact,district_verdict_stage_media,2010-04-20,2010-05-27
+72312764ac5fecb145ce8b78,HUGGINGFACE-5098e12ceff4,"""אילן טסלר""",party_name_exact,appeal_stage_pre_decision_media,2016-10-13,2018-03-09
+882e91ae9bd01ecad562c372,HUGGINGFACE-5098e12ceff4,"""אילן טסלר""",party_name_exact,district_verdict_stage_media,2016-10-06,2016-11-12
+c2e25c3a17ec18dcac7903fa,HUGGINGFACE-5141a8d90a41,"""נביל אבו נצירה""",party_name_exact,appeal_stage_pre_decision_media,2009-10-28,2010-10-27
+b858e7944ee9b085581a740a,HUGGINGFACE-5160bbaa4c14,"""ערף אבו רקייק""",party_name_exact,appeal_stage_pre_decision_media,2007-12-03,2010-03-07
+364a62213e9e81c870e07709,HUGGINGFACE-5160bbaa4c14,"""ערף אבו רקייק""",party_name_exact,district_verdict_stage_media,2007-11-26,2008-01-02
+c9230984d427fb2f4726acc5,HUGGINGFACE-51e59d2154e0,"""טדרוס גטצאו""",party_name_exact,appeal_stage_pre_decision_media,2010-07-19,2013-04-09
+95cd429f2dd060a9948ff617,HUGGINGFACE-51e59d2154e0,"""טדרוס גטצאו""",party_name_exact,district_verdict_stage_media,2010-07-12,2010-08-18
+efc1d080246297eba58b30df,HUGGINGFACE-526e5660d02f,"""סלימאן שוויש""",party_name_exact,appeal_stage_pre_decision_media,2010-04-22,2011-06-14
+441d59f65f4533ff843fcb50,HUGGINGFACE-526e5660d02f,"""סלימאן שוויש""",party_name_exact,district_verdict_stage_media,2010-04-15,2010-05-22
+4753098c577cce1d0eefd95b,HUGGINGFACE-5380011e4f98,"""מוחמד שלעאטה""",party_name_exact,appeal_stage_pre_decision_media,2008-12-24,2010-03-14
+6b0135e56276a62a02873f91,HUGGINGFACE-5380011e4f98,"""מוחמד שלעאטה""",party_name_exact,district_verdict_stage_media,2008-12-17,2009-01-23
+be1a68d6819b9803aab9b35b,HUGGINGFACE-53998ac33c66,"""מחמוד שעלאן""",party_name_exact,appeal_stage_pre_decision_media,2010-03-18,2013-03-20
+676cbc7e9d0af923e898e510,HUGGINGFACE-53998ac33c66,"""מחמוד שעלאן""",party_name_exact,district_verdict_stage_media,2010-03-11,2010-04-17
+bc263e9c4828db4ce044b1a0,HUGGINGFACE-53cef6c5e26e,"""אוסאמה שוויקי""",party_name_exact,appeal_stage_pre_decision_media,2012-04-22,2013-10-19
+0855636af6261542c88b1ffc,HUGGINGFACE-53cef6c5e26e,"""אוסאמה שוויקי""",party_name_exact,district_verdict_stage_media,2012-04-15,2012-05-22
+2a70313bfdca096ab88581bc,HUGGINGFACE-561c92a295cf,"""סעיד טראבין""",party_name_exact,appeal_stage_pre_decision_media,2010-10-18,2012-07-30
+3e134dd97e7df05df96d067e,HUGGINGFACE-561c92a295cf,"""סעיד טראבין""",party_name_exact,district_verdict_stage_media,2010-10-11,2010-11-17
+1909b41fb9dcb000e88f469d,HUGGINGFACE-568ed638c69d,"""אליאב דגון""",party_name_exact,appeal_stage_pre_decision_media,2010-07-18,2013-08-05
+24842bc91f33174935033400,HUGGINGFACE-568ed638c69d,"""אליאב דגון""",party_name_exact,district_verdict_stage_media,2010-07-11,2010-08-17
+891506d9c693070a55fd2b93,HUGGINGFACE-56a286b30f55,"""מוחמד ח'ארוף""",party_name_exact,appeal_stage_pre_decision_media,2018-02-25,2018-11-09
+f6616a93ce68de78071358ac,HUGGINGFACE-56a286b30f55,"""מוחמד ח'ארוף""",party_name_exact,district_verdict_stage_media,2018-02-18,2018-03-27
+8e1f3493fe3d4d146e0ec4cb,HUGGINGFACE-56b405d156ba,"""מיכאל גייבדנוב""",party_name_exact,appeal_stage_pre_decision_media,2014-02-17,2015-11-22
+c67f3fd62a2840293c0c0386,HUGGINGFACE-56b405d156ba,"""מיכאל גייבדנוב""",party_name_exact,district_verdict_stage_media,2014-02-10,2014-03-19
+08bcb9e161e413f05a6a9dca,HUGGINGFACE-5754837de1ce,"""אדנה הברה""",party_name_exact,appeal_stage_pre_decision_media,2016-03-17,2018-02-20
+028f50838fd5ba1c82eb2432,HUGGINGFACE-5754837de1ce,"""אדנה הברה""",party_name_exact,district_verdict_stage_media,2016-03-10,2016-04-16
+f902fa660e22ea0175fff775,HUGGINGFACE-57cb441759bf,"""אורן חנונה""",party_name_exact,appeal_stage_pre_decision_media,2014-05-29,2015-01-20
+f6e32b0052556fdd8a3370f6,HUGGINGFACE-57cb441759bf,"""אורן חנונה""",party_name_exact,district_verdict_stage_media,2014-05-22,2014-06-28
+8d06c2f30564d27676f850d9,HUGGINGFACE-588a0a9bb61d,"""טימור פיזולאיב""",party_name_exact,appeal_stage_pre_decision_media,2008-04-30,2010-01-24
+fafecdebb683d20ba8a63736,HUGGINGFACE-588a0a9bb61d,"""טימור פיזולאיב""",party_name_exact,district_verdict_stage_media,2008-04-23,2008-05-30
+0f1389c3d89195cdfdcc0c5a,HUGGINGFACE-58b3ad2e50eb,"""עדנאן סבאענה""",party_name_exact,appeal_stage_pre_decision_media,2012-06-10,2015-11-10
+190436281fbcf73f0ee97663,HUGGINGFACE-58b3ad2e50eb,"""עדנאן סבאענה""",party_name_exact,district_verdict_stage_media,2012-06-03,2012-07-10
+22334ad2f11e23de8d87369e,HUGGINGFACE-5a641d0214dc,"""אנדרי ליושצנקו""",party_name_exact,appeal_stage_pre_decision_media,2014-08-27,2015-08-26
+0f930459eb8893aa79bc0683,HUGGINGFACE-5ac99ffba014,"""אנה קומשין""",party_name_exact,appeal_stage_pre_decision_media,2014-10-23,2016-07-17
+8aae78667bbf71452e2c1b2f,HUGGINGFACE-5ac99ffba014,"""אנה קומשין""",party_name_exact,district_verdict_stage_media,2014-10-16,2014-11-22
+eb7e49d74f7d9bf5c9fe4343,HUGGINGFACE-5ae5697dc786,"""חסיין ח'ליפה""",party_name_exact,appeal_stage_pre_decision_media,2015-09-09,2016-08-24
+00e32503130adc3b6dce955a,HUGGINGFACE-5ae5697dc786,"""חסיין ח'ליפה""",party_name_exact,district_verdict_stage_media,2015-09-02,2015-10-09
+22cb57e21539b1cf116636b0,HUGGINGFACE-5b0fe7208a8e,"""סרגיי קרביאשוילי""",party_name_exact,appeal_stage_pre_decision_media,2009-06-09,2010-06-21
+2db6cca4dc5961c65393a6e5,HUGGINGFACE-5b0fe7208a8e,"""סרגיי קרביאשוילי""",party_name_exact,district_verdict_stage_media,2009-06-02,2009-07-09
+db00c0a8d7a9818d0fdc6e47,HUGGINGFACE-5bd26e997c52,"""רמזי אבו רידה""",party_name_exact,appeal_stage_pre_decision_media,2010-10-18,2012-07-29
+9adc8bc48f0bc9e143bb6854,HUGGINGFACE-5bd26e997c52,"""רמזי אבו רידה""",party_name_exact,district_verdict_stage_media,2010-10-11,2010-11-17
+f28427d1cffd3768c5199a1b,HUGGINGFACE-5c1af4aecac3,"""אולגה גורליק""",party_name_exact,appeal_stage_pre_decision_media,2014-11-30,2015-11-29
+f00d5fc77d434f73eb36c382,HUGGINGFACE-5c1fa5660db8,"""איאד אבו אל היג'א""",party_name_exact,appeal_stage_pre_decision_media,2009-09-29,2010-07-05
+2d8e25e312cd3a1d81d5adcb,HUGGINGFACE-5c1fa5660db8,"""איאד אבו אל היג'א""",party_name_exact,district_verdict_stage_media,2009-09-22,2009-10-29
+b65caef708b59387993c7da7,HUGGINGFACE-5d2e351e9a26,"""נור אלאדין חמאיסה""",party_name_exact,appeal_stage_pre_decision_media,2014-03-31,2016-11-07
+4b7c703440299ae770990090,HUGGINGFACE-5d2e351e9a26,"""נור אלאדין חמאיסה""",party_name_exact,district_verdict_stage_media,2014-03-24,2014-04-30
+fa44a73570c60b798c9a8266,HUGGINGFACE-5e188c654f5c,"""אלכסנדר צ'ורני""",party_name_exact,appeal_stage_pre_decision_media,2016-01-07,2018-03-02
+77c1381bf1091770f601a0c8,HUGGINGFACE-5e188c654f5c,"""אלכסנדר צ'ורני""",party_name_exact,district_verdict_stage_media,2015-12-31,2016-02-06
+adc7eabff7c76d532076faee,HUGGINGFACE-5e36ec6092fe,"""ויטלי מיכלוב""",party_name_exact,appeal_stage_pre_decision_media,2012-12-26,2016-01-05
+82da1658a2f59aecd6fefeda,HUGGINGFACE-5e36ec6092fe,"""ויטלי מיכלוב""",party_name_exact,district_verdict_stage_media,2012-12-19,2013-01-25
+cfc7f9914b1c2295bb673d16,HUGGINGFACE-5ec893c90ed0,"""מואיד נאשף""",party_name_exact,appeal_stage_pre_decision_media,2010-12-08,2011-01-03
+118ecebdef3791501f08de20,HUGGINGFACE-5ec893c90ed0,"""מואיד נאשף""",party_name_exact,district_verdict_stage_media,2010-12-01,2011-01-07
+7aa4a59e7ca1637624f40528,HUGGINGFACE-5ee9862d64b6,"""אברטרמרים טוולדה""",party_name_exact,appeal_stage_pre_decision_media,2018-06-28,2018-06-09
+2fd54ee5f05aa2b80b9280f4,HUGGINGFACE-5ee9862d64b6,"""אברטרמרים טוולדה""",party_name_exact,district_verdict_stage_media,2018-06-21,2018-07-28
+d7e16b19afa5055774188469,HUGGINGFACE-612fd57b58b1,"""מוחמד חאלד ענתאוי""",party_name_exact,appeal_stage_pre_decision_media,2013-08-04,2014-08-03
+0569f0ec04fa78efddd85a50,HUGGINGFACE-614e80e8fc9a,"""נביל אבו חדיר""",party_name_exact,appeal_stage_pre_decision_media,2010-11-01,2010-11-13
+24c3ff04cd1e309922503650,HUGGINGFACE-614e80e8fc9a,"""נביל אבו חדיר""",party_name_exact,district_verdict_stage_media,2010-10-25,2010-12-01
+bd041689e35c3027e6765a1b,HUGGINGFACE-619eee149049,"""שלמה פינטו""",party_name_exact,appeal_stage_pre_decision_media,2017-02-27,2018-10-12
+b0334631a895b4ed15669617,HUGGINGFACE-619eee149049,"""שלמה פינטו""",party_name_exact,district_verdict_stage_media,2017-02-20,2017-03-29
+a45e0ac8fb469d46f4f7bff1,HUGGINGFACE-6219821eee81,"""מרדכי אבני""",party_name_exact,appeal_stage_pre_decision_media,2008-01-30,2010-07-28
+d5eaa5ebbcbb8ec240a6640a,HUGGINGFACE-6219821eee81,"""מרדכי אבני""",party_name_exact,district_verdict_stage_media,2008-01-23,2008-02-29
+316ecf3245f53ae4f5138a69,HUGGINGFACE-63fbea044b91,"""אמיל רפאילוב""",party_name_exact,appeal_stage_pre_decision_media,2007-07-01,2010-06-27
+f5bd5f9fa296fae1a96c0af7,HUGGINGFACE-63fbea044b91,"""אמיל רפאילוב""",party_name_exact,district_verdict_stage_media,2007-06-24,2007-07-31
+eb356ba07c9adaa24b6665a4,HUGGINGFACE-648fb82488dd,"""פריד אלענמי""",party_name_exact,appeal_stage_pre_decision_media,2009-11-17,2013-04-09
+f77f660a94a8ccbfca22fb78,HUGGINGFACE-648fb82488dd,"""פריד אלענמי""",party_name_exact,district_verdict_stage_media,2009-11-10,2009-12-17
+3735b2e17cfa30c15044e37c,HUGGINGFACE-64ad29ed04b9,"""אנואר סלאמה""",party_name_exact,appeal_stage_pre_decision_media,2008-03-12,2010-11-06
+6e01de2bdec7bbcedc990193,HUGGINGFACE-64ad29ed04b9,"""אנואר סלאמה""",party_name_exact,district_verdict_stage_media,2008-03-05,2008-04-11
+20d684229434628570f790fb,HUGGINGFACE-65a971fc803d,"""ג'ורג' גרייב""",party_name_exact,appeal_stage_pre_decision_media,2019-01-29,2020-04-03
+7d326b75f0925742d54341f6,HUGGINGFACE-65a971fc803d,"""ג'ורג' גרייב""",party_name_exact,district_verdict_stage_media,2019-01-22,2019-02-28
+1be6d8e45ca6f29ee511cf5f,HUGGINGFACE-67082803f3d1,"""פנחס אבורמד""",party_name_exact,appeal_stage_pre_decision_media,2012-05-29,2015-04-14
+9d5c298be57f395e25f708a9,HUGGINGFACE-67082803f3d1,"""פנחס אבורמד""",party_name_exact,district_verdict_stage_media,2012-05-22,2012-06-28
+8c4119718cff5b93361c5c0c,HUGGINGFACE-67884dea231c,"""אשר דאהן""",party_name_exact,appeal_stage_pre_decision_media,2014-01-21,2019-06-25
+f358a67c54206880ccb6052d,HUGGINGFACE-67884dea231c,"""אשר דאהן""",party_name_exact,district_verdict_stage_media,2014-01-14,2014-02-20
+149a24a6a0bf97265a36e505,HUGGINGFACE-67b0f34fb8bc,"""פיכרי מנצור""",party_name_exact,appeal_stage_pre_decision_media,2008-06-17,2010-08-09
+906154b8f4f973aa24bedc3f,HUGGINGFACE-67b0f34fb8bc,"""פיכרי מנצור""",party_name_exact,district_verdict_stage_media,2008-06-10,2008-07-17
+32d91811b3aaea6c20bd4c56,HUGGINGFACE-67e3ba002d76,"""מחמד מהרה""",party_name_exact,appeal_stage_pre_decision_media,2012-07-12,2014-02-22
+f3490474837ce5cebda773b7,HUGGINGFACE-67e3ba002d76,"""מחמד מהרה""",party_name_exact,district_verdict_stage_media,2012-07-05,2012-08-11
+a106da73770892215aebc2a1,HUGGINGFACE-680e59c0eeec,"""עימאד חמד""",party_name_exact,appeal_stage_pre_decision_media,2011-02-20,2012-06-27
+2c7f8b125a9d7885daad2a8b,HUGGINGFACE-680e59c0eeec,"""עימאד חמד""",party_name_exact,district_verdict_stage_media,2011-02-13,2011-03-22
+194603d5573b6cda2c8dcad7,HUGGINGFACE-68561d2c1001,"""רן דוד""",party_name_exact,appeal_stage_pre_decision_media,2010-04-22,2013-01-01
+d5b1b5829d2ae4906e6edc2e,HUGGINGFACE-68561d2c1001,"""רן דוד""",party_name_exact,district_verdict_stage_media,2010-04-15,2010-05-22
+53ea9a0f5e116b6ed6e8151e,HUGGINGFACE-686e90bb4154,"""עאהד ע'ולמה""",party_name_exact,appeal_stage_pre_decision_media,2008-12-01,2011-07-27
+2af6f44e89f2d2b7386c3bab,HUGGINGFACE-686e90bb4154,"""עאהד ע'ולמה""",party_name_exact,district_verdict_stage_media,2008-11-24,2008-12-31
+22d57879ea7b24c817a9c9e7,HUGGINGFACE-68a058065bfc,"""אליזבת קרנדל""",party_name_exact,appeal_stage_pre_decision_media,2017-07-13,2018-04-16
+fabb63d342f7594879965609,HUGGINGFACE-68a058065bfc,"""אליזבת קרנדל""",party_name_exact,district_verdict_stage_media,2017-07-06,2017-08-12
+0cb31feee22894d7f627c843,HUGGINGFACE-68ac7637d58e,"""אללין זריהון""",party_name_exact,appeal_stage_pre_decision_media,2014-09-08,2015-05-13
+60098d6f29fbd834e1f530c5,HUGGINGFACE-68ac7637d58e,"""אללין זריהון""",party_name_exact,district_verdict_stage_media,2014-09-01,2014-10-08
+6742b08dc7661fa62e344e36,HUGGINGFACE-68e246db85a3,"""מוחמד מחאמיד""",party_name_exact,appeal_stage_pre_decision_media,2011-09-19,2012-05-16
+5472e2f22e496f12868f59c4,HUGGINGFACE-68e246db85a3,"""מוחמד מחאמיד""",party_name_exact,district_verdict_stage_media,2011-09-12,2011-10-19
+7e23da5aa162f47171fea016,HUGGINGFACE-69ef284475ea,"""דוד כבאז""",party_name_exact,appeal_stage_pre_decision_media,2010-04-07,2013-06-10
+e19a6d39df4a7ad1e2fc7676,HUGGINGFACE-69ef284475ea,"""דוד כבאז""",party_name_exact,district_verdict_stage_media,2010-03-31,2010-05-07
+981b3f8f4aab2d0549d327ed,HUGGINGFACE-6a0b745d118c,"""מחמד עוף""",party_name_exact,appeal_stage_pre_decision_media,2009-07-08,2010-07-18
+260053e1432b9a04148534af,HUGGINGFACE-6a0b745d118c,"""מחמד עוף""",party_name_exact,district_verdict_stage_media,2009-07-01,2009-08-07
+e9df975b77d367268c042b28,HUGGINGFACE-6b7a8d4765b7,"""בת אל שרעבי""",party_name_exact,appeal_stage_pre_decision_media,2011-03-02,2012-02-29
+5c8a81b5a998571bc035f460,HUGGINGFACE-6b7ae11720f4,"""פואד אל עסייוי""",party_name_exact,appeal_stage_pre_decision_media,2018-05-13,2019-10-26
+173f3d17e85251ac8814ba85,HUGGINGFACE-6b7ae11720f4,"""פואד אל עסייוי""",party_name_exact,district_verdict_stage_media,2018-05-06,2018-06-12
+499e20ea60bbd1d1407a54af,HUGGINGFACE-6b8accfe6856,"""רומן שוורצמן""",party_name_exact,appeal_stage_pre_decision_media,2011-10-30,2014-11-02
+15da27fa5804c6e51c63c44b,HUGGINGFACE-6b8accfe6856,"""רומן שוורצמן""",party_name_exact,district_verdict_stage_media,2011-10-23,2011-11-29
+516e46080dc96237e356b919,HUGGINGFACE-6c81389226fc,"""אריציה אקאל סונגו""",party_name_exact,appeal_stage_pre_decision_media,2015-12-31,2018-05-15
+436cab51e00e80cdc9f42aa2,HUGGINGFACE-6c81389226fc,"""אריציה אקאל סונגו""",party_name_exact,district_verdict_stage_media,2015-12-24,2016-01-30
+aec8cafd1774ae7694c9e54a,HUGGINGFACE-6c9df8f5ef7b,"""אליאור חן""",party_name_exact,appeal_stage_pre_decision_media,2011-02-28,2014-05-07
+df40289d806d629c85c39d1d,HUGGINGFACE-6c9df8f5ef7b,"""אליאור חן""",party_name_exact,district_verdict_stage_media,2011-02-21,2011-03-30
+92e012163e9b688a83a18336,HUGGINGFACE-6d7d1fa9dd53,"""יצחק חנוכה""",party_name_exact,appeal_stage_pre_decision_media,2011-05-24,2014-11-11
+333909bcdc5dde015bd4a389,HUGGINGFACE-6d7d1fa9dd53,"""יצחק חנוכה""",party_name_exact,district_verdict_stage_media,2011-05-17,2011-06-23
+008ab97abf8d7f2b9d6cfca3,HUGGINGFACE-6e72260f08fc,"""יונס אבו שנדי""",party_name_exact,appeal_stage_pre_decision_media,2014-01-28,2014-12-03
+021110a0f4d13c09bc245ec4,HUGGINGFACE-6e72260f08fc,"""יונס אבו שנדי""",party_name_exact,district_verdict_stage_media,2014-01-21,2014-02-27
+83abbb9d5966cb9bfc4301d9,HUGGINGFACE-70311a4c797a,"""מאיר איתן""",party_name_exact,appeal_stage_pre_decision_media,2015-07-13,2017-01-08
+4b4af0d13c88006846721bf5,HUGGINGFACE-70311a4c797a,"""מאיר איתן""",party_name_exact,district_verdict_stage_media,2015-07-06,2015-08-12
+96dd69976057df1955815e47,HUGGINGFACE-70bbcdf6bf59,"""יקיר יעקב לוי""",party_name_exact,appeal_stage_pre_decision_media,2009-10-25,2010-02-23
+7546740d36e1f04eb38a85f5,HUGGINGFACE-70bbcdf6bf59,"""יקיר יעקב לוי""",party_name_exact,district_verdict_stage_media,2009-10-18,2009-11-24
+3f12837d71b445888d490fed,HUGGINGFACE-718af39915d4,"""אברהם אלענאמי""",party_name_exact,appeal_stage_pre_decision_media,2014-11-13,2017-08-20
+5e51e14ea7d5901ddcb74764,HUGGINGFACE-718af39915d4,"""אברהם אלענאמי""",party_name_exact,district_verdict_stage_media,2014-11-06,2014-12-13
+36407ee2f81764f9c9637a0a,HUGGINGFACE-72823df71b0f,"""ריאד אבו שנדי""",party_name_exact,appeal_stage_pre_decision_media,2019-10-24,2020-03-31
+040db5d340986949c2b7abb0,HUGGINGFACE-72823df71b0f,"""ריאד אבו שנדי""",party_name_exact,district_verdict_stage_media,2019-10-17,2019-11-23
+903019343e7ef706eb7731fc,HUGGINGFACE-728ebf11b386,"""מלקה בהטה""",party_name_exact,appeal_stage_pre_decision_media,2009-10-21,2012-04-29
+d87a36c02a0f833f6cf1389f,HUGGINGFACE-728ebf11b386,"""מלקה בהטה""",party_name_exact,district_verdict_stage_media,2009-10-14,2009-11-20
+c8fad1d9be5f5051ba8f4002,HUGGINGFACE-73823124bf3c,"""מימון נחמני""",party_name_exact,appeal_stage_pre_decision_media,2011-02-24,2012-03-20
+edee704386211e0269a438bf,HUGGINGFACE-73823124bf3c,"""מימון נחמני""",party_name_exact,district_verdict_stage_media,2011-02-17,2011-03-26
+82f69f1ba7b342890ec32a7d,HUGGINGFACE-74078834328b,"""מועתסם אבו גנאם""",party_name_exact,appeal_stage_pre_decision_media,2011-12-11,2014-02-09
+13fe4dac265829ecaa8232ab,HUGGINGFACE-74078834328b,"""מועתסם אבו גנאם""",party_name_exact,district_verdict_stage_media,2011-12-04,2012-01-10
+f1aa1a099f379b2b214d88d4,HUGGINGFACE-744e14a1a221,"""רמי גראב""",party_name_exact,appeal_stage_pre_decision_media,2012-11-01,2013-03-12
+b9643f9137eb809eb3a37c6a,HUGGINGFACE-744e14a1a221,"""רמי גראב""",party_name_exact,district_verdict_stage_media,2012-10-25,2012-12-01
+872c48efad5b1ea08a515360,HUGGINGFACE-75752e48ebd0,"""שניר מקייטן""",party_name_exact,appeal_stage_pre_decision_media,2006-04-03,2010-02-21
+66922591efa2406c7c4b0b58,HUGGINGFACE-75752e48ebd0,"""שניר מקייטן""",party_name_exact,district_verdict_stage_media,2006-03-27,2006-05-03
+727dec240328e1ff0a742436,HUGGINGFACE-7577b9464623,"""מרואן מורה""",party_name_exact,appeal_stage_pre_decision_media,2014-12-25,2016-11-21
+806a833558a8e89b55953ed7,HUGGINGFACE-7577b9464623,"""מרואן מורה""",party_name_exact,district_verdict_stage_media,2014-12-18,2015-01-24
+4f6aa4e2de94697932fd4efe,HUGGINGFACE-76611d2db345,"""נור אלדין אבו חאשיה""",party_name_exact,appeal_stage_pre_decision_media,2016-05-18,2018-10-14
+72ef33c7aca834c55ba5ca8d,HUGGINGFACE-76611d2db345,"""נור אלדין אבו חאשיה""",party_name_exact,district_verdict_stage_media,2016-05-11,2016-06-17
+4c77ec4f496f211ac17ea397,HUGGINGFACE-76f5a62b1393,"""פארס אנטילי""",party_name_exact,appeal_stage_pre_decision_media,2016-09-08,2018-02-04
+060d2356f8355764bae948ec,HUGGINGFACE-76f5a62b1393,"""פארס אנטילי""",party_name_exact,district_verdict_stage_media,2016-09-01,2016-10-08
+21f31dbf7aae3a34d97c23c8,HUGGINGFACE-771c88392e4f,"""סופיאן סעאידה""",party_name_exact,appeal_stage_pre_decision_media,2014-05-11,2015-07-05
+7b4cbcda64db82f9b097c3d0,HUGGINGFACE-771c88392e4f,"""סופיאן סעאידה""",party_name_exact,district_verdict_stage_media,2014-05-04,2014-06-10
+bf28fc150fd9008f773e7e5e,HUGGINGFACE-778f55423d8a,"""אברהים בללאוי""",party_name_exact,appeal_stage_pre_decision_media,2011-07-12,2013-10-06
+154eafeef697d37d44fea748,HUGGINGFACE-778f55423d8a,"""אברהים בללאוי""",party_name_exact,district_verdict_stage_media,2011-07-05,2011-08-11
+db5e002f47aecb154e5120d7,HUGGINGFACE-77933bc5b545,"""מחמוד מסארוה""",party_name_exact,appeal_stage_pre_decision_media,2010-04-14,2015-03-31
+3cb11d0de22f495959a83314,HUGGINGFACE-77933bc5b545,"""מחמוד מסארוה""",party_name_exact,district_verdict_stage_media,2010-04-07,2010-05-14
+3c35d0258dd13928ce1860ab,HUGGINGFACE-77a260782a76,"""אלישע לוי""",party_name_exact,appeal_stage_pre_decision_media,2009-05-26,2010-04-26
+5dc8cdf369948e74524d5e81,HUGGINGFACE-77a260782a76,"""אלישע לוי""",party_name_exact,district_verdict_stage_media,2009-05-19,2009-06-25
+1577b29d91a2d1a06119b2d1,HUGGINGFACE-781e3e01a834,"""מחמוד אבו סרארי""",party_name_exact,appeal_stage_pre_decision_media,2017-02-27,2018-02-26
+c7818c12a4f9f249b45ed47e,HUGGINGFACE-78cdfe544a3c,"""יעקב טייטל""",party_name_exact,appeal_stage_pre_decision_media,2013-04-09,2016-06-27
+f8c5ff5178d211ee269b75c9,HUGGINGFACE-78cdfe544a3c,"""יעקב טייטל""",party_name_exact,district_verdict_stage_media,2013-04-02,2013-05-09
+1ae84240cf78fc5146a1c4c9,HUGGINGFACE-7913d60fd82b,"""יצחק קרן""",party_name_exact,appeal_stage_pre_decision_media,2014-04-30,2015-11-14
+209143cb69f10bfaeb7343f0,HUGGINGFACE-7913d60fd82b,"""יצחק קרן""",party_name_exact,district_verdict_stage_media,2014-04-23,2014-05-30
+c4aa0088fc40ddbdd459eec2,HUGGINGFACE-794428b4b6e0,"""וודגה מינליק""",party_name_exact,appeal_stage_pre_decision_media,2010-07-28,2013-01-07
+c83f9a13143558955b5b0f70,HUGGINGFACE-794428b4b6e0,"""וודגה מינליק""",party_name_exact,district_verdict_stage_media,2010-07-21,2010-08-27
+31414416082c1fa4aea6acb3,HUGGINGFACE-796f7cd994be,"""וגד'י ח'דר""",party_name_exact,appeal_stage_pre_decision_media,2011-04-17,2011-09-24
+1dad5b22b367f5a6dd2153b3,HUGGINGFACE-796f7cd994be,"""וגד'י ח'דר""",party_name_exact,district_verdict_stage_media,2011-04-10,2011-05-17
+045f128ea4134ae0893c2c5d,HUGGINGFACE-7b0eb4b46fc1,"""חמד זינאתי""",party_name_exact,appeal_stage_pre_decision_media,2009-02-15,2011-11-08
+d8c0252c95ec83172bbd2906,HUGGINGFACE-7b0eb4b46fc1,"""חמד זינאתי""",party_name_exact,district_verdict_stage_media,2009-02-08,2009-03-17
+810c05297d12a73c4bed7a10,HUGGINGFACE-7b4ccd3e74ed,"""אצראר ברגותי""",party_name_exact,appeal_stage_pre_decision_media,2009-07-07,2011-05-15
+0b67c61138a07940fde665d4,HUGGINGFACE-7b4ccd3e74ed,"""אצראר ברגותי""",party_name_exact,district_verdict_stage_media,2009-06-30,2009-08-06
+d3b61ddf6e4a1e3581a563b0,HUGGINGFACE-7bf23031113b,"""סער אדטו""",party_name_exact,appeal_stage_pre_decision_media,2008-11-25,2010-01-04
+eecd9fc5c1ee6b46d6146c2c,HUGGINGFACE-7bf23031113b,"""סער אדטו""",party_name_exact,district_verdict_stage_media,2008-11-18,2008-12-25
+54a075fe6c25592df38c3563,HUGGINGFACE-7c52f7ff787d,"""באסל סלאם""",party_name_exact,appeal_stage_pre_decision_media,2012-12-20,2014-11-26
+b28736e789d445971ec27a61,HUGGINGFACE-7c52f7ff787d,"""באסל סלאם""",party_name_exact,district_verdict_stage_media,2012-12-13,2013-01-19
+6605819005d20c10f58ebe0b,HUGGINGFACE-7cc695a67f0b,"""נביל אבו חדיר""",party_name_exact,appeal_stage_pre_decision_media,2011-04-17,2016-02-14
+8080b19ba49a7f4f6a010b8f,HUGGINGFACE-7cc695a67f0b,"""נביל אבו חדיר""",party_name_exact,district_verdict_stage_media,2011-04-10,2011-05-17
+42e9ef260ec87f91d052c9fa,HUGGINGFACE-7cfb31c4d3d1,"""אריה אבוטבול""",party_name_exact,appeal_stage_pre_decision_media,2009-12-28,2011-09-10
+b1650dacea6ee47889466318,HUGGINGFACE-7cfb31c4d3d1,"""אריה אבוטבול""",party_name_exact,district_verdict_stage_media,2009-12-21,2010-01-27
+0a6c59825ebce261a62e4c1b,HUGGINGFACE-7d2e3c3d6417,"""סמיר אבו מוך""",party_name_exact,appeal_stage_pre_decision_media,2006-08-24,2010-09-05
+e3222a0244a9cbc9ce1128e4,HUGGINGFACE-7d2e3c3d6417,"""סמיר אבו מוך""",party_name_exact,district_verdict_stage_media,2006-08-17,2006-09-23
+1b2b57a9b789b9882f835cfd,HUGGINGFACE-7e531a841644,"""איסלאם איברהים עיסא""",party_name_exact,appeal_stage_pre_decision_media,2012-07-19,2015-07-29
+0f634811f31f6fe0f5c320fc,HUGGINGFACE-7e531a841644,"""איסלאם איברהים עיסא""",party_name_exact,district_verdict_stage_media,2012-07-12,2012-08-18
+4303b65362df482cbff60f4d,HUGGINGFACE-7e96aca655df,"""מוראד עותמאן""",party_name_exact,appeal_stage_pre_decision_media,2009-09-24,2012-02-14
+3f285d59ba4552f26afd0118,HUGGINGFACE-7e96aca655df,"""מוראד עותמאן""",party_name_exact,district_verdict_stage_media,2009-09-17,2009-10-24
+54f1cc644270b711d98da21a,HUGGINGFACE-7ebefe19a0e7,"""אברהם סטואר""",party_name_exact,appeal_stage_pre_decision_media,2010-10-28,2014-04-27
+c8c8ebb88318f87f1626ba1b,HUGGINGFACE-7ebefe19a0e7,"""אברהם סטואר""",party_name_exact,district_verdict_stage_media,2010-10-21,2010-11-27
+53e1a2a4aef9789d745bc83c,HUGGINGFACE-7f30aebba18a,"""חיים ניימן""",party_name_exact,appeal_stage_pre_decision_media,2010-02-18,2010-11-28
+73307221a4a9d1539d11a4a0,HUGGINGFACE-7f30aebba18a,"""חיים ניימן""",party_name_exact,district_verdict_stage_media,2010-02-11,2010-03-20
+9c7fb8867c2029586da35605,HUGGINGFACE-7f66273e473f,"""אנס בדראן""",party_name_exact,appeal_stage_pre_decision_media,2019-12-18,2020-11-27
+105b25852e32b3a4c7ac5764,HUGGINGFACE-7f66273e473f,"""אנס בדראן""",party_name_exact,district_verdict_stage_media,2019-12-11,2020-01-17
+2ff820cc34f566caf1b6fc1e,HUGGINGFACE-7f8440ce6bf0,"""ראמי זיאדאת""",party_name_exact,appeal_stage_pre_decision_media,2017-03-28,2019-12-29
+a196cc7085f1e232eb69de16,HUGGINGFACE-7f8440ce6bf0,"""ראמי זיאדאת""",party_name_exact,district_verdict_stage_media,2017-03-21,2017-04-27
+c7874274035d37f51e33b19d,HUGGINGFACE-80dbc8f86c5a,"""איאד פטאפאה""",party_name_exact,appeal_stage_pre_decision_media,2012-01-22,2014-08-03
+c223b87f33d1bdd46e49c85f,HUGGINGFACE-80dbc8f86c5a,"""איאד פטאפאה""",party_name_exact,district_verdict_stage_media,2012-01-15,2012-02-21
+1bc668e40cafb204343e3d25,HUGGINGFACE-80e678d4cccb,"""אניס אל הייזל""",party_name_exact,appeal_stage_pre_decision_media,2006-10-24,2012-09-02
+7fb053e1d737e5d91c7dd5ff,HUGGINGFACE-80e678d4cccb,"""אניס אל הייזל""",party_name_exact,district_verdict_stage_media,2006-10-17,2006-11-23
+b18b57161acc4e21108e58af,HUGGINGFACE-81fb7c34cc29,"""מנחם רבאייב""",party_name_exact,appeal_stage_pre_decision_media,2017-11-21,2018-11-17
+ca67274e02f0b5cb4fa4dfca,HUGGINGFACE-81fb7c34cc29,"""מנחם רבאייב""",party_name_exact,district_verdict_stage_media,2017-11-14,2017-12-21
+767da60ebf6de1a570a15a33,HUGGINGFACE-82416e8d24e8,"""חיים ביטון""",party_name_exact,appeal_stage_pre_decision_media,2019-11-17,2020-11-22
+f90c4557d4c65aa218c380de,HUGGINGFACE-82416e8d24e8,"""חיים ביטון""",party_name_exact,district_verdict_stage_media,2019-11-10,2019-12-17
+52548c6d07e1d52004c147a5,HUGGINGFACE-8250571b69a0,"""בוריס מנקין""",party_name_exact,appeal_stage_pre_decision_media,2009-09-15,2013-02-12
+fa2f8c9462d479408fc5ff41,HUGGINGFACE-8250571b69a0,"""בוריס מנקין""",party_name_exact,district_verdict_stage_media,2009-09-08,2009-10-15
+867a933678f4e3e7f61d7713,HUGGINGFACE-8273af0cf389,"""וסילי פנזין""",party_name_exact,appeal_stage_pre_decision_media,2015-10-29,2017-10-28
+3d61a92216249fddf6bc2d7f,HUGGINGFACE-8273af0cf389,"""וסילי פנזין""",party_name_exact,district_verdict_stage_media,2015-10-22,2015-11-28
+b16660f640460cc64b3f3602,HUGGINGFACE-827b198c09f2,"""יוסי חזן""",party_name_exact,appeal_stage_pre_decision_media,2007-09-10,2011-02-08
+ecf410e646ecc6e8e93e3910,HUGGINGFACE-827b198c09f2,"""יוסי חזן""",party_name_exact,district_verdict_stage_media,2007-09-03,2007-10-10
+67ac85f2e5d71838a676a6ae,HUGGINGFACE-8286d0289967,"""עאוני גבארה""",party_name_exact,appeal_stage_pre_decision_media,2008-09-07,2010-05-23
+901223aba69755ccd756dbc4,HUGGINGFACE-8286d0289967,"""עאוני גבארה""",party_name_exact,district_verdict_stage_media,2008-08-31,2008-10-07
+ed249481a136e6904085bf86,HUGGINGFACE-82cce4062186,"""יניב זגורי""",party_name_exact,appeal_stage_pre_decision_media,2019-08-26,2019-08-31
+13dc4ecf371bc2ab8995ab5f,HUGGINGFACE-82cce4062186,"""יניב זגורי""",party_name_exact,district_verdict_stage_media,2019-08-19,2019-09-25
+5961ee77f66f78b772b2b941,HUGGINGFACE-831f332ec790,"""נור עראר""",party_name_exact,appeal_stage_pre_decision_media,2008-09-17,2010-01-03
+fe31eb80d97e4f5fcac1608e,HUGGINGFACE-831f332ec790,"""נור עראר""",party_name_exact,district_verdict_stage_media,2008-09-10,2008-10-17
+5c7332f19345ee783de8110f,HUGGINGFACE-834472d72f26,"""מוסטפא שאפא""",party_name_exact,appeal_stage_pre_decision_media,2015-03-09,2017-04-06
+8472cbd809523a67171a169e,HUGGINGFACE-834472d72f26,"""מוסטפא שאפא""",party_name_exact,district_verdict_stage_media,2015-03-02,2015-04-08
+aab074f7e9f963039b75158c,HUGGINGFACE-8353a3c6bf17,"""סאמר אבו עמאש""",party_name_exact,appeal_stage_pre_decision_media,2006-07-20,2010-01-10
+08b28f2e23fa005682900965,HUGGINGFACE-8353a3c6bf17,"""סאמר אבו עמאש""",party_name_exact,district_verdict_stage_media,2006-07-13,2006-08-19
+208d9564bf1c529635d3aa05,HUGGINGFACE-84657f87d3b0,"""יהושע בלום""",party_name_exact,appeal_stage_pre_decision_media,2012-04-22,2012-11-14
+146e7164963e3492fc7b5684,HUGGINGFACE-84657f87d3b0,"""יהושע בלום""",party_name_exact,district_verdict_stage_media,2012-04-15,2012-05-22
+3419fbb8aeb67c99c46e86d8,HUGGINGFACE-84952f1dc5f5,"""ציון אוחיון""",party_name_exact,appeal_stage_pre_decision_media,2010-08-25,2012-04-24
+52dd9d0723ba9687c1334a28,HUGGINGFACE-84952f1dc5f5,"""ציון אוחיון""",party_name_exact,district_verdict_stage_media,2010-08-18,2010-09-24
+78bbbe3fe1e6e83cf89b3233,HUGGINGFACE-84fd038cd400,"""ראיד רושרוש""",party_name_exact,appeal_stage_pre_decision_media,2019-11-21,2020-07-17
+99966e70dc57fdc9722d8e74,HUGGINGFACE-84fd038cd400,"""ראיד רושרוש""",party_name_exact,district_verdict_stage_media,2019-11-14,2019-12-21
+6addd13e12fd53e1bd5d4cd8,HUGGINGFACE-85179478134c,"""מיכאל פרץ""",party_name_exact,appeal_stage_pre_decision_media,2011-01-25,2014-06-28
+988bf5c592714d84beb5bd10,HUGGINGFACE-85179478134c,"""מיכאל פרץ""",party_name_exact,district_verdict_stage_media,2011-01-18,2011-02-24
+5f62bdbb24aa38eaac6ed52f,HUGGINGFACE-85c9bfe33955,"""ולרי אדמוב""",party_name_exact,appeal_stage_pre_decision_media,2010-03-21,2012-10-15
+f2f79c0591e75340684d1b8e,HUGGINGFACE-85c9bfe33955,"""ולרי אדמוב""",party_name_exact,district_verdict_stage_media,2010-03-14,2010-04-20
+31978256de8ffc69f8122895,HUGGINGFACE-86ba04cdc060,"""ישראל חנניאייב""",party_name_exact,appeal_stage_pre_decision_media,2017-02-20,2018-08-06
+6c32870bc7a0e67d02860491,HUGGINGFACE-86ba04cdc060,"""ישראל חנניאייב""",party_name_exact,district_verdict_stage_media,2017-02-13,2017-03-22
+f0c02d1a86bd05a59a17d468,HUGGINGFACE-877e5cf300cf,"""ארקאן כורבאג'""",party_name_exact,appeal_stage_pre_decision_media,2013-11-28,2014-06-15
+9942f92bab2e57c38e4e38b6,HUGGINGFACE-877e5cf300cf,"""ארקאן כורבאג'""",party_name_exact,district_verdict_stage_media,2013-11-21,2013-12-28
+5dd51d735d8106c29d66208e,HUGGINGFACE-8870bd09f468,"""שוקאת ברכאת""",party_name_exact,appeal_stage_pre_decision_media,2014-10-15,2015-10-14
+33453f6b6f9a1a4412202747,HUGGINGFACE-888de4ae3895,"""עיסאם ניג'ם""",party_name_exact,appeal_stage_pre_decision_media,2010-09-06,2012-12-26
+a2c6a676aa3c965e787308e1,HUGGINGFACE-888de4ae3895,"""עיסאם ניג'ם""",party_name_exact,district_verdict_stage_media,2010-08-30,2010-10-06
+3266b1aa13c874a3dc0b0ca9,HUGGINGFACE-8896bed32892,"""זיראי אדרה""",party_name_exact,appeal_stage_pre_decision_media,2011-07-18,2013-01-30
+e818363e59de73d3af980a81,HUGGINGFACE-8896bed32892,"""זיראי אדרה""",party_name_exact,district_verdict_stage_media,2011-07-11,2011-08-17
+4bff57d5a1929cc3f19cd7f2,HUGGINGFACE-88c8306bdf8b,"""מיכאל זפרן זוארץ""",party_name_exact,appeal_stage_pre_decision_media,2019-04-30,2020-04-03
+f603ae67af314f41d55bdf9b,HUGGINGFACE-88c8306bdf8b,"""מיכאל זפרן זוארץ""",party_name_exact,district_verdict_stage_media,2019-04-23,2019-05-30
+89ee82a0a3cc83f84396e132,HUGGINGFACE-891868d3b200,"""רדה קלקאי""",party_name_exact,appeal_stage_pre_decision_media,2013-06-23,2015-06-28
+c93c3526c14c5f22a302973f,HUGGINGFACE-891868d3b200,"""רדה קלקאי""",party_name_exact,district_verdict_stage_media,2013-06-16,2013-07-23
+70411640ab7f0a45f9135e96,HUGGINGFACE-89dcc28b147a,"""עמאר אבו דקה""",party_name_exact,appeal_stage_pre_decision_media,2016-03-15,2019-07-15
+b7073e049960cea4700b11e3,HUGGINGFACE-89dcc28b147a,"""עמאר אבו דקה""",party_name_exact,district_verdict_stage_media,2016-03-08,2016-04-14
+a66b7d7246838a54db2b3c2c,HUGGINGFACE-8b75905889eb,"""רמזי אלבאלי""",party_name_exact,appeal_stage_pre_decision_media,2013-03-03,2014-03-02
+d1eb9afc58ccb7e578604602,HUGGINGFACE-8ba2be519bec,"""אחמד חסארמה""",party_name_exact,appeal_stage_pre_decision_media,2017-05-07,2018-05-06
+b07d6d4025bd43c5220c434e,HUGGINGFACE-8bfeb9315f18,"""גיאורגי טוטיקוב""",party_name_exact,appeal_stage_pre_decision_media,2018-11-15,2020-11-03
+73a93887847f325882be2853,HUGGINGFACE-8bfeb9315f18,"""גיאורגי טוטיקוב""",party_name_exact,district_verdict_stage_media,2018-11-08,2018-12-15
+0ff7b116f9955e39d2dcbe97,HUGGINGFACE-8db7aa9aeedb,"""תורכיה אבו סיאם""",party_name_exact,appeal_stage_pre_decision_media,2016-04-26,2017-04-25
+1fe751bd2c9048d15a8b88f0,HUGGINGFACE-8e61e23b727b,"""עזיז עויסאת""",party_name_exact,appeal_stage_pre_decision_media,2015-05-06,2017-09-29
+6bf54b8932efa71f74333a75,HUGGINGFACE-8e61e23b727b,"""עזיז עויסאת""",party_name_exact,district_verdict_stage_media,2015-04-29,2015-06-05
+f815a8f0a526610bf2728c24,HUGGINGFACE-8edc925628d9,"""אברהם בראשי""",party_name_exact,appeal_stage_pre_decision_media,2007-09-03,2010-04-25
+e1d60e383e3b496fec51fa23,HUGGINGFACE-8edc925628d9,"""אברהם בראשי""",party_name_exact,district_verdict_stage_media,2007-08-27,2007-10-03
+074d75da80f864c5c80996e1,HUGGINGFACE-8f54a9dd70ce,"""מרים טאראבין""",party_name_exact,appeal_stage_pre_decision_media,2006-01-19,2011-05-24
+bb57bd89931052e000fed02d,HUGGINGFACE-8f54a9dd70ce,"""מרים טאראבין""",party_name_exact,district_verdict_stage_media,2006-01-12,2006-02-18
+1b8750db3d365b08a3c130bf,HUGGINGFACE-8fc4387b130d,"""האיל אבו עואד""",party_name_exact,appeal_stage_pre_decision_media,2011-04-13,2013-09-15
+20d1ed178f9a12daac2a4edc,HUGGINGFACE-8fc4387b130d,"""האיל אבו עואד""",party_name_exact,district_verdict_stage_media,2011-04-06,2011-05-13
+0004e3dd93ec3013d093fa01,HUGGINGFACE-8fe0569c7339,"""סלימאן אל עוקה""",party_name_exact,appeal_stage_pre_decision_media,2008-05-22,2011-11-22
+9a4710522b2fdaf4932a3f24,HUGGINGFACE-8fe0569c7339,"""סלימאן אל עוקה""",party_name_exact,district_verdict_stage_media,2008-05-15,2008-06-21
+4cfa7ba9cde21ba20df1c88f,HUGGINGFACE-906cf8306996,"""שלום שטרית""",party_name_exact,appeal_stage_pre_decision_media,2010-04-14,2011-04-13
+dd7a496f678e6acbf70c2aed,HUGGINGFACE-90ccd18272f2,"""נוי קלדרון""",party_name_exact,appeal_stage_pre_decision_media,2010-03-01,2012-01-22
+afef8106de19721246913b9d,HUGGINGFACE-90ccd18272f2,"""נוי קלדרון""",party_name_exact,district_verdict_stage_media,2010-02-22,2010-03-31
+bf40a6611bcb4d2ef26aae74,HUGGINGFACE-91ac0bc4940c,"""חוסין כואזבה""",party_name_exact,appeal_stage_pre_decision_media,2007-08-19,2012-07-17
+0746a80d54694e3e1e028438,HUGGINGFACE-91ac0bc4940c,"""חוסין כואזבה""",party_name_exact,district_verdict_stage_media,2007-08-12,2007-09-18
+d96c45cbce359f9e6637eb21,HUGGINGFACE-922189ffb887,"""אילן גדו""",party_name_exact,appeal_stage_pre_decision_media,2009-09-01,2013-03-09
+50583e83577969c8127a2d20,HUGGINGFACE-922189ffb887,"""אילן גדו""",party_name_exact,district_verdict_stage_media,2009-08-25,2009-10-01
+c19b00d6a626c251d19b521a,HUGGINGFACE-92711143bcdc,"""חוסם מטר""",party_name_exact,appeal_stage_pre_decision_media,2009-06-10,2012-09-05
+6ca373fa7a755c9082e13155,HUGGINGFACE-92711143bcdc,"""חוסם מטר""",party_name_exact,district_verdict_stage_media,2009-06-03,2009-07-10
+59fcaf191acfb7fdc83b8f46,HUGGINGFACE-958307fd164b,"""סאמר עבדאללה""",party_name_exact,appeal_stage_pre_decision_media,2010-09-05,2011-09-04
+191ca696b4b5ed6856196168,HUGGINGFACE-95bbef1c33f3,"""אריק ארנסט""",party_name_exact,appeal_stage_pre_decision_media,2014-06-18,2014-12-31
+3e359479d5629f14a77b8a53,HUGGINGFACE-95bbef1c33f3,"""אריק ארנסט""",party_name_exact,district_verdict_stage_media,2014-06-11,2014-07-18
+7c08824db7cd05c553843c29,HUGGINGFACE-961913db6203,"""ד\""ר סבטלנה רוסו-לופו""",party_name_exact,appeal_stage_pre_decision_media,2009-03-19,2010-08-30
+4f9fceeb59ba920f8bd91e72,HUGGINGFACE-961913db6203,"""ד\""ר סבטלנה רוסו-לופו""",party_name_exact,district_verdict_stage_media,2009-03-12,2009-04-18
+084c80d3e3fd77e7f74e54c2,HUGGINGFACE-961bbbd9e92b,"""דניאל מעוז""",party_name_exact,appeal_stage_pre_decision_media,2013-07-01,2016-07-04
+2cf3c3567e4cb74a75973133,HUGGINGFACE-961bbbd9e92b,"""דניאל מעוז""",party_name_exact,district_verdict_stage_media,2013-06-24,2013-07-31
+27a4ca53bb7a292a2406bebf,HUGGINGFACE-97c44c68ae21,"""ראתב אבו עצא""",party_name_exact,appeal_stage_pre_decision_media,2008-10-23,2012-08-22
+5b45f9ebd8f45e46b4d2ab30,HUGGINGFACE-97c44c68ae21,"""ראתב אבו עצא""",party_name_exact,district_verdict_stage_media,2008-10-16,2008-11-22
+276bc69aa73349694d92dd26,HUGGINGFACE-97fdcec0b7a1,"""גידאי קפיאלאו""",party_name_exact,appeal_stage_pre_decision_media,2010-07-07,2012-12-04
+bf39973df5ef206dbb99cd98,HUGGINGFACE-97fdcec0b7a1,"""גידאי קפיאלאו""",party_name_exact,district_verdict_stage_media,2010-06-30,2010-08-06
+4799040f736691f2a7f6d6ac,HUGGINGFACE-98644a2130c5,"""אברהם קשת""",party_name_exact,appeal_stage_pre_decision_media,2017-06-25,2020-08-22
+2da9071055f185e24a4ec73d,HUGGINGFACE-98644a2130c5,"""אברהם קשת""",party_name_exact,district_verdict_stage_media,2017-06-18,2017-07-25
+7d49cee09a4dbdeaed2e658d,HUGGINGFACE-99c4a9b97bcf,"""נור אבו רומי""",party_name_exact,appeal_stage_pre_decision_media,2011-06-21,2013-05-18
+e521a1c4704e3fd6d66f38a6,HUGGINGFACE-99c4a9b97bcf,"""נור אבו רומי""",party_name_exact,district_verdict_stage_media,2011-06-14,2011-07-21
+027edf57e7372bf50401920f,HUGGINGFACE-9a145251fbfa,"""מיכאל ניאזוב""",party_name_exact,appeal_stage_pre_decision_media,2008-03-17,2011-02-02
+ce1b253ef763d6fe725c7173,HUGGINGFACE-9a145251fbfa,"""מיכאל ניאזוב""",party_name_exact,district_verdict_stage_media,2008-03-10,2008-04-16
+39ef3feef1e79d47cf77dd47,HUGGINGFACE-9a62f37349dc,"""שפירוב חיים""",party_name_exact,appeal_stage_pre_decision_media,2011-06-26,2012-06-24
+69297fd870a967d6fa0bdf2a,HUGGINGFACE-9a8bd90ec85a,"""דיאב אבו עראר""",party_name_exact,appeal_stage_pre_decision_media,2017-04-11,2018-04-10
+81bda36f73aa768d521a8aae,HUGGINGFACE-9adf8ef65d0f,"""דודי בר יוסף""",party_name_exact,appeal_stage_pre_decision_media,2008-07-15,2011-09-20
+f6d1e46fa2e9121509b220d7,HUGGINGFACE-9adf8ef65d0f,"""דודי בר יוסף""",party_name_exact,district_verdict_stage_media,2008-07-08,2008-08-14
+df270a34a137f61edf98641d,HUGGINGFACE-9b55c869007c,"""נחום בן יצחק""",party_name_exact,appeal_stage_pre_decision_media,2014-04-30,2016-05-28
+b34fbc8091f1669b96176907,HUGGINGFACE-9b55c869007c,"""נחום בן יצחק""",party_name_exact,district_verdict_stage_media,2014-04-23,2014-05-30
+30eeff70c8a0ecc78c3e422c,HUGGINGFACE-9c6a41d26f75,"""יוסף דנינו""",party_name_exact,appeal_stage_pre_decision_media,2006-10-03,2012-01-24
+9a434fe8ae45ab82a0bbd2a3,HUGGINGFACE-9c6a41d26f75,"""יוסף דנינו""",party_name_exact,district_verdict_stage_media,2006-09-26,2006-11-02
+310d8e86c1e8a2399f6261f2,HUGGINGFACE-9cd3cf2a0afa,"""נאפז מחמד עבד אלמהדי""",party_name_exact,appeal_stage_pre_decision_media,2007-10-09,2010-02-02
+3d684adab7ef3eed19c961d5,HUGGINGFACE-9cd3cf2a0afa,"""נאפז מחמד עבד אלמהדי""",party_name_exact,district_verdict_stage_media,2007-10-02,2007-11-08
+cabe26a8e5e9559701c95250,HUGGINGFACE-9da645eb103b,"""רוסלן אגייב""",party_name_exact,appeal_stage_pre_decision_media,2014-05-20,2015-11-04
+914bf8da3b6486842b9a7c4b,HUGGINGFACE-9da645eb103b,"""רוסלן אגייב""",party_name_exact,district_verdict_stage_media,2014-05-13,2014-06-19
+81a08b0eda56e1f753289dc6,HUGGINGFACE-9e33e0f30f3f,"""גניש בן""",party_name_exact,appeal_stage_pre_decision_media,2017-05-15,2017-08-28
+2931a02f3f24f8f2bdf75732,HUGGINGFACE-9e33e0f30f3f,"""גניש בן""",party_name_exact,district_verdict_stage_media,2017-05-08,2017-06-14
+c8380e1a88056c502cc8db72,HUGGINGFACE-9eb2f1df19bb,"""חיים צרפתי""",party_name_exact,appeal_stage_pre_decision_media,2013-09-16,2015-05-02
+b7ad28c09f8e218382f31e67,HUGGINGFACE-9eb2f1df19bb,"""חיים צרפתי""",party_name_exact,district_verdict_stage_media,2013-09-09,2013-10-16
+fe2cd27f2fb8925657033659,HUGGINGFACE-9eb89b188135,"""אילן רייצין פאיס""",party_name_exact,appeal_stage_pre_decision_media,2012-12-30,2015-07-05
+7e76dae845131c639dba3bed,HUGGINGFACE-9eb89b188135,"""אילן רייצין פאיס""",party_name_exact,district_verdict_stage_media,2012-12-23,2013-01-29
+89a6431ab089b43f0d7d5636,HUGGINGFACE-9f083d3b76e6,"""איתמר שאלתיאל""",party_name_exact,appeal_stage_pre_decision_media,2011-03-22,2013-07-07
+7bd7cc0917585aca0341ff8e,HUGGINGFACE-9f083d3b76e6,"""איתמר שאלתיאל""",party_name_exact,district_verdict_stage_media,2011-03-15,2011-04-21
+518001dccb8b001e5d6c95b6,HUGGINGFACE-9f519071dbd0,"""ג'מיל סרור""",party_name_exact,appeal_stage_pre_decision_media,2012-11-16,2014-09-15
+04a9f838f89580b20d9e6cf5,HUGGINGFACE-9f519071dbd0,"""ג'מיל סרור""",party_name_exact,district_verdict_stage_media,2012-11-09,2012-12-16
+382ee9c893c23adfb0fae91c,HUGGINGFACE-9fcadcfd06fd,"""מוחמד שיבלי""",party_name_exact,appeal_stage_pre_decision_media,2013-07-11,2015-09-20
+55c4537a8cede6bd86609d0c,HUGGINGFACE-9fcadcfd06fd,"""מוחמד שיבלי""",party_name_exact,district_verdict_stage_media,2013-07-04,2013-08-10
+b00b6129f2b80cf2d61590a7,HUGGINGFACE-a02b271802c3,"""דוד גונצר""",party_name_exact,appeal_stage_pre_decision_media,2007-09-20,2011-05-24
+d7a5557c0a9e23f651f389b9,HUGGINGFACE-a02b271802c3,"""דוד גונצר""",party_name_exact,district_verdict_stage_media,2007-09-13,2007-10-20
+48ffe0d832a7a6de499e117e,HUGGINGFACE-a04e7775c071,"""מאלק חלס""",party_name_exact,appeal_stage_pre_decision_media,2014-08-05,2015-08-04
+4b45eea992a85cb87ac5d9e8,HUGGINGFACE-a07c03fe1347,"""ולדימיר זכרוב""",party_name_exact,appeal_stage_pre_decision_media,2011-06-19,2014-07-01
+cd6d2184f6ce08b5be4ac878,HUGGINGFACE-a07c03fe1347,"""ולדימיר זכרוב""",party_name_exact,district_verdict_stage_media,2011-06-12,2011-07-19
+2fddeca684f07464ee8559de,HUGGINGFACE-a12bb3039904,"""מוחמד באדיר""",party_name_exact,appeal_stage_pre_decision_media,2010-03-04,2012-04-01
+6de809f4d02d8f445c039ac4,HUGGINGFACE-a12bb3039904,"""מוחמד באדיר""",party_name_exact,district_verdict_stage_media,2010-02-25,2010-04-03
+4bf22bbf99ae42b8fc681b0d,HUGGINGFACE-a1425cebb972,"""זידאן סואעד""",party_name_exact,appeal_stage_pre_decision_media,2007-05-06,2010-09-11
+5e0ee66fb05e8654c98baa17,HUGGINGFACE-a1425cebb972,"""זידאן סואעד""",party_name_exact,district_verdict_stage_media,2007-04-29,2007-06-05
+b38f8d4077bc572dc0d7f2ee,HUGGINGFACE-a2810eeb4c19,"""יובל כהן""",party_name_exact,appeal_stage_pre_decision_media,2014-01-26,2014-06-24
+4c0978c451596e6bc9e2d5d2,HUGGINGFACE-a2810eeb4c19,"""יובל כהן""",party_name_exact,district_verdict_stage_media,2014-01-19,2014-02-25
+30d1564860d78a9d7a115126,HUGGINGFACE-a3a5d368607b,"""פיסל חלילה""",party_name_exact,appeal_stage_pre_decision_media,2009-12-13,2011-03-08
+a1359be885600943fda94517,HUGGINGFACE-a3a5d368607b,"""פיסל חלילה""",party_name_exact,district_verdict_stage_media,2009-12-06,2010-01-12
+be94696f6eb97952e1c9d5ae,HUGGINGFACE-a430d108dada,"""אהוד כדור""",party_name_exact,appeal_stage_pre_decision_media,2012-03-11,2013-10-13
+8258f264830a0b997b789323,HUGGINGFACE-a430d108dada,"""אהוד כדור""",party_name_exact,district_verdict_stage_media,2012-03-04,2012-04-10
+29145b467f222a657500abce,HUGGINGFACE-a4920c8bb0da,"""מאהר סעסע""",party_name_exact,appeal_stage_pre_decision_media,2008-02-27,2010-04-07
+3bce1bb90f7d07113bd1db22,HUGGINGFACE-a4920c8bb0da,"""מאהר סעסע""",party_name_exact,district_verdict_stage_media,2008-02-20,2008-03-28
+f525f13ecdbc492760d10777,HUGGINGFACE-a64265b76ba5,"""אלי אבשלום""",party_name_exact,appeal_stage_pre_decision_media,2010-09-08,2011-09-07
+eefeea2aca294d34e1ec8bb2,HUGGINGFACE-a68d4eb5f1ad,"""אלכסנדר מכניצקי""",party_name_exact,appeal_stage_pre_decision_media,2017-05-03,2018-11-24
+cc62cfcfad493e2cdd87362a,HUGGINGFACE-a68d4eb5f1ad,"""אלכסנדר מכניצקי""",party_name_exact,district_verdict_stage_media,2017-04-26,2017-06-02
+fe4a4d69daa1b288e7644419,HUGGINGFACE-a76e69a724d4,"""אוסאמה פרעוני""",party_name_exact,appeal_stage_pre_decision_media,2008-01-20,2011-12-27
+bb2a59a3f8b2c7d9ff77ca3a,HUGGINGFACE-a76e69a724d4,"""אוסאמה פרעוני""",party_name_exact,district_verdict_stage_media,2008-01-13,2008-02-19
+56ef6b18c494d227f8b370e8,HUGGINGFACE-a7b1587b8301,"""ולדימיר גוטליוב""",party_name_exact,appeal_stage_pre_decision_media,2012-02-13,2013-04-06
+3923851be7bf7eff85706fd3,HUGGINGFACE-a7b1587b8301,"""ולדימיר גוטליוב""",party_name_exact,district_verdict_stage_media,2012-02-06,2012-03-14
+10cc76a3a1c55a551db1f2e5,HUGGINGFACE-a8654325cb85,"""עבד אל רחים זובידאת""",party_name_exact,appeal_stage_pre_decision_media,2011-09-06,2012-07-15
+0d09a7578dc7b13b3fa29448,HUGGINGFACE-a8654325cb85,"""עבד אל רחים זובידאת""",party_name_exact,district_verdict_stage_media,2011-08-30,2011-10-06
+618cacd29a0948242e8290d0,HUGGINGFACE-a8b3cc72b35e,"""שמואל אטיאס""",party_name_exact,appeal_stage_pre_decision_media,2014-02-17,2016-08-31
+a227803c081647f6ffc5b48b,HUGGINGFACE-a8b3cc72b35e,"""שמואל אטיאס""",party_name_exact,district_verdict_stage_media,2014-02-10,2014-03-19
+55077a334cf69425c1f5e7b2,HUGGINGFACE-a8c46f7e7f77,"""מחמוד מחאג'נה""",party_name_exact,appeal_stage_pre_decision_media,2018-11-15,2019-11-01
+7855a246e4494fe558acf6aa,HUGGINGFACE-a8c46f7e7f77,"""מחמוד מחאג'נה""",party_name_exact,district_verdict_stage_media,2018-11-08,2018-12-15
+73b4dcc7e73ea24c2688dc69,HUGGINGFACE-a9d014614ff6,"""פארס ג'ארבאן""",party_name_exact,appeal_stage_pre_decision_media,2019-12-18,2020-06-30
+b1dbbcd7639c6f1e51e5dc53,HUGGINGFACE-a9d014614ff6,"""פארס ג'ארבאן""",party_name_exact,district_verdict_stage_media,2019-12-11,2020-01-17
+f495adc87d363290ef73a5cb,HUGGINGFACE-aa5bab886762,"""ישראל גלבך""",party_name_exact,appeal_stage_pre_decision_media,2010-02-18,2012-05-15
+ad118f09d9fa1d069cab8c12,HUGGINGFACE-aa5bab886762,"""ישראל גלבך""",party_name_exact,district_verdict_stage_media,2010-02-11,2010-03-20
+636c7b3f16bd0ee21296e1bc,HUGGINGFACE-aa68b2cfbf2f,"""ילנה ורלין""",party_name_exact,appeal_stage_pre_decision_media,2011-07-14,2014-04-08
+5856c237cf3fe7ebfd89171d,HUGGINGFACE-aa68b2cfbf2f,"""ילנה ורלין""",party_name_exact,district_verdict_stage_media,2011-07-07,2011-08-13
+95b765416757035e38db05a4,HUGGINGFACE-ab5510f1c9d0,"""איהאב גמבז""",party_name_exact,appeal_stage_pre_decision_media,2009-12-22,2010-12-21
+a8ec63fb76fffb7afc277b23,HUGGINGFACE-abf73ddc3f7c,"""ערן אליהו קרני""",party_name_exact,appeal_stage_pre_decision_media,2016-02-24,2019-06-29
+31703773fdd0c1b426c111c8,HUGGINGFACE-abf73ddc3f7c,"""ערן אליהו קרני""",party_name_exact,district_verdict_stage_media,2016-02-17,2016-03-25
+298496b83c8c9a92338cd4a9,HUGGINGFACE-abfcbfdb966c,"""אשרף מחאג'נה""",party_name_exact,appeal_stage_pre_decision_media,2011-12-04,2014-06-07
+c630bbb8527fa44ef2893003,HUGGINGFACE-abfcbfdb966c,"""אשרף מחאג'נה""",party_name_exact,district_verdict_stage_media,2011-11-27,2012-01-03
+ed18c2ffb4f2c0adcf22f0f1,HUGGINGFACE-ad00793d218d,"""איברהים עבסיון""",party_name_exact,appeal_stage_pre_decision_media,2008-09-23,2014-10-01
+74caf62256731d0d6685b3c9,HUGGINGFACE-ad00793d218d,"""איברהים עבסיון""",party_name_exact,district_verdict_stage_media,2008-09-16,2008-10-23
+71828bd89f39ed301c986c2b,HUGGINGFACE-ad670f569e96,"""סאלח כליפה""",party_name_exact,appeal_stage_pre_decision_media,2012-01-04,2013-01-02
+8047a26d79b51778a0a3e950,HUGGINGFACE-ad6e90cda8a5,"""שמעון אסולין""",party_name_exact,appeal_stage_pre_decision_media,2017-07-20,2018-01-08
+5bf623d08c3508407b851f1f,HUGGINGFACE-ad6e90cda8a5,"""שמעון אסולין""",party_name_exact,district_verdict_stage_media,2017-07-13,2017-08-19
+04ef2dbefe927788f83d6ca1,HUGGINGFACE-ae0f363373af,"""שריף סאלמה""",party_name_exact,appeal_stage_pre_decision_media,2009-06-14,2011-07-10
+4fc5abb6023261055c69715f,HUGGINGFACE-ae0f363373af,"""שריף סאלמה""",party_name_exact,district_verdict_stage_media,2009-06-07,2009-07-14
+554a14ffe997e7904396c0ae,HUGGINGFACE-ae999ea68878,"""ג'האד יונס""",party_name_exact,appeal_stage_pre_decision_media,2009-05-24,2012-08-29
+7d15ce6168adde92f3a79532,HUGGINGFACE-ae999ea68878,"""ג'האד יונס""",party_name_exact,district_verdict_stage_media,2009-05-17,2009-06-23
+aab2fef5889f0730a4c06251,HUGGINGFACE-aecd1b040b34,"""סופין אבו מוסטפא""",party_name_exact,appeal_stage_pre_decision_media,2010-07-15,2012-07-16
+9a4aa2ed6f3a905720be5d9b,HUGGINGFACE-aecd1b040b34,"""סופין אבו מוסטפא""",party_name_exact,district_verdict_stage_media,2010-07-08,2010-08-14
+eba53b5611bd8a18ef03278f,HUGGINGFACE-b087bad42aa9,"""רחל זהבי נקר""",party_name_exact,appeal_stage_pre_decision_media,2010-06-20,2013-05-01
+bbf7e567098fe27129ba2fb6,HUGGINGFACE-b087bad42aa9,"""רחל זהבי נקר""",party_name_exact,district_verdict_stage_media,2010-06-13,2010-07-20
+8b630ba165e6859730649a05,HUGGINGFACE-b09441243094,"""אבירם זגורי""",party_name_exact,appeal_stage_pre_decision_media,2019-07-07,2019-08-05
+7debce5059da71eebee3d2e6,HUGGINGFACE-b09441243094,"""אבירם זגורי""",party_name_exact,district_verdict_stage_media,2019-06-30,2019-08-06
+eec289d7c8887f4f03367684,HUGGINGFACE-b193a9001e43,"""אנטון אוליינקוב""",party_name_exact,appeal_stage_pre_decision_media,2007-10-24,2010-04-13
+0680fa446dad7a2875fa9882,HUGGINGFACE-b193a9001e43,"""אנטון אוליינקוב""",party_name_exact,district_verdict_stage_media,2007-10-17,2007-11-23
+925b47720080b6becd7ade55,HUGGINGFACE-b286aa16098a,"""יבגני גנסון""",party_name_exact,appeal_stage_pre_decision_media,2015-05-28,2016-07-13
+657ca3a1acffccd4fcb3452c,HUGGINGFACE-b286aa16098a,"""יבגני גנסון""",party_name_exact,district_verdict_stage_media,2015-05-21,2015-06-27
+48e7d37f8e0b7a84e41481ea,HUGGINGFACE-b2f9cd7cc5ec,"""יוסף פיאד""",party_name_exact,appeal_stage_pre_decision_media,2011-03-29,2012-03-20
+9c22e071abbeff8760945ab1,HUGGINGFACE-b2f9cd7cc5ec,"""יוסף פיאד""",party_name_exact,district_verdict_stage_media,2011-03-22,2011-04-28
+cfad37584ce669dfc54fe380,HUGGINGFACE-b31246b6a30b,"""אברהם אלחיאני""",party_name_exact,appeal_stage_pre_decision_media,2012-10-31,2015-08-23
+327add5de89ab1390b9a8ddc,HUGGINGFACE-b31246b6a30b,"""אברהם אלחיאני""",party_name_exact,district_verdict_stage_media,2012-10-24,2012-11-30
+0e8135bdc3cc9808370c6358,HUGGINGFACE-b3a939fece3a,"""מונדר ג'באלי""",party_name_exact,appeal_stage_pre_decision_media,2008-06-24,2011-01-16
+012acd19634bd8013095d7e1,HUGGINGFACE-b3a939fece3a,"""מונדר ג'באלי""",party_name_exact,district_verdict_stage_media,2008-06-17,2008-07-24
+cc6b96e9950000bb6dfc9553,HUGGINGFACE-b52710b2c548,"""יצחק זוזיאשווילי""",party_name_exact,appeal_stage_pre_decision_media,2006-02-23,2010-12-01
+a779df47a881a841b1394633,HUGGINGFACE-b52710b2c548,"""יצחק זוזיאשווילי""",party_name_exact,district_verdict_stage_media,2006-02-16,2006-03-25
+884aba843e925483b34613bc,HUGGINGFACE-b6a33301b63d,"""איוב אבו סיאם""",party_name_exact,appeal_stage_pre_decision_media,2010-07-15,2012-06-06
+6dcd3192a3d95cfe0830b920,HUGGINGFACE-b6a33301b63d,"""איוב אבו סיאם""",party_name_exact,district_verdict_stage_media,2010-07-08,2010-08-14
+def50a87090330f0d163d626,HUGGINGFACE-b6d04c6c9ba5,"""מוחמד מזאריב""",party_name_exact,appeal_stage_pre_decision_media,2013-01-24,2014-03-02
+5f161658b069032b8d4cc08e,HUGGINGFACE-b6d04c6c9ba5,"""מוחמד מזאריב""",party_name_exact,district_verdict_stage_media,2013-01-17,2013-02-23
+08d2fd370dc5af5d15130a9d,HUGGINGFACE-b7b407f629d7,"""חמד סועאד""",party_name_exact,appeal_stage_pre_decision_media,2014-01-21,2016-01-26
+655b690024e4d08c10d1de86,HUGGINGFACE-b7b407f629d7,"""חמד סועאד""",party_name_exact,district_verdict_stage_media,2014-01-14,2014-02-20
+019fa90eef9edb15a0a38d6e,HUGGINGFACE-b91dede8e54f,"""רומן גריבוב""",party_name_exact,appeal_stage_pre_decision_media,2015-09-06,2017-10-01
+2bc2cc70b11badb02c90fcb3,HUGGINGFACE-b91dede8e54f,"""רומן גריבוב""",party_name_exact,district_verdict_stage_media,2015-08-30,2015-10-06
+ce5708f8651765e486d2217c,HUGGINGFACE-b987185fb74d,"""משה מלול""",party_name_exact,appeal_stage_pre_decision_media,2015-11-30,2017-03-15
+004d78b6b20296177586b45f,HUGGINGFACE-b987185fb74d,"""משה מלול""",party_name_exact,district_verdict_stage_media,2015-11-23,2015-12-30
+b8b3bed406602f4f440dfe85,HUGGINGFACE-ba5b076a800a,"""אלכסי פרידלין""",party_name_exact,appeal_stage_pre_decision_media,2018-04-29,2020-11-16
+18575b15bc0e1e3f14fd05c5,HUGGINGFACE-ba5b076a800a,"""אלכסי פרידלין""",party_name_exact,district_verdict_stage_media,2018-04-22,2018-05-29
+76c27320d86fc349835f3d18,HUGGINGFACE-ba8c1575b41d,"""יצחקי מיכני""",party_name_exact,appeal_stage_pre_decision_media,2005-07-11,2012-01-01
+04a940848c37670811016c76,HUGGINGFACE-ba8c1575b41d,"""יצחקי מיכני""",party_name_exact,district_verdict_stage_media,2005-07-04,2005-08-10
+9427746d0f9f5008cdebc620,HUGGINGFACE-bad7c264e4c9,"""סרגיי שיצינין""",party_name_exact,appeal_stage_pre_decision_media,2011-12-05,2014-06-11
+88ad4cbebcc15bb51f8bf993,HUGGINGFACE-bad7c264e4c9,"""סרגיי שיצינין""",party_name_exact,district_verdict_stage_media,2011-11-28,2012-01-04
+0635405cfd5e6cb96463e352,HUGGINGFACE-bbe152e0685f,"""מוחמד שוויקי""",party_name_exact,appeal_stage_pre_decision_media,2016-04-19,2018-11-09
+7e4ef2c13e7084ff3c5bfb0f,HUGGINGFACE-bbe152e0685f,"""מוחמד שוויקי""",party_name_exact,district_verdict_stage_media,2016-04-12,2016-05-19
+e812ff90ca7f9875090c56ca,HUGGINGFACE-bc5c08144a18,"""חיים וייץ""",party_name_exact,appeal_stage_pre_decision_media,2010-03-14,2010-07-18
+1d6890b0143b855a83c961be,HUGGINGFACE-bc5c08144a18,"""חיים וייץ""",party_name_exact,district_verdict_stage_media,2010-03-07,2010-04-13
+517955e549bef094296cdcef,HUGGINGFACE-bc6216d987a8,"""יצחק צרור""",party_name_exact,appeal_stage_pre_decision_media,2008-12-29,2010-02-16
+77a9d6595f62f9b7d94117e6,HUGGINGFACE-bc6216d987a8,"""יצחק צרור""",party_name_exact,district_verdict_stage_media,2008-12-22,2009-01-28
+0133aac66f0b0d3ddbb62f94,HUGGINGFACE-bc6be7701d1e,"""אחמד מוזפר""",party_name_exact,appeal_stage_pre_decision_media,2013-01-16,2014-01-15
+6ba52b1ad7eb57325f125775,HUGGINGFACE-bca04d54178b,"""איאד סלוטה""",party_name_exact,appeal_stage_pre_decision_media,2013-10-07,2015-06-08
+76101d49d491889e6f4c2b31,HUGGINGFACE-bca04d54178b,"""איאד סלוטה""",party_name_exact,district_verdict_stage_media,2013-09-30,2013-11-06
+dc0c4d90dd2cf1aab15488af,HUGGINGFACE-bca898d8669f,"""חליס טארק""",party_name_exact,appeal_stage_pre_decision_media,2013-03-14,2014-07-26
+4fff32712aae2b4546d2db91,HUGGINGFACE-bca898d8669f,"""חליס טארק""",party_name_exact,district_verdict_stage_media,2013-03-07,2013-04-13
+9c654057144171683556cd52,HUGGINGFACE-bcc927576eb0,"""דוד בן שטרית""",party_name_exact,appeal_stage_pre_decision_media,2013-03-24,2017-03-18
+da097160ca45b03c04e0b321,HUGGINGFACE-bcc927576eb0,"""דוד בן שטרית""",party_name_exact,district_verdict_stage_media,2013-03-17,2013-04-23
+bd9a1c0c7f4aa43057f2c213,HUGGINGFACE-bd24b4acc9eb,"""יצחק רוזנצוויג""",party_name_exact,appeal_stage_pre_decision_media,2014-01-29,2016-01-03
+b2f99394d102baf2f5b8aac4,HUGGINGFACE-bd24b4acc9eb,"""יצחק רוזנצוויג""",party_name_exact,district_verdict_stage_media,2014-01-22,2014-02-28
+312ece5ad9a11cfba13c05da,HUGGINGFACE-bdab64185c48,"""עלי גזאל""",party_name_exact,appeal_stage_pre_decision_media,2010-10-17,2016-02-23
+93d6e27301e1e4db7c2245da,HUGGINGFACE-bdab64185c48,"""עלי גזאל""",party_name_exact,district_verdict_stage_media,2010-10-10,2010-11-16
+01dec19ed6eaa580ae299730,HUGGINGFACE-be0006aa4fea,"""מחמד שקרא""",party_name_exact,appeal_stage_pre_decision_media,2011-08-30,2013-10-09
+7d3e1aa0edff147cbb6be287,HUGGINGFACE-be0006aa4fea,"""מחמד שקרא""",party_name_exact,district_verdict_stage_media,2011-08-23,2011-09-29
+0e92e6e3dc645b571657a74f,HUGGINGFACE-be885b99cdc4,"""אנדרי פולוחין""",party_name_exact,appeal_stage_pre_decision_media,2011-04-26,2012-12-23
+149e5f37813a24dabf29a36c,HUGGINGFACE-be885b99cdc4,"""אנדרי פולוחין""",party_name_exact,district_verdict_stage_media,2011-04-19,2011-05-26
+d37914aaa88ac061380fa31e,HUGGINGFACE-bef59bdf74dd,"""סלים ספיה""",party_name_exact,appeal_stage_pre_decision_media,2010-01-20,2010-11-21
+234ff4b10dcc487d473d4419,HUGGINGFACE-bef59bdf74dd,"""סלים ספיה""",party_name_exact,district_verdict_stage_media,2010-01-13,2010-02-19
+cdb5f8e870a843d21cb6dd4e,HUGGINGFACE-bf506d6e5e78,"""מאיר צדיק""",party_name_exact,appeal_stage_pre_decision_media,2006-11-09,2012-01-01
+81247274d551e5ad2bd994c3,HUGGINGFACE-bf506d6e5e78,"""מאיר צדיק""",party_name_exact,district_verdict_stage_media,2006-11-02,2006-12-09
+04645744eb7fab7abd478424,HUGGINGFACE-bf73ba409f35,"""יפרם אלישקוב""",party_name_exact,appeal_stage_pre_decision_media,2015-04-26,2016-11-12
+39b5a32cb0aa48804d8b5bb6,HUGGINGFACE-bf73ba409f35,"""יפרם אלישקוב""",party_name_exact,district_verdict_stage_media,2015-04-19,2015-05-26
+99f9ebded3fd7aca3eb968f0,HUGGINGFACE-bf9f231e6433,"""עלי בן מוחמד""",party_name_exact,appeal_stage_pre_decision_media,2012-06-10,2014-01-07
+1ba4e2d14cc562aa226735d0,HUGGINGFACE-bf9f231e6433,"""עלי בן מוחמד""",party_name_exact,district_verdict_stage_media,2012-06-03,2012-07-10
+c021f563033817f305663b11,HUGGINGFACE-c035d612bcd5,"""תלעת אלכמלאת""",party_name_exact,appeal_stage_pre_decision_media,2019-08-05,2020-08-03
+10d0bc8a6daf6bca84c032ea,HUGGINGFACE-c0e8a25b8b45,"""אברהים דרויש אגבריה""",party_name_exact,appeal_stage_pre_decision_media,2014-12-31,2015-12-30
+ab744d56555519793cad023c,HUGGINGFACE-c0f5ef125985,"""אדוארד גלפונד""",party_name_exact,appeal_stage_pre_decision_media,2013-09-08,2016-02-16
+07937402a10ba08e86bde72b,HUGGINGFACE-c0f5ef125985,"""אדוארד גלפונד""",party_name_exact,district_verdict_stage_media,2013-09-01,2013-10-08
+fd088f73238fbd5543d9907f,HUGGINGFACE-c1411358cbea,"""מהרטה אדנה""",party_name_exact,appeal_stage_pre_decision_media,2008-10-28,2010-04-12
+ce5300b032b817d9737e0092,HUGGINGFACE-c1411358cbea,"""מהרטה אדנה""",party_name_exact,district_verdict_stage_media,2008-10-21,2008-11-27
+86eeb3b571be111737bd8fa0,HUGGINGFACE-c15fbfc17d1b,"""סגונדו לוי ורגס""",party_name_exact,appeal_stage_pre_decision_media,2012-12-09,2014-03-08
+dea718cda8c6d80924e50721,HUGGINGFACE-c15fbfc17d1b,"""סגונדו לוי ורגס""",party_name_exact,district_verdict_stage_media,2012-12-02,2013-01-08
+870832f23c7889940e08b93b,HUGGINGFACE-c284beed7965,"""מוחמד נחלה""",party_name_exact,appeal_stage_pre_decision_media,2015-04-28,2018-07-27
+eb651f9ce60a7d8fea96d3cd,HUGGINGFACE-c284beed7965,"""מוחמד נחלה""",party_name_exact,district_verdict_stage_media,2015-04-21,2015-05-28
+7624726bbd012afb1ea40c96,HUGGINGFACE-c2d7d1a225d0,"""מאג'ד חילס""",party_name_exact,appeal_stage_pre_decision_media,2010-05-26,2011-05-31
+0ee95a337e122d00d6d3ca57,HUGGINGFACE-c2d7d1a225d0,"""מאג'ד חילס""",party_name_exact,district_verdict_stage_media,2010-05-19,2010-06-25
+de2dd01e8f01a21cce437bd5,HUGGINGFACE-c3413672b5fd,"""יורי סוליימנוב""",party_name_exact,appeal_stage_pre_decision_media,2016-07-31,2020-03-31
+271d4e25c90d3f65d1722090,HUGGINGFACE-c3413672b5fd,"""יורי סוליימנוב""",party_name_exact,district_verdict_stage_media,2016-07-24,2016-08-30
+f905d78e07091f3505ff233b,HUGGINGFACE-c4b0032e5458,"""איתן גץ""",party_name_exact,appeal_stage_pre_decision_media,2008-07-03,2011-11-13
+3d1617c0f04507def5cae86e,HUGGINGFACE-c4b0032e5458,"""איתן גץ""",party_name_exact,district_verdict_stage_media,2008-06-26,2008-08-02
+c0be1d133af8e49bffa6bd8d,HUGGINGFACE-c55ace11c5e8,"""מוחמד עואדה""",party_name_exact,appeal_stage_pre_decision_media,2012-01-17,2013-04-29
+a736b75dde34296f37798341,HUGGINGFACE-c55ace11c5e8,"""מוחמד עואדה""",party_name_exact,district_verdict_stage_media,2012-01-10,2012-02-16
+12b4e213472058793cb74b94,HUGGINGFACE-c5805b1e6c60,"""סאטי אגבריה""",party_name_exact,appeal_stage_pre_decision_media,2012-02-12,2015-05-12
+89bcfb80f10fa3f3e9be2c44,HUGGINGFACE-c5805b1e6c60,"""סאטי אגבריה""",party_name_exact,district_verdict_stage_media,2012-02-05,2012-03-13
+a5dd9addd13bf0286d99fa84,HUGGINGFACE-c5a84ec44088,"""סאמר מריסאת""",party_name_exact,appeal_stage_pre_decision_media,2015-07-06,2016-07-26
+714ffb2af43babba055da93c,HUGGINGFACE-c5a84ec44088,"""סאמר מריסאת""",party_name_exact,district_verdict_stage_media,2015-06-29,2015-08-05
+a0796911b2bb58852fd38ad3,HUGGINGFACE-c6b2072f1b4c,"""איברהים אבו סבחה""",party_name_exact,appeal_stage_pre_decision_media,2008-12-24,2012-04-22
+9724670e4b75a3180c1463d4,HUGGINGFACE-c6b2072f1b4c,"""איברהים אבו סבחה""",party_name_exact,district_verdict_stage_media,2008-12-17,2009-01-23
+75b747cf569b7471330dab66,HUGGINGFACE-c6f2e479281f,"""רפי בראנץ""",party_name_exact,appeal_stage_pre_decision_media,2012-03-11,2013-09-28
+6cf5267f3b3c1cd199469fd6,HUGGINGFACE-c6f2e479281f,"""רפי בראנץ""",party_name_exact,district_verdict_stage_media,2012-03-04,2012-04-10
+448a695bc1091bad8a1be234,HUGGINGFACE-c74a3791132c,"""אביאור אברהם""",party_name_exact,appeal_stage_pre_decision_media,2010-05-25,2013-03-13
+7960effb64fba3dab3defcb9,HUGGINGFACE-c74a3791132c,"""אביאור אברהם""",party_name_exact,district_verdict_stage_media,2010-05-18,2010-06-24
+083e20250c91c07a7f6adf1f,HUGGINGFACE-c755a0c5fe5b,"""אורן אוסקר""",party_name_exact,appeal_stage_pre_decision_media,2011-02-16,2013-09-29
+e779977905bad6e7b73a1653,HUGGINGFACE-c755a0c5fe5b,"""אורן אוסקר""",party_name_exact,district_verdict_stage_media,2011-02-09,2011-03-18
+83a292fd19329d86c945e6ef,HUGGINGFACE-c7c04ba45065,"""רוזה דהן""",party_name_exact,appeal_stage_pre_decision_media,2006-10-03,2012-01-24
+008ee86c95ee7939a2b34f13,HUGGINGFACE-c7c04ba45065,"""רוזה דהן""",party_name_exact,district_verdict_stage_media,2006-09-26,2006-11-02
+c3ef7a0f6591be5851d1c91b,HUGGINGFACE-c8a770eb7e21,"""ג'מיל אבו חסן""",party_name_exact,appeal_stage_pre_decision_media,2013-05-21,2014-09-10
+61225e01be302fe320516e06,HUGGINGFACE-c8a770eb7e21,"""ג'מיל אבו חסן""",party_name_exact,district_verdict_stage_media,2013-05-14,2013-06-20
+82a3dd0499feb57444e44296,HUGGINGFACE-c994a4ff8d43,"""אלון חיימוב""",party_name_exact,appeal_stage_pre_decision_media,2015-02-23,2016-12-10
+4cb8b979aad3a1142e52e174,HUGGINGFACE-c994a4ff8d43,"""אלון חיימוב""",party_name_exact,district_verdict_stage_media,2015-02-16,2015-03-25
+58e8b6733fdc8523245c1efd,HUGGINGFACE-ca0f44176702,"""נאהד חמיד""",party_name_exact,appeal_stage_pre_decision_media,2011-06-30,2013-12-22
+18ed636de97e8868dd675dae,HUGGINGFACE-ca0f44176702,"""נאהד חמיד""",party_name_exact,district_verdict_stage_media,2011-06-23,2011-07-30
+162bdbdf53eb8799eae44d7b,HUGGINGFACE-ca14059634b6,"""שלווה ציציאשוילי""",party_name_exact,appeal_stage_pre_decision_media,2013-06-11,2014-06-10
+bcc506e12a520177267c3b1f,HUGGINGFACE-ca2904fe5c5f,"""איסמעיל אזברגה""",party_name_exact,appeal_stage_pre_decision_media,2008-11-10,2010-03-15
+ff471001918e6cee4eae120c,HUGGINGFACE-ca2904fe5c5f,"""איסמעיל אזברגה""",party_name_exact,district_verdict_stage_media,2008-11-03,2008-12-10
+d062901fbd418cb333f3bd7b,HUGGINGFACE-caed7ce3c636,"""שלגין אנג'ל""",party_name_exact,appeal_stage_pre_decision_media,2011-12-06,2012-12-04
+344798a80f01bcb384e44084,HUGGINGFACE-caf6d9e8746f,"""יעד חלילי""",party_name_exact,appeal_stage_pre_decision_media,2014-06-02,2016-01-19
+4d4bb141f5143937dd3c67b9,HUGGINGFACE-caf6d9e8746f,"""יעד חלילי""",party_name_exact,district_verdict_stage_media,2014-05-26,2014-07-02
+7954ae85dec4dbdd02e84d94,HUGGINGFACE-cb29e089b159,"""אלכסנדר ספרונוב""",party_name_exact,appeal_stage_pre_decision_media,2012-06-10,2015-01-25
+38d0c202aa62f983148638a3,HUGGINGFACE-cb29e089b159,"""אלכסנדר ספרונוב""",party_name_exact,district_verdict_stage_media,2012-06-03,2012-07-10
+bade2de8075b91fed111155d,HUGGINGFACE-ce630e1406e3,"""סרגיי סולוביוב""",party_name_exact,appeal_stage_pre_decision_media,2008-05-14,2014-01-06
+941e7c106bffb286bba81425,HUGGINGFACE-ce630e1406e3,"""סרגיי סולוביוב""",party_name_exact,district_verdict_stage_media,2008-05-07,2008-06-13
+a6e1642ac7616516fa74ac62,HUGGINGFACE-cea0d472291e,"""סאמר דוויק""",party_name_exact,appeal_stage_pre_decision_media,2015-01-11,2015-01-21
+37081aad8f2f23a4c9fb3be4,HUGGINGFACE-cea0d472291e,"""סאמר דוויק""",party_name_exact,district_verdict_stage_media,2015-01-04,2015-02-10
+6bab461d927308692b6cf919,HUGGINGFACE-cf4f1dd373a0,"""מני חזון""",party_name_exact,appeal_stage_pre_decision_media,2016-06-08,2017-07-12
+7724155346776ab23ce67b3e,HUGGINGFACE-cf4f1dd373a0,"""מני חזון""",party_name_exact,district_verdict_stage_media,2016-06-01,2016-07-08
+b378c5f4788245dc8f0f7c65,HUGGINGFACE-d09716422baf,"""אסצאלו אבהה""",party_name_exact,appeal_stage_pre_decision_media,2008-09-03,2015-01-19
+f069126d98b51a38d85fa6d7,HUGGINGFACE-d09716422baf,"""אסצאלו אבהה""",party_name_exact,district_verdict_stage_media,2008-08-27,2008-10-03
+98f476fae00845e1ca107939,HUGGINGFACE-d130633461e5,"""יגאל גוזלנד""",party_name_exact,appeal_stage_pre_decision_media,2011-11-27,2013-10-07
+e7023f1dea4e2534385b43e5,HUGGINGFACE-d130633461e5,"""יגאל גוזלנד""",party_name_exact,district_verdict_stage_media,2011-11-20,2011-12-27
+47499ba2686b443547801747,HUGGINGFACE-d139193d11dc,"""יהודה חדד""",party_name_exact,appeal_stage_pre_decision_media,2010-07-13,2015-03-02
+374d16e944b554b9c449ce2b,HUGGINGFACE-d139193d11dc,"""יהודה חדד""",party_name_exact,district_verdict_stage_media,2010-07-06,2010-08-12
+d3891dd91bd33ac49f46616a,HUGGINGFACE-d13c15eb5ebd,"""נתנאל ביטון""",party_name_exact,appeal_stage_pre_decision_media,2012-04-17,2013-10-27
+32bfc9d2f9ed8cc7480803d0,HUGGINGFACE-d13c15eb5ebd,"""נתנאל ביטון""",party_name_exact,district_verdict_stage_media,2012-04-10,2012-05-17
+72aa470faf779045dbac5ae1,HUGGINGFACE-d1b5535b9a4e,"""יעקב חפותה""",party_name_exact,appeal_stage_pre_decision_media,2010-01-25,2013-02-06
+9ed7a092f7f785fc9edc7f9f,HUGGINGFACE-d1b5535b9a4e,"""יעקב חפותה""",party_name_exact,district_verdict_stage_media,2010-01-18,2010-02-24
+8002500ac3ff0e5ef0336bb6,HUGGINGFACE-d249ad730ad2,"""מוחמד אבו סנינה""",party_name_exact,appeal_stage_pre_decision_media,2010-01-11,2014-06-11
+eb25f1ff0aaf08d886d453e8,HUGGINGFACE-d249ad730ad2,"""מוחמד אבו סנינה""",party_name_exact,district_verdict_stage_media,2010-01-04,2010-02-10
+b8a36aea8e3babd2e3e4f467,HUGGINGFACE-d2aa44671674,"""טהה עותמאן""",party_name_exact,appeal_stage_pre_decision_media,2010-03-22,2011-02-23
+9856b9556cd0c803261c5d21,HUGGINGFACE-d2aa44671674,"""טהה עותמאן""",party_name_exact,district_verdict_stage_media,2010-03-15,2010-04-21
+f8ca1d1c3624e8e8287c7b4d,HUGGINGFACE-d2b5576fcf60,"""ג'האד אלהרוש""",party_name_exact,appeal_stage_pre_decision_media,2016-01-05,2018-11-23
+3786ead9b8fa81486e59358f,HUGGINGFACE-d2b5576fcf60,"""ג'האד אלהרוש""",party_name_exact,district_verdict_stage_media,2015-12-29,2016-02-04
+2c9769208c5d65a6cda7d3a7,HUGGINGFACE-d3180b79f353,"""סעד אבו עסא""",party_name_exact,appeal_stage_pre_decision_media,2014-09-03,2015-09-02
+d5f662c8a8fa2e914c66e4d5,HUGGINGFACE-d32198442446,"""יצחק אדרי""",party_name_exact,appeal_stage_pre_decision_media,2012-04-30,2014-09-28
+8c997835e37bc299d25736a0,HUGGINGFACE-d32198442446,"""יצחק אדרי""",party_name_exact,district_verdict_stage_media,2012-04-23,2012-05-30
+0bc16b8022296e80579ebb17,HUGGINGFACE-d33f58efe47b,"""עדנאן זהאדה""",party_name_exact,appeal_stage_pre_decision_media,2014-09-30,2016-08-14
+76cffe19296633cde430c6e4,HUGGINGFACE-d33f58efe47b,"""עדנאן זהאדה""",party_name_exact,district_verdict_stage_media,2014-09-23,2014-10-30
+fc009f84606ed6165d57ad83,HUGGINGFACE-d35e2fc6029e,"""ג'מיל אמר""",party_name_exact,appeal_stage_pre_decision_media,2017-09-27,2019-01-29
+b0ade82c5c1bd0ce0db9e6fa,HUGGINGFACE-d35e2fc6029e,"""ג'מיל אמר""",party_name_exact,district_verdict_stage_media,2017-09-20,2017-10-27
+ca138ca49d9b0b6bd72b2f80,HUGGINGFACE-d3ba9b38eef3,"""סורי אבראהים""",party_name_exact,appeal_stage_pre_decision_media,2014-08-19,2015-08-18
+e621b94afb3bc063c62d17d6,HUGGINGFACE-d3eb3770cd2e,"""מוחמד עקול""",party_name_exact,appeal_stage_pre_decision_media,2015-07-15,2016-06-26
+47ce9a8a6e7f98a328e9b1c6,HUGGINGFACE-d3eb3770cd2e,"""מוחמד עקול""",party_name_exact,district_verdict_stage_media,2015-07-08,2015-08-14
+d8e3a087d24b112b3b40eb6b,HUGGINGFACE-d3f14668c081,"""אגנהו סיסאי""",party_name_exact,appeal_stage_pre_decision_media,2013-05-06,2014-08-05
+1f2b7a9f38960a24f59a1efc,HUGGINGFACE-d3f14668c081,"""אגנהו סיסאי""",party_name_exact,district_verdict_stage_media,2013-04-29,2013-06-05
+3029bd2cc77aa9fd903438c5,HUGGINGFACE-d3f56e410d20,"""אליהו קריספיל""",party_name_exact,appeal_stage_pre_decision_media,2017-03-28,2018-04-15
+de1d42b2b64e47e8852e3009,HUGGINGFACE-d3f56e410d20,"""אליהו קריספיל""",party_name_exact,district_verdict_stage_media,2017-03-21,2017-04-27
+dc22d344468373488d36148f,HUGGINGFACE-d4352b8318fb,"""נור נאצר""",party_name_exact,appeal_stage_pre_decision_media,2020-03-01,2020-11-17
+da6d0f1f11d4c0ba9fea924b,HUGGINGFACE-d4352b8318fb,"""נור נאצר""",party_name_exact,district_verdict_stage_media,2020-02-23,2020-03-31
+ae308ed42d06c6fe447eb459,HUGGINGFACE-d4707499513c,"""ירון סנקר""",party_name_exact,appeal_stage_pre_decision_media,2006-10-15,2010-07-28
+07539898f771b01a1c31f633,HUGGINGFACE-d4707499513c,"""ירון סנקר""",party_name_exact,district_verdict_stage_media,2006-10-08,2006-11-14
+b33dad87d236740cf0d638ad,HUGGINGFACE-d4e0c2ce9af3,"""יחזקאל באשה""",party_name_exact,appeal_stage_pre_decision_media,2011-11-12,2012-11-10
+e52b3ce161de8487a13e9779,HUGGINGFACE-d58a7bbab08b,"""אביב בן בסט""",party_name_exact,appeal_stage_pre_decision_media,2011-07-18,2012-10-27
+9d45510923cd5fa21f52ce8a,HUGGINGFACE-d58a7bbab08b,"""אביב בן בסט""",party_name_exact,district_verdict_stage_media,2011-07-11,2011-08-17
+71e41e121d3c89f4948649aa,HUGGINGFACE-d59711ada206,"""דרור חכמון""",party_name_exact,appeal_stage_pre_decision_media,2009-09-02,2012-07-03
+8125bf2ffa3d482216e93a49,HUGGINGFACE-d59711ada206,"""דרור חכמון""",party_name_exact,district_verdict_stage_media,2009-08-26,2009-10-02
+fb1168187627582ad9282984,HUGGINGFACE-d5bc94c5b831,"""נדאל טובאסי""",party_name_exact,appeal_stage_pre_decision_media,2015-04-15,2016-05-01
+3b597452261d36b1c06b268d,HUGGINGFACE-d5bc94c5b831,"""נדאל טובאסי""",party_name_exact,district_verdict_stage_media,2015-04-08,2015-05-15
+157a933a7e0f74adb7daf5cd,HUGGINGFACE-d5f07f9530de,"""איברהים מכאוי""",party_name_exact,appeal_stage_pre_decision_media,2014-08-13,2017-01-23
+e3dd4bb67763311cb2adcc7c,HUGGINGFACE-d5f07f9530de,"""איברהים מכאוי""",party_name_exact,district_verdict_stage_media,2014-08-06,2014-09-12
+dbafc036305e045c2c73d562,HUGGINGFACE-d649eba6e433,"""אלכסיי שולמן""",party_name_exact,appeal_stage_pre_decision_media,2011-06-21,2012-08-04
+145803f3014de03590fd1951,HUGGINGFACE-d649eba6e433,"""אלכסיי שולמן""",party_name_exact,district_verdict_stage_media,2011-06-14,2011-07-21
+efc6dd171dc6660efc661cfa,HUGGINGFACE-d68190cfe7da,"""אשרף בן נזמי קייסי""",party_name_exact,appeal_stage_pre_decision_media,2007-10-18,2012-07-29
+126d60e0b04d72222ee4d6d4,HUGGINGFACE-d68190cfe7da,"""אשרף בן נזמי קייסי""",party_name_exact,district_verdict_stage_media,2007-10-11,2007-11-17
+5cb48b375bdb9c44b7cc4466,HUGGINGFACE-d6ea8e479798,"""ראוסוב קונסטנטין""",party_name_exact,appeal_stage_pre_decision_media,2009-11-30,2011-03-29
+d1d79121dd90932b07e0ed15,HUGGINGFACE-d6ea8e479798,"""ראוסוב קונסטנטין""",party_name_exact,district_verdict_stage_media,2009-11-23,2009-12-30
+18923752d9e91f18c75d5a20,HUGGINGFACE-d80762fc1653,"""פתחי אגבריה""",party_name_exact,appeal_stage_pre_decision_media,2014-07-07,2015-07-06
+08558c54ac91e8b7d8f5217c,HUGGINGFACE-d81503c9404e,"""עדוואן פרחאן""",party_name_exact,appeal_stage_pre_decision_media,2010-07-21,2013-10-01
+5f216bb184821b5358c26b4f,HUGGINGFACE-d81503c9404e,"""עדוואן פרחאן""",party_name_exact,district_verdict_stage_media,2010-07-14,2010-08-20
+ec7e9dae0cb44e257420b06f,HUGGINGFACE-d897082c9482,"""מחמד עבידיה""",party_name_exact,appeal_stage_pre_decision_media,2018-05-22,2019-06-24
+027081a07b036487980cac98,HUGGINGFACE-d897082c9482,"""מחמד עבידיה""",party_name_exact,district_verdict_stage_media,2018-05-15,2018-06-21
+f29e0687d68e5e90c2588d6b,HUGGINGFACE-d9795360a936,"""מחמד זובידאת""",party_name_exact,appeal_stage_pre_decision_media,2010-03-16,2011-02-23
+36ce6b204a29249dd79f8e45,HUGGINGFACE-d9795360a936,"""מחמד זובידאת""",party_name_exact,district_verdict_stage_media,2010-03-09,2010-04-15
+415cf7c64342decb147afa7a,HUGGINGFACE-da61f822abad,"""עדי בניטה""",party_name_exact,appeal_stage_pre_decision_media,2011-06-23,2012-12-02
+78c3a11543bc32f8c926fe7c,HUGGINGFACE-da61f822abad,"""עדי בניטה""",party_name_exact,district_verdict_stage_media,2011-06-16,2011-07-23
+32e6a02b60aa15b8204b4513,HUGGINGFACE-dc5828365532,"""משה כהן""",party_name_exact,appeal_stage_pre_decision_media,2014-03-03,2014-03-09
+7778dcb4756198f47ef91791,HUGGINGFACE-dc5828365532,"""משה כהן""",party_name_exact,district_verdict_stage_media,2014-02-24,2014-04-02
+13632630ec9ead6268cf2841,HUGGINGFACE-dd1c796c5216,"""נאיף אבו סרחאן""",party_name_exact,appeal_stage_pre_decision_media,2011-01-05,2015-05-04
+b1dd8ce7966f3084d4b5780b,HUGGINGFACE-dd1c796c5216,"""נאיף אבו סרחאן""",party_name_exact,district_verdict_stage_media,2010-12-29,2011-02-04
+a475a5fe7c94425296d30112,HUGGINGFACE-dd872f007f89,"""סמר אבו חאמד""",party_name_exact,appeal_stage_pre_decision_media,2014-03-25,2017-12-05
+96a5832dc42ae5b2355f8aba,HUGGINGFACE-dd872f007f89,"""סמר אבו חאמד""",party_name_exact,district_verdict_stage_media,2014-03-18,2014-04-24
+08404d82168d24a58b010e8d,HUGGINGFACE-de9e091dbd1f,"""רמזי חרוטדינוב""",party_name_exact,appeal_stage_pre_decision_media,2017-03-21,2018-03-20
+a843b6dda9762bc619541d0c,HUGGINGFACE-dea0fe609182,"""חוסאם אסעד עטאר""",party_name_exact,appeal_stage_pre_decision_media,2013-12-29,2014-12-28
+800e3d35c67e27bb595414de,HUGGINGFACE-deb1b58b307a,"""איאד מוחמד שאמי""",party_name_exact,appeal_stage_pre_decision_media,2010-01-12,2012-09-11
+02f29cba92de79608bc74715,HUGGINGFACE-deb1b58b307a,"""איאד מוחמד שאמי""",party_name_exact,district_verdict_stage_media,2010-01-05,2010-02-11
+880dfc2aab303048dcac6821,HUGGINGFACE-debe1b36e3ef,"""ניקולה דמיטרוב קונקיוב""",party_name_exact,appeal_stage_pre_decision_media,2015-09-21,2019-04-09
+14cfb9b1c15afaec05039c68,HUGGINGFACE-debe1b36e3ef,"""ניקולה דמיטרוב קונקיוב""",party_name_exact,district_verdict_stage_media,2015-09-14,2015-10-21
+e1b5c786c1ea05d6cc83d840,HUGGINGFACE-df466b089ed1,"""איהאב חמוד""",party_name_exact,appeal_stage_pre_decision_media,2009-04-07,2011-07-31
+80bb62c88555397d0870b3c0,HUGGINGFACE-df466b089ed1,"""איהאב חמוד""",party_name_exact,district_verdict_stage_media,2009-03-31,2009-05-07
+e2e628e8704f58f1f1771aef,HUGGINGFACE-df8306e252ab,"""עזיז דוידוב""",party_name_exact,appeal_stage_pre_decision_media,2011-02-16,2012-11-06
+af452afdde429098ab35feac,HUGGINGFACE-df8306e252ab,"""עזיז דוידוב""",party_name_exact,district_verdict_stage_media,2011-02-09,2011-03-18
+f9de721945b6ef78ae099508,HUGGINGFACE-e05c17a7c2a7,"""אבי אלימלך""",party_name_exact,appeal_stage_pre_decision_media,2007-08-14,2010-10-10
+7cb08ee229d160f91c5cc24b,HUGGINGFACE-e05c17a7c2a7,"""אבי אלימלך""",party_name_exact,district_verdict_stage_media,2007-08-07,2007-09-13
+0eaca20e9c0812092bd9aa00,HUGGINGFACE-e0d4db495880,"""אחמד זידאן""",party_name_exact,appeal_stage_pre_decision_media,2011-06-06,2012-03-07
+389756c83a42d21bdd45907c,HUGGINGFACE-e0d4db495880,"""אחמד זידאן""",party_name_exact,district_verdict_stage_media,2011-05-30,2011-07-06
+a4aad3f808b2a3f55038ad28,HUGGINGFACE-e12d413c71c5,"""ג'מאל שחתות""",party_name_exact,appeal_stage_pre_decision_media,2017-02-13,2018-02-12
+6587d69b88515f3feec774e1,HUGGINGFACE-e135fc674616,"""חאלד קוטינה""",party_name_exact,appeal_stage_pre_decision_media,2017-10-24,2018-10-23
+d8621b776fc5ef3e7dd0e6c4,HUGGINGFACE-e2771655dbdd,"""רומן זדורוב""",party_name_exact,appeal_stage_pre_decision_media,2010-09-13,2015-12-22
+24fc87a57fa508b7b8765a04,HUGGINGFACE-e2771655dbdd,"""רומן זדורוב""",party_name_exact,district_verdict_stage_media,2010-09-06,2010-10-13
+b70c68ab1671a8d71091f5cc,HUGGINGFACE-e3f55aa10d4d,"""עבאס אל סיד""",party_name_exact,appeal_stage_pre_decision_media,2006-01-10,2011-09-04
+3dd375b11a60b92e03b5fd9a,HUGGINGFACE-e3f55aa10d4d,"""עבאס אל סיד""",party_name_exact,district_verdict_stage_media,2006-01-03,2006-02-09
+1606538fb3bad8c43d441c35,HUGGINGFACE-e41fa0adb336,"""קאסם עלי""",party_name_exact,appeal_stage_pre_decision_media,2009-09-18,2010-07-21
+4a5b8ad9a1c09c00a147ac27,HUGGINGFACE-e41fa0adb336,"""קאסם עלי""",party_name_exact,district_verdict_stage_media,2009-09-11,2009-10-18
+367b9058f3889d2dd98428cc,HUGGINGFACE-e43a24160e9c,"""יניב מלכה""",party_name_exact,appeal_stage_pre_decision_media,2013-01-29,2014-01-26
+d4b05235c5777943b91b8df8,HUGGINGFACE-e43a24160e9c,"""יניב מלכה""",party_name_exact,district_verdict_stage_media,2013-01-22,2013-02-28
+c18996f96c40165583e6222f,HUGGINGFACE-e5382789e99c,"""סאלם עבד אלקאדר""",party_name_exact,appeal_stage_pre_decision_media,2014-07-14,2015-09-01
+b4ca4eaa54d01bfe3b6d044b,HUGGINGFACE-e5382789e99c,"""סאלם עבד אלקאדר""",party_name_exact,district_verdict_stage_media,2014-07-07,2014-08-13
+e472a78ece14130428c272da,HUGGINGFACE-e5d36f240c76,"""שחר רוזינקין חבני""",party_name_exact,appeal_stage_pre_decision_media,2014-01-14,2015-08-23
+4c9c18fcdca8de475789009f,HUGGINGFACE-e5d36f240c76,"""שחר רוזינקין חבני""",party_name_exact,district_verdict_stage_media,2014-01-07,2014-02-13
+5c73cd85ffe165d8c8dca0ca,HUGGINGFACE-e5f856f88a52,"""ולרי גורוביץ""",party_name_exact,appeal_stage_pre_decision_media,2008-03-26,2011-01-12
+4adc3dfd512709ad0f480ecc,HUGGINGFACE-e5f856f88a52,"""ולרי גורוביץ""",party_name_exact,district_verdict_stage_media,2008-03-19,2008-04-25
+7936bf4ea8699deb1b67de61,HUGGINGFACE-e621712d907b,"""ליאור בלטי""",party_name_exact,appeal_stage_pre_decision_media,2013-12-02,2019-05-21
+89e8bfc0450abf835e4ce1e6,HUGGINGFACE-e621712d907b,"""ליאור בלטי""",party_name_exact,district_verdict_stage_media,2013-11-25,2014-01-01
+e7a34a9fbc87be1b6667e788,HUGGINGFACE-e68fdf227656,"""שאדי סעיד""",party_name_exact,appeal_stage_pre_decision_media,2009-04-21,2010-11-24
+80a5d9ba4c71b68290f1984a,HUGGINGFACE-e68fdf227656,"""שאדי סעיד""",party_name_exact,district_verdict_stage_media,2009-04-14,2009-05-21
+f274b0dc63597dc9080d22d9,HUGGINGFACE-e754aa1ad220,"""מוחמד ח'גאזי""",party_name_exact,appeal_stage_pre_decision_media,2009-03-23,2012-07-17
+a1ca3a5be29d74fb49be9613,HUGGINGFACE-e754aa1ad220,"""מוחמד ח'גאזי""",party_name_exact,district_verdict_stage_media,2009-03-16,2009-04-22
+44d5280cb9a891d2577095de,HUGGINGFACE-e7cdcd6bdd78,"""אסף שי""",party_name_exact,appeal_stage_pre_decision_media,2005-09-26,2010-02-17
+9501653a03943fe9d3f617a5,HUGGINGFACE-e7cdcd6bdd78,"""אסף שי""",party_name_exact,district_verdict_stage_media,2005-09-19,2005-10-26
+9d6f19b8ba1cc2d300a6b3ea,HUGGINGFACE-e8953c7c6b21,"""מוסיה קסאי""",party_name_exact,appeal_stage_pre_decision_media,2015-01-12,2016-10-05
+8071947fdb42ef8778d8f022,HUGGINGFACE-e8953c7c6b21,"""מוסיה קסאי""",party_name_exact,district_verdict_stage_media,2015-01-05,2015-02-11
+b9c2ac31f647920ccbac5b8b,HUGGINGFACE-e9117a81dcc9,"""סבטלנה אורית זורין""",party_name_exact,appeal_stage_pre_decision_media,2007-11-08,2010-09-06
+74cad39a0d2756ba8c8ea9f3,HUGGINGFACE-e9117a81dcc9,"""סבטלנה אורית זורין""",party_name_exact,district_verdict_stage_media,2007-11-01,2007-12-08
+75ab54cec282a0c514132179,HUGGINGFACE-e9bd0a79f4e4,"""ראמי גזאוי""",party_name_exact,appeal_stage_pre_decision_media,2016-12-25,2018-06-19
+cfbe01504c6393c8726394af,HUGGINGFACE-e9bd0a79f4e4,"""ראמי גזאוי""",party_name_exact,district_verdict_stage_media,2016-12-18,2017-01-24
+f629e12f00bdeab6c1d0795f,HUGGINGFACE-ea3daca3af38,"""אדם איטל""",party_name_exact,appeal_stage_pre_decision_media,2012-09-04,2016-12-10
+93df9cbe5b9bdc9f911aee3d,HUGGINGFACE-ea3daca3af38,"""אדם איטל""",party_name_exact,district_verdict_stage_media,2012-08-28,2012-10-04
+3bb6d15c1d4a44d93c964e65,HUGGINGFACE-eb11a99ff93f,"""אברהם ילמה""",party_name_exact,appeal_stage_pre_decision_media,2017-09-18,2019-09-14
+d38d7fe3505fb0eca2af1d56,HUGGINGFACE-eb11a99ff93f,"""אברהם ילמה""",party_name_exact,district_verdict_stage_media,2017-09-11,2017-10-18
+e085d51c5b3400723730684d,HUGGINGFACE-eb19ba05ddfc,"""אורי גדקר""",party_name_exact,appeal_stage_pre_decision_media,2007-05-28,2010-10-03
+9bb9a363b0d34c849d21a9b6,HUGGINGFACE-eb19ba05ddfc,"""אורי גדקר""",party_name_exact,district_verdict_stage_media,2007-05-21,2007-06-27
+4f2cbe5ef93615368fd92908,HUGGINGFACE-ed124bb1c04e,"""שלום פרץ""",party_name_exact,appeal_stage_pre_decision_media,2014-06-01,2015-05-31
+0b0fbb2bc16f011a44a51ae9,HUGGINGFACE-ed917691c2cd,"""קסיס עאסי""",party_name_exact,appeal_stage_pre_decision_media,2012-12-03,2014-10-22
+6268909eacb8816d3b528569,HUGGINGFACE-ed917691c2cd,"""קסיס עאסי""",party_name_exact,district_verdict_stage_media,2012-11-26,2013-01-02
+aa06093661352b4d5c85bc28,HUGGINGFACE-ee34bcf5c171,"""בוגוסלבסקי רוסטיסלב""",party_name_exact,appeal_stage_pre_decision_media,2015-07-13,2016-07-11
+4f6fde81e0de682006e94b52,HUGGINGFACE-eea99af84a58,"""דימטרי סקורדוק""",party_name_exact,appeal_stage_pre_decision_media,2012-12-30,2017-01-04
+cc38788e8c42fbce29863717,HUGGINGFACE-eea99af84a58,"""דימטרי סקורדוק""",party_name_exact,district_verdict_stage_media,2012-12-23,2013-01-29
+8023720dbbde9016ee0bc6f5,HUGGINGFACE-eebb83d1a882,"""זוארץ בר""",party_name_exact,appeal_stage_pre_decision_media,2013-03-20,2013-09-16
+ccaff99bbe31580509076638,HUGGINGFACE-eebb83d1a882,"""זוארץ בר""",party_name_exact,district_verdict_stage_media,2013-03-13,2013-04-19
+1cad0bbbf72aa71ec703b322,HUGGINGFACE-ef11315c0bd8,"""לחאם ודיע""",party_name_exact,appeal_stage_pre_decision_media,2013-12-05,2015-06-16
+ccabd754134574af393feda0,HUGGINGFACE-ef11315c0bd8,"""לחאם ודיע""",party_name_exact,district_verdict_stage_media,2013-11-28,2014-01-04
+0bbdb3028fbe7ded4ace2bb9,HUGGINGFACE-ef304e453837,"""עבדאללה סמיח חטיב""",party_name_exact,appeal_stage_pre_decision_media,2016-12-13,2018-02-05
+44f0e1769c525e534825c541,HUGGINGFACE-ef304e453837,"""עבדאללה סמיח חטיב""",party_name_exact,district_verdict_stage_media,2016-12-06,2017-01-12
+a0724d12e3a126bd6a473159,HUGGINGFACE-ef576b774c22,"""ניקולאי מצגורה""",party_name_exact,appeal_stage_pre_decision_media,2009-12-13,2013-12-02
+d6d34c2892eccf007f2798f4,HUGGINGFACE-ef576b774c22,"""ניקולאי מצגורה""",party_name_exact,district_verdict_stage_media,2009-12-06,2010-01-12
+485423d25b99f6fe9085138a,HUGGINGFACE-f02ede7891c2,"""מחמד אבו גראבה""",party_name_exact,appeal_stage_pre_decision_media,2012-10-31,2013-10-30
+07540da3475018a2c98cc7b8,HUGGINGFACE-f13d7a450f3b,"""גילברט פדידה""",party_name_exact,appeal_stage_pre_decision_media,2013-04-04,2015-02-10
+c0f7bd951d4aef23fe0048ef,HUGGINGFACE-f13d7a450f3b,"""גילברט פדידה""",party_name_exact,district_verdict_stage_media,2013-03-28,2013-05-04
+08d531b502a40385790c21a9,HUGGINGFACE-f14f18e6df5c,"""אושרי גז""",party_name_exact,appeal_stage_pre_decision_media,2011-01-03,2012-05-30
+fdc71d2529c320186593d620,HUGGINGFACE-f14f18e6df5c,"""אושרי גז""",party_name_exact,district_verdict_stage_media,2010-12-27,2011-02-02
+465410783a42435f9fb4b2a9,HUGGINGFACE-f17cb61d7dc3,"""דרור דיין""",party_name_exact,appeal_stage_pre_decision_media,2010-03-03,2013-02-06
+6c3a4a9e79893c672d189110,HUGGINGFACE-f17cb61d7dc3,"""דרור דיין""",party_name_exact,district_verdict_stage_media,2010-02-24,2010-04-02
+021e4f55633d6e238dd96db8,HUGGINGFACE-f18dde462332,"""מרגריטה חומנקו""",party_name_exact,appeal_stage_pre_decision_media,2016-04-17,2017-09-17
+df63ae291e5080bf3d0e0e8a,HUGGINGFACE-f18dde462332,"""מרגריטה חומנקו""",party_name_exact,district_verdict_stage_media,2016-04-10,2016-05-17
+52c943309f43cfbee54da184,HUGGINGFACE-f1d8acf054f4,"""יונתן ימר""",party_name_exact,appeal_stage_pre_decision_media,2015-06-01,2016-05-30
+c9279164a511dcf0a16c23c8,HUGGINGFACE-f2789609abe6,"""שלומי מזרחי""",party_name_exact,appeal_stage_pre_decision_media,2011-09-18,2013-06-29
+84926da6bf5607e57d97975c,HUGGINGFACE-f2789609abe6,"""שלומי מזרחי""",party_name_exact,district_verdict_stage_media,2011-09-11,2011-10-18
+7285723118b5fa9344498d77,HUGGINGFACE-f281bc7d50f2,"""עואג'י אבו זעילה""",party_name_exact,appeal_stage_pre_decision_media,2016-12-15,2017-05-27
+f3e0e42db935c8f31e69ad41,HUGGINGFACE-f281bc7d50f2,"""עואג'י אבו זעילה""",party_name_exact,district_verdict_stage_media,2016-12-08,2017-01-14
+b71ce2beb47f8930f1988cd2,HUGGINGFACE-f2860d69af94,"""נור אל סאנע""",party_name_exact,appeal_stage_pre_decision_media,2018-01-23,2019-03-18
+c2b3f104b667e47e762c9140,HUGGINGFACE-f2860d69af94,"""נור אל סאנע""",party_name_exact,district_verdict_stage_media,2018-01-16,2018-02-22
+e919012e4eaba0d9246c9c9f,HUGGINGFACE-f3ad25565ecf,"""מוחמד אלעוקה""",party_name_exact,appeal_stage_pre_decision_media,2008-07-09,2010-06-28
+2603f2b5cc121b1f50832f22,HUGGINGFACE-f3ad25565ecf,"""מוחמד אלעוקה""",party_name_exact,district_verdict_stage_media,2008-07-02,2008-08-08
+af23ad598b75122ba159ebea,HUGGINGFACE-f43158b66185,"""מנהל אסעד""",party_name_exact,appeal_stage_pre_decision_media,2016-07-03,2019-01-06
+7912fb6e5ca5b77bfb5239fd,HUGGINGFACE-f43158b66185,"""מנהל אסעד""",party_name_exact,district_verdict_stage_media,2016-06-26,2016-08-02
+98b2fd30fd93ec5f68e8b04a,HUGGINGFACE-f445843cb5db,"""נאשד בסול""",party_name_exact,appeal_stage_pre_decision_media,2012-11-29,2014-05-06
+9ed7d812cf998db526a19638,HUGGINGFACE-f445843cb5db,"""נאשד בסול""",party_name_exact,district_verdict_stage_media,2012-11-22,2012-12-29
+9effc74e89eb3bc90a5b33bf,HUGGINGFACE-f566cc01d722,"""מיכה מכלוף פרץ""",party_name_exact,appeal_stage_pre_decision_media,2017-02-22,2019-01-29
+be672977457e6505dab7abb2,HUGGINGFACE-f566cc01d722,"""מיכה מכלוף פרץ""",party_name_exact,district_verdict_stage_media,2017-02-15,2017-03-24
+647cbea85a022acbc21027bc,HUGGINGFACE-f666f63ae4db,"""שירי סובול""",party_name_exact,appeal_stage_pre_decision_media,2017-09-19,2018-08-10
+8330a1af3517ed89a3595144,HUGGINGFACE-f666f63ae4db,"""שירי סובול""",party_name_exact,district_verdict_stage_media,2017-09-12,2017-10-19
+cfb82ffd2a4f6b7e0cd5d824,HUGGINGFACE-f68f4bf76655,"""איהאב נמר""",party_name_exact,appeal_stage_pre_decision_media,2012-10-24,2016-01-31
+02af1a3434ff5fa49d4cdfb8,HUGGINGFACE-f68f4bf76655,"""איהאב נמר""",party_name_exact,district_verdict_stage_media,2012-10-17,2012-11-23
+d0e5ea0a90cca667ae0c40e8,HUGGINGFACE-f71ee8953507,"""שגיא גמליאל""",party_name_exact,appeal_stage_pre_decision_media,2012-01-29,2013-08-14
+6d4e297c44418ba164563b2a,HUGGINGFACE-f71ee8953507,"""שגיא גמליאל""",party_name_exact,district_verdict_stage_media,2012-01-22,2012-02-28
+5012999003d266126b486e2c,HUGGINGFACE-f780e9c26687,"""אניס עמאש""",party_name_exact,appeal_stage_pre_decision_media,2011-11-10,2015-06-08
+b7208419c88e57e3f6f89a8f,HUGGINGFACE-f780e9c26687,"""אניס עמאש""",party_name_exact,district_verdict_stage_media,2011-11-03,2011-12-10
+958fabf6cd18de759b75612d,HUGGINGFACE-f87a0d3e1c72,"""אבנר טווק""",party_name_exact,appeal_stage_pre_decision_media,2014-12-29,2016-06-06
+801f2872dd5e442d494467be,HUGGINGFACE-f87a0d3e1c72,"""אבנר טווק""",party_name_exact,district_verdict_stage_media,2014-12-22,2015-01-28
+cd2640e0220e08be5428c18e,HUGGINGFACE-f95607aa864f,"""עדן אוחיון""",party_name_exact,appeal_stage_pre_decision_media,2014-03-09,2015-10-06
+26ed726964143dabbf8b2b08,HUGGINGFACE-f95607aa864f,"""עדן אוחיון""",party_name_exact,district_verdict_stage_media,2014-03-02,2014-04-08
+2658a28f6827de1753b29844,HUGGINGFACE-f9bc50d81e60,"""אבו שנדי חוסאם""",party_name_exact,appeal_stage_pre_decision_media,2014-01-22,2015-01-31
+3fc5b0681aecf4050ccd0409,HUGGINGFACE-f9bc50d81e60,"""אבו שנדי חוסאם""",party_name_exact,district_verdict_stage_media,2014-01-15,2014-02-21
+a66cc83f8fb38f7e85b79d75,HUGGINGFACE-f9fb8a26e3dc,"""נתנאל קורש""",party_name_exact,appeal_stage_pre_decision_media,2009-12-14,2011-01-29
+3816981db28263da9d4b8353,HUGGINGFACE-f9fb8a26e3dc,"""נתנאל קורש""",party_name_exact,district_verdict_stage_media,2009-12-07,2010-01-13
+464994e62308a20244e63ee4,HUGGINGFACE-fa42fcfab294,"""עמית ז'ן-קלוד טוויל""",party_name_exact,appeal_stage_pre_decision_media,2014-09-15,2015-11-21
+55635a14e84406fade8a3483,HUGGINGFACE-fa42fcfab294,"""עמית ז'ן-קלוד טוויל""",party_name_exact,district_verdict_stage_media,2014-09-08,2014-10-15
+f6caf51c8984df5099ea3e23,HUGGINGFACE-fb004ce71c59,"""אזייב גוד""",party_name_exact,appeal_stage_pre_decision_media,2009-03-03,2010-12-13
+8ef75acbd085a474ca1f293a,HUGGINGFACE-fb004ce71c59,"""אזייב גוד""",party_name_exact,district_verdict_stage_media,2009-02-24,2009-04-02
+cd2c854cd2cfe5ebb3e2bee3,HUGGINGFACE-fb17e751e15f,"""מחמד מפארגה""",party_name_exact,appeal_stage_pre_decision_media,2014-03-10,2015-10-28
+3b505d8e6c52fd4e7350a01f,HUGGINGFACE-fb17e751e15f,"""מחמד מפארגה""",party_name_exact,district_verdict_stage_media,2014-03-03,2014-04-09
+32f50c2edc97c722c8414c88,HUGGINGFACE-fbb80e8aa6ec,"""איהאב זידאן""",party_name_exact,appeal_stage_pre_decision_media,2007-12-02,2013-02-19
+927120e79ab3f9cfdec06687,HUGGINGFACE-fbb80e8aa6ec,"""איהאב זידאן""",party_name_exact,district_verdict_stage_media,2007-11-25,2008-01-01
+1e70631972d9d38bdd61850a,HUGGINGFACE-fcc7634808b7,"""ניר ניסים חזיזה""",party_name_exact,appeal_stage_pre_decision_media,2011-11-13,2012-11-14
+c1a2fd254403880ea38db87b,HUGGINGFACE-fcc7634808b7,"""ניר ניסים חזיזה""",party_name_exact,district_verdict_stage_media,2011-11-06,2011-12-13
+709e085c7f612a76695799f4,HUGGINGFACE-fcd2e2fadba7,"""פרחאן אלסאנע""",party_name_exact,appeal_stage_pre_decision_media,2018-06-21,2020-07-25
+58d3fa87c3ecd4347481abea,HUGGINGFACE-fcd2e2fadba7,"""פרחאן אלסאנע""",party_name_exact,district_verdict_stage_media,2018-06-14,2018-07-21
+eec357d02208176ca10097c3,HUGGINGFACE-fdcbba5c2b39,"""אברהם כהן""",party_name_exact,appeal_stage_pre_decision_media,2010-05-31,2010-08-07
+85c546d88d6b1a7c52c01dad,HUGGINGFACE-fdcbba5c2b39,"""אברהם כהן""",party_name_exact,district_verdict_stage_media,2010-05-24,2010-06-30
+423f97f535d7b46a830acc55,HUGGINGFACE-fdf8bb131075,"""ניקולאי בונר""",party_name_exact,appeal_stage_pre_decision_media,2007-05-06,2013-05-29
+f2a6861378e37d8c4861b994,HUGGINGFACE-fdf8bb131075,"""ניקולאי בונר""",party_name_exact,district_verdict_stage_media,2007-04-29,2007-06-05
+d16a8093467f515d8833f942,HUGGINGFACE-fe313c45f127,"""יוחנן ברקאי""",party_name_exact,appeal_stage_pre_decision_media,2007-10-09,2010-06-29
+f3ccfe1869fa15f2f0c2ef0f,HUGGINGFACE-fe313c45f127,"""יוחנן ברקאי""",party_name_exact,district_verdict_stage_media,2007-10-02,2007-11-08
+146fa946d42f2d75ab75fd09,HUGGINGFACE-ffc2037834c5,"""שמואל לוי""",party_name_exact,appeal_stage_pre_decision_media,2009-06-21,2010-11-24
+7cad0b6289eeb6a5ba524060,HUGGINGFACE-ffc2037834c5,"""שמואל לוי""",party_name_exact,district_verdict_stage_media,2009-06-14,2009-07-21

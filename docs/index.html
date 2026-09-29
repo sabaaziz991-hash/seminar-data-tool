@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>כלי נתוני הסמינריון</title>
+<meta name="description" content="הורדת כלי התוכנה לשחזור הניתוח של הסמינריון: בולטות תקשורתית מוקדמת והתערבות ערעורית בערעורי רצח והמתה, 2010-2020.">
+<style>
+  :root {
+    --bg: #f6f7f9; --surface: #ffffff; --ink: #1c2230; --muted: #5b6475; --line: #e2e5eb;
+    --accent: #1f4e8c; --accent-ink: #ffffff; --ok: #1e7a4f; --ok-bg: #e8f5ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11151c; --surface: #1a202b; --ink: #e8ebf1; --muted: #a3acbd; --line: #2c3444;
+      --accent: #6ea2e8; --accent-ink: #0d1420; --ok: #7fd3a8; --ok-bg: #173226;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Segoe UI", Arial, "Noto Sans Hebrew", sans-serif; font-size: 17px; line-height: 1.65;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 56px; }
+  header h1 { font-size: 2rem; margin: 0 0 6px; }
+  header p { margin: 0; color: var(--muted); }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+    padding: 22px 24px; margin-top: 22px;
+  }
+  h2 { font-size: 1.2rem; margin: 0 0 10px; }
+  .download {
+    display: inline-block; background: var(--accent); color: var(--accent-ink); text-decoration: none;
+    font-weight: 600; font-size: 1.1rem; padding: 13px 26px; border-radius: 10px; margin: 6px 0 8px;
+  }
+  .download:hover, .download:focus-visible { filter: brightness(1.08); }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: 0; }
+  ol, ul { margin: 0; padding-inline-start: 22px; }
+  li { margin: 4px 0; }
+  .ok { background: var(--ok-bg); color: var(--ok); border-radius: 8px; padding: 10px 14px; margin-top: 12px; }
+  a { color: var(--accent); }
+  code, .ltr { direction: ltr; unicode-bidi: isolate; }
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>כלי נתוני הסמינריון</h1>
+    <p>בולטות תקשורתית מוקדמת והתערבות ערעורית: ערעורי רצח והמתה בבית המשפט העליון בישראל, 2010-2020</p>
+    <p>עזיז סאבא · סמינריון מחקרי, החוג לקרימינולוגיה, המכללה האקדמית עמק יזרעאל</p>
+  </header>
+
+  <section class="card">
+    <h2>הורדה</h2>
+    <a class="download" href="https://github.com/sabaaziz991-hash/seminar-data-tool/releases/latest/download/SeminarDataTool.zip">הורדת הכלי (ZIP)</a>
+    <p class="meta">כ-108MB · Windows 10 או 11, ‏64 סיביות · אין צורך בהתקנה, ב-Python או ב-SPSS</p>
+  </section>
+
+  <section class="card">
+    <h2>מה הכלי עושה</h2>
+    <ul>
+      <li><strong>שחזור הניתוח:</strong> מחשב מחדש את כל הלוחות של פרק הממצאים מקובץ הנתונים, ומשווה אוטומטית כל מספר לערכים שבעבודה.</li>
+      <li><strong>צפייה בנתונים:</strong> כל אחד מ-497 התיקים, כולל הפרסומים שנמצאו, תוצאת הערעור וטקסט פסק הדין.</li>
+      <li><strong>ייצוא:</strong> התוצאות ל-Excel, והנתונים עם קובצי פקודות ל-SPSS.</li>
+      <li><strong>ייבוא מחדש:</strong> הורדה חוזרת של נתוני בית המשפט מהמאגר הפתוח וחיפוש חוזר של הפרסומים לתיקים נבחרים.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>הפעלה</h2>
+    <ol>
+      <li>להוריד את קובץ ה-ZIP.</li>
+      <li>לחלץ את כל התוכן לתיקייה: לחצן ימני על הקובץ ← „חלץ הכל”.</li>
+      <li>בתיקייה שחולצה, ללחוץ פעמיים על <span class="ltr">הפעלה.bat</span> או על <span class="ltr">SeminarDataTool.exe</span>. הכלי נפתח בדפדפן.</li>
+      <li>אם Windows מציג את ההודעה „Windows protected your PC”: ללחוץ „More info” ואז „Run anyway”. ההודעה מופיעה כי התוכנה אינה חתומה דיגיטלית.</li>
+      <li>במסך „שחזור הניתוח” לבדוק את הסימון הירוק.</li>
+    </ol>
+    <p class="ok">✓ זהה לנתוני העבודה: 342 מתוך 342 ערכים זהים לגיליון המספרים המאושר של העבודה (פלט SPSS 27).</p>
+  </section>
+
+  <section class="card">
+    <h2>מסמכים ומקור</h2>
+    <ul>
+      <li><a href="user-guide.pdf">מדריך למשתמש (PDF, 4 עמודים)</a></li>
+      <li><a href="https://github.com/sabaaziz991-hash/seminar-data-tool">קוד המקור והנתונים ב-GitHub</a></li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>על הנתונים</h2>
+    <p>
+      פסקי הדין נלקחו מהמאגר הפתוח של פסקי בית המשפט העליון
+      (<span class="ltr">LevMuchnik/SupremeCourtOfIsrael</span>, Hugging Face), והפרסומים אותרו ב-Google News ובמפתח בית אריאלה לעיתונות.
+      כתבות שבבדיקה הידנית נמצאו כלא שייכות לתיק, בעיקר כתבות על אדם אחר בעל אותו שם, נספרות בכלי אך מוצגות בו בלי כותרת וקישור.
+    </p>
+  </section>
+
+  <footer>הכלי פועל במחשב המקומי בלבד. הוא אינו שולח נתונים לשום מקום, מלבד הלחצנים של מסך הייבוא מחדש.</footer>
+</main>
+</body>
+</html>
