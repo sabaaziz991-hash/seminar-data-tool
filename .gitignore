@@ -6,3 +6,4 @@ dist/
 *.zip
 תוצרים/
 !docs/SeminarDataTool.zip
+!docs/data-and-code.zip

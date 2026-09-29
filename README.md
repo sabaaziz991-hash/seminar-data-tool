@@ -8,6 +8,8 @@
 **הורדה ישירה:** [SeminarDataTool.zip](https://sabaaziz991-hash.github.io/seminar-data-tool/SeminarDataTool.zip)
 (כ-62MB, ‏Windows 10 או 11, ‏64 סיביות)
 
+**הנתונים, קובצי SPSS והקוד של העבודה:** [data-and-code.zip](https://sabaaziz991-hash.github.io/seminar-data-tool/data-and-code.zip) (כ-1.6MB; קובץ הנתונים, קובצי הפקודות והפלט של SPSS, קוד הניתוח ותיעוד החלטות הקידוד, כמתואר בנספח ד בעבודה)
+
 ## מה הכלי עושה
 - **הורדת הנתונים מהמקור:** הורדה ישירה של מאגר פסקי הדין הפתוח של בית המשפט העליון (Hugging Face).
 - **בניית אוכלוסיית המחקר:** אותם סינונים של העבודה (ע"פ, פסק דין סופי בשנים 2010-2020, עבירות המתה, נאשם מערער, החרגת מערערים בשם חסוי), עם הספירה אחרי כל שלב והשוואה לעבודה.
@@ -37,7 +39,7 @@
 | `src/tests/` | בדיקות אוטומטיות, כולל השוואת מדדי הטקסט לנתוני המחקר |
 | `src/build.py`, `src/SeminarDataTool.spec` | בניית החבילה (PyInstaller) |
 | `data/` | נתוני המחקר שהכלי משתמש בהם |
-| `docs/` | דף ההורדה, קובץ התוכנה (`SeminarDataTool.zip`) והמדריך למשתמש |
+| `docs/` | דף ההורדה, קובץ התוכנה (`SeminarDataTool.zip`), המדריך למשתמש, והנתונים והקוד של העבודה (`data-and-code.zip`) |
 
 ## English summary
 A portable Windows tool (Hebrew UI, runs in the browser) that replicates the automatic part of the study's data-collection
