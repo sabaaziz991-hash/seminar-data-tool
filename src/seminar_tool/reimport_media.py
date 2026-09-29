@@ -1,14 +1,18 @@
-"""Screen ג, step 2: re-run the exact-name Google News RSS queries for a small, user-selected set of cases.
+"""Screen ב, step 2: re-run the exact-name Google News RSS queries for user-selected cases, and classify every item
+with the automatic rules of the original pipeline (window, duplicate, legal-context / off-topic terms).
 
 Polite by design: one request at a time, >= 3 s (default 5 s) + random jitter between requests,
 exponential back-off on 429/5xx, the job stops after repeated errors, and a stop button.
 Results are saved after every query, so a stopped run resumes where it left off.
-Only items dated inside the case's pre-decision window are kept. Google News results change over time,
-so the curated snapshot of the study remains the reference.
+Only items dated inside the case's pre-decision window are kept. The automatic rules are copied verbatim into
+court_rules.py (suggested_name_only_article_status); items they cannot decide were reviewed by hand in the study, a
+step the tool does not replay. Google News results change over time, so the curated snapshot of the study remains
+the reference.
 """
 from __future__ import annotations
 
 import datetime as dt
+import html
 import json
 import random
 import re
@@ -22,7 +26,8 @@ from typing import Any
 import pandas as pd
 
 from . import paths
-from .court_rules import google_news_date_operators, parse_rfc822_date
+from .court_rules import (canonicalize_url, google_news_date_operators, normalize_title, parse_rfc822_date,
+                          suggested_name_only_article_status)
 from .jobs import Job
 
 MIN_DELAY = 3.0
@@ -57,8 +62,10 @@ def parse_rss(xml_text: str, start: str, end: str) -> list[dict[str, Any]]:
         except (TypeError, ValueError, IndexError):
             date = ""
         src = item.find("source")
+        snippet = re.sub(r"<[^>]+>", " ", html.unescape(item.findtext("description") or ""))
         out.append({"title": (item.findtext("title") or "").strip(), "url": (item.findtext("link") or "").strip(),
                     "source": (src.text or "").strip() if src is not None else "", "published_date": date,
+                    "snippet": re.sub(r"\s+", " ", snippet).strip(),
                     "in_window": bool(date) and s <= dt.date.fromisoformat(date) <= e})
     return out
 
@@ -139,8 +146,39 @@ def run(job: Job, cases: list[dict[str, Any]], delay: float) -> dict[str, Any]:
     return {"done": len(todo)}
 
 
+AUTO_LABELS = {
+    "included": "נכלל אוטומטית",
+    "excluded_wrong_case": "הוחרג אוטומטית",
+    "pending_review": "לבדיקה ידנית",
+    "excluded_duplicate": "הוחרג — כפילות",
+}
+
+
+def classify(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """The automatic curation rules of the original pipeline (appeals_media_study.ingest_media_rows) for the items of
+    one exact-name query, already limited to the window: duplicate (same canonical link, or same source + title + date)
+    -> excluded_duplicate; otherwise suggested_name_only_article_status: strong off-topic terms -> excluded_wrong_case,
+    legal / case context terms -> included, neither -> pending_review (decided by hand in the study)."""
+    seen: set[str] = set()
+    out = []
+    for it in items:
+        key = canonicalize_url(it.get("url", "")) or "|".join(
+            [str(it.get("source", "")).casefold(), normalize_title(it.get("title", "")), it.get("published_date", "")])
+        if key in seen:
+            status, note = "excluded_duplicate", "duplicate of an earlier item of the same query"
+        else:
+            seen.add(key)
+            row = {"title": it.get("title", ""), "snippet": it.get("snippet", ""), "source_name": it.get("source", ""),
+                   "source": it.get("source", ""), "article_url": it.get("url", ""), "url": it.get("url", "")}
+            status, note = suggested_name_only_article_status(row, {"query_type": "party_name_exact"})
+        terms = note.rsplit(": ", 1)[1] if ": " in note and status in ("included", "excluded_wrong_case") else ""
+        out.append({**it, "auto_status": status, "auto_label": AUTO_LABELS.get(status, status), "auto_terms": terms})
+    return out
+
+
 def summary(sd: Any, case_ids: list[str] | None = None) -> list[dict[str, Any]]:
-    """Per-case comparison: items found now (inside the window) vs. the curated items of the study."""
+    """Per-case comparison: items found now (inside the window, with the automatic classification) vs. the curated
+    items of the study."""
     store = load_store()
     by_case: dict[str, list[dict[str, Any]]] = {}
     for key, rec in store.items():
@@ -153,18 +191,17 @@ def summary(sd: Any, case_ids: list[str] | None = None) -> list[dict[str, Any]]:
     for cid, recs in by_case.items():
         o = orig[(orig.case_id == cid) & (orig.curation_status == "included")]
         otitles = {norm_title(t) for t in o.title}
-        now_items, seen = [], set()
+        now_items = []
         for rec in recs:
-            for it in rec.get("items", []):
-                if it["url"] in seen:
-                    continue
-                seen.add(it["url"])
+            for it in classify(rec.get("items", [])):
                 now_items.append({**it, "window_label": rec.get("window_label", ""),
                                   "also_in_original": norm_title(it["title"]) in otitles})
         errors = [r.get("error") for r in recs if r.get("status") == "error"]
+        counts = {k: sum(i["auto_status"] == k for i in now_items) for k in AUTO_LABELS}
         out.append({"case_id": cid, "case_number": recs[0].get("case_number", ""), "query": recs[0].get("query", ""),
                     "queries_done": sum(r.get("status") == "ok" for r in recs), "errors": errors,
                     "now_count": len(now_items), "overlap": sum(i["also_in_original"] for i in now_items),
+                    "auto_counts": counts,
                     "original_count": len(o), "now_items": sorted(now_items, key=lambda x: x["published_date"]),
                     "original_items": o[["title", "source", "published_date", "url"]].sort_values("published_date").to_dict(orient="records")})
     return sorted(out, key=lambda r: r["case_number"])
@@ -176,6 +213,7 @@ def export_rows(sd: Any) -> pd.DataFrame:
         for it in c["now_items"]:
             rows.append({"מספר הליך": c["case_number"], "case_id": c["case_id"], "שאילתה": c["query"], "חלון": it["window_label"],
                          "כותרת": it["title"], "כלי תקשורת": it["source"], "תאריך פרסום": it["published_date"], "קישור": it["url"],
+                         "סיווג אוטומטי": it["auto_label"], "מונחים שנמצאו": it["auto_terms"],
                          "נמצא גם בתמונת המצב המקורית": "כן" if it["also_in_original"] else "לא"})
         if not c["now_items"]:
             rows.append({"מספר הליך": c["case_number"], "case_id": c["case_id"], "שאילתה": c["query"],

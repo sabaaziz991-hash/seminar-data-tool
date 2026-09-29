@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-25T16:02:29",
+  "built_at": "2026-09-29T07:43:48",
   "files": {
     "study_dataset_final.csv": {
       "source": "02_נתונים\\study_dataset_final.csv",
@@ -13,8 +13,8 @@
     },
     "media_google.csv": {
       "source": "02_נתונים\\FINAL_STUDY_DATA_2010_2020_PRIMO_MANUAL_REVIEW_2026-05-27_113917\\01_final_dataset\\selected_google_articles_district_plus_appeal_and_appeal_only.csv",
-      "bytes": 259214,
-      "sha256": "7916b56d7958461ecf94b60769c361452cab81f13559fd75e1859821260c31bd"
+      "bytes": 245053,
+      "sha256": "3c0dc9d560b6ff5d16a7cf1418f8f1d43d4c9b67d847f751a11e87755aeca020"
     },
     "queries_google.csv": {
       "source": "02_נתונים\\FINAL_STUDY_DATA_2010_2020_PRIMO_MANUAL_REVIEW_2026-05-27_113917\\01_final_dataset\\selected_google_queries_district_plus_appeal_and_appeal_only.csv",
@@ -23,8 +23,8 @@
     },
     "media_primo.csv": {
       "source": "02_נתונים\\FINAL_STUDY_DATA_2010_2020_PRIMO_MANUAL_REVIEW_2026-05-27_113917\\01_final_dataset\\primo_advanced_api_articles_2010_2020_manual_reviewed.csv",
-      "bytes": 33640,
-      "sha256": "74a70aad039586de32f7204d5aa70be343c26a2a9b7b3caf7026976788db6e1d"
+      "bytes": 33613,
+      "sha256": "5342b259fdfd79f8f02879b35166149b0cc735f137a337a4bacf39d7ad21d332"
     },
     "judgments.parquet": {
       "source": "02_נתונים\\main_judgments_497.parquet",
@@ -36,35 +36,20 @@
       "bytes": 165036,
       "sha256": "449ec65dc2932c9bacb9ece0bfaf12f3fbaa0e936c630ab92bc68b6c807597f4"
     },
+    "mention_candidates_reference.csv": {
+      "source": "02_נתונים\\media_mention_candidates.csv",
+      "bytes": 97467,
+      "sha256": "792ef0634969b00b28abdc27cde1b457b7556db0a290222bf90296268a8c0aeb"
+    },
     "outcome_manual_review.csv": {
       "source": "02_נתונים\\outcome_manual_review_117.csv",
       "bytes": 1242158,
       "sha256": "bcd0db29399ceeca768a6650faf117036564126269692389e37339b4c58ee928"
     },
-    "spss/01_import_and_labels.sps": {
-      "source": "03_ניתוח\\spss\\01_import_and_labels.sps (paths -> placeholder)",
-      "bytes": 6885,
-      "sha256": "0f0fe240449e5c314d142d13157d9477741fd45828f06dc6d95a1c43884835e2"
-    },
-    "spss/02_analysis.sps": {
-      "source": "03_ניתוח\\spss\\02_analysis.sps (paths -> placeholder)",
-      "bytes": 8066,
-      "sha256": "43259dd2b3f65ae11b5a97c00811df6803b49cf8aa6f6a7d590f5855a333c563"
-    },
     "flow_reference.json": {
       "source": "03_ניתוח\\flow_counts.json + results_master.md",
       "bytes": 1123,
       "sha256": "eecc5162612ab1b18218bea659d065456ad03f91e1f69a73aa83f4a81a8c5757"
-    },
-    "results_master.md": {
-      "source": "03_ניתוח\\results_master.md",
-      "bytes": 12146,
-      "sha256": "51bee1b0655c815834a5d38ca0d6ec9dc5d36fb0fecfb4faa11c369946901b81"
-    },
-    "golden_values.json": {
-      "source": "03_ניתוח/results_master.md (SPSS 27 output)",
-      "bytes": 46247,
-      "sha256": "4eb9f49abf50f7477f83d72e14416239de41d50d538e2c834e10ae1f6c48917b"
     }
   }
 }

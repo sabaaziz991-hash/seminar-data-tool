@@ -2,13 +2,12 @@
 
 Runs a copy of the packaged tool from a neutral folder (C:\\Users\\Public\\SeminarDataTool, so no personal paths
 appear in the pictures), prepares the screens (population rebuild from a local cases_all.parquet, one Google News
-re-query, an uploaded file, a saved export) and captures them with Playwright's Chromium.
+re-query with the automatic classification, the text measures) and captures them with Playwright's Chromium.
 
     python src/guide/take_screenshots.py [path\\to\\cases_all.parquet]
 """
 from __future__ import annotations
 
-import io
 import json
 import shutil
 import sys
@@ -21,6 +20,7 @@ from winutil import PKG, clean_env, copy_package, get_json, heartbeat, post, sta
 
 OUT = HERE / "screens"
 CASE = "HUGGINGFACE-00ab1bad61ad"
+MEDIA_CASE = "HUGGINGFACE-c0f5ef125985"   # a case whose live results are all about the case itself
 PUBLIC = Path(r"C:\Users\Public")
 SAVE_DIR = PUBLIC / "Documents" / "SeminarDataTool"
 
@@ -31,15 +31,9 @@ def prepare(base: str, parquet: str | None) -> None:
         post(base + "/api/court/build", {"path": parquet})
         while get_json(base + "/api/court/status")["build"]["state"] == "running":
             time.sleep(2)
-    post(base + "/api/media/start", {"case_ids": [CASE], "delay": 5})
+    post(base + "/api/media/start", {"case_ids": [MEDIA_CASE], "delay": 5})
     while get_json(base + "/api/media/status")["job"]["state"] == "running":
         time.sleep(2)
-    import pandas as pd
-
-    buf = io.BytesIO()
-    pd.read_csv(PKG / "data" / "study_dataset_final.csv").to_excel(buf, index=False)
-    post(base + "/api/upload", buf.getvalue(), {"X-Requested-With": "SeminarDataTool",
-                                                  "X-Filename": "%D7%A0%D7%AA%D7%95%D7%A0%D7%99%D7%9D_%D7%9E%D7%AA%D7%95%D7%A7%D7%A0%D7%99%D7%9D.xlsx"})
 
 
 def shoot(base: str) -> None:
@@ -70,29 +64,23 @@ def shoot(base: str) -> None:
         page.evaluate("document.querySelector('mark.ref').scrollIntoView({block: 'center'})")
         page.evaluate("window.scrollBy(0, -120)")
         shot("04_case_judgment")
-        page.goto(base + "/#stats")
-        page.wait_for_selector(".banner.ok", timeout=60000)
-        page.click("text=ייצוא התוצאות ל-Excel…")
-        page.wait_for_selector(".saved", timeout=30000)
-        shot("05_stats_top")
-        page.evaluate("document.getElementById('sec-main').scrollIntoView()")
-        page.evaluate("window.scrollBy(0, -70)")
-        shot("06_stats_main")
-        page.click("text=ייצוא ל-SPSS")
-        page.evaluate("document.getElementById('spssPanel').scrollIntoView({block: 'center'})")
-        shot("07_stats_spss")
         page.goto(base + "/#reimport")
         page.wait_for_selector("text=מקור הנתונים")
         if page.locator("text=תוצאה: שלבי הסינון").count():
             page.evaluate("[...document.querySelectorAll('h2')].find(x => x.textContent.includes('תוצאה')).scrollIntoView()")
             page.evaluate("window.scrollBy(0, -70)")
             shot("09_reimport_flow")
-        page.click("text=שלב 2 · ידיעות Google News")
+        page.click("text=שלב 2 · Google News וסיווג הכתבות")
         page.wait_for_selector("text=בחירת תיקים")
+        page.evaluate("const d = document.querySelector('details.card'); d.open = true; d.scrollIntoView()")
+        page.evaluate("window.scrollBy(0, -70)")
         shot("10_reimport_media")
-        page.goto(base + "/#upload")
-        page.wait_for_selector("text=בדיקת הקובץ")
-        shot("12_upload")
+        page.click("text=שלב 3 · מדדי הטקסט")
+        page.click("text=חישוב המדדים והשוואה למחקר")
+        page.wait_for_selector(".banner.ok", timeout=120000)
+        page.evaluate("document.querySelector('.banner.ok').scrollIntoView()")
+        page.evaluate("window.scrollBy(0, -70)")
+        shot("11_reimport_text")
         browser.close()
 
 

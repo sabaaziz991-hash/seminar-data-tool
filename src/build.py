@@ -122,7 +122,7 @@ def main() -> None:
     if args.refresh_data:
         run([py, str(SRC / "prepare_data.py")])
     if not args.skip_tests and not args.package_only:
-        run([py, "-m", "pytest", "tests/test_stats_golden.py", "tests/test_server_smoke.py", "-q", "-p", "no:cacheprovider"], cwd=SRC)
+        run([py, "-m", "pytest", "tests/test_method.py", "tests/test_server_smoke.py", "-q", "-p", "no:cacheprovider"], cwd=SRC)
     if not args.package_only:
         run([py, "-m", "PyInstaller", "SeminarDataTool.spec", "--noconfirm", "--clean",
              "--distpath", str(PYI_DIST), "--workpath", str(BUILD / "pyi_work")], cwd=SRC)

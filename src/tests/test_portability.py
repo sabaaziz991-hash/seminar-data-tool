@@ -1,6 +1,6 @@
 """Portability ("any Windows 10/11 computer, any folder") tests of the packaged tool (dist\\SeminarDataTool).
 
-* no machine-specific paths anywhere in the package (files, compressed Python archives, templates, JSON, guide)
+* no machine-specific paths anywhere in the package (files, compressed Python archives, JSON, guide)
 * all DLLs are bundled or part of Windows (no VC++ redistributable / Python / .NET install needed except the
   .NET Framework 4 that ships with Windows 10/11 for the small launcher)
 * runs from C:\\Users\\Public\\<Hebrew folder with spaces> and from another drive
@@ -101,12 +101,6 @@ def _pdf_streams(pdf: bytes) -> list[bytes]:
     return out
 
 
-def test_spss_templates_have_no_path() -> None:
-    for sps in (PKG / "data" / "spss").glob("*.sps"):
-        txt = sps.read_text(encoding="utf-8")
-        assert "FILE HANDLE root /NAME='{{SPSS_FOLDER}}'." in txt and ":/" not in txt.replace("http://", "")
-
-
 # ---------------------------------------------------------------- 2. DLL dependencies
 def test_all_dll_dependencies_are_bundled_or_windows() -> None:
     import pefile
@@ -150,7 +144,7 @@ def _run_and_check(dest: Path, **kw) -> None:
     try:
         info = get_json(base + "/api/info")
         assert Path(info["root_dir"]) == dest and Path(info["output_dir"]) == dest / "תוצרים"
-        assert get_json(base + "/api/stats?source=study")["golden"]["all_ok"]
+        assert get_json(base + "/api/text/measures")["all_ok"]
         assert get_json(base + "/api/case?id=HUGGINGFACE-00ab1bad61ad")["card"]["judgment"]["available"]
     finally:
         assert stop_tool(base, pid) == 0
@@ -207,7 +201,7 @@ def test_runs_with_stripped_environment() -> None:
         assert not any(k.upper().startswith(("PYTHON", "CONDA", "HF_", "VIRTUAL_ENV")) for k in env)
         base, pid = start_tool(dest, how, env=env)
         try:
-            assert get_json(base + "/api/stats?source=study")["golden"]["all_ok"]
+            assert get_json(base + "/api/text/measures")["all_ok"]
             res = post(base + "/api/save", {"kind": "study_xlsx"})
             assert Path(res["path"]).exists()
         finally:
@@ -239,7 +233,7 @@ def test_read_only_folder_uses_documents_fallback() -> None:
             assert Path(info["output_dir"]) == fallback_root / "תוצרים"
             assert "לא ניתן לשמור קבצים בתיקיית התוכנה" in info["output_reason"]
             assert (fallback_root / "תוצרים" / "log.txt").exists()
-            assert get_json(base + "/api/stats?source=study")["golden"]["all_ok"]
+            assert get_json(base + "/api/text/measures")["all_ok"]
         finally:
             assert stop_tool(base, pid) == 0
         assert not (dest / "תוצרים").exists()
@@ -362,10 +356,10 @@ def test_page_runs_in_browser(browser: str) -> None:
     base, pid = start_tool(dest, "launcher")
     heartbeat(base, "test-keepalive")
     if browser == "Firefox":
-        cmd = [exe, "-headless", "-no-remote", "-profile", str(profile), base + "/#stats"]
+        cmd = [exe, "-headless", "-no-remote", "-profile", str(profile), base + "/#reimport"]
     else:
         cmd = [exe, "--headless=new", "--no-first-run", "--no-default-browser-check", "--disable-gpu",
-               f"--user-data-dir={profile}", base + "/#stats"]
+               f"--user-data-dir={profile}", base + "/#reimport"]
     br = subprocess.Popen(cmd)
     try:
         t0 = time.time()

@@ -112,7 +112,7 @@ $("#closeApp").addEventListener("click", async () => {
 });
 
 // ------------------------------------------------------------------ router
-const ROUTES = { home: viewHome, cases: viewCases, case: viewCase, stats: viewStats, "stats-upload": viewStats, reimport: viewReimport, upload: viewUpload };
+const ROUTES = { home: viewHome, cases: viewCases, case: viewCase, reimport: viewReimport };
 async function route() {
   clearTimers();
   const hash = location.hash.replace(/^#/, "") || "home";
@@ -150,10 +150,10 @@ function savedLine(path, isFolder) {
 }
 /** Save an export: the program opens the Windows "Save as" dialog (it starts in the last folder used, by default
  *  תוצרים), writes the file, and the status line shows the full path. Without the dialog: browser download. */
-async function saveFileOrDownload(kind, statusEl, source) {
+async function saveFileOrDownload(kind, statusEl) {
   try {
     const r = await fetch("/api/save", { method: "POST", headers: { "X-Requested-With": "SeminarDataTool", "Content-Type": "application/json" },
-      body: JSON.stringify({ kind, source: source || "study" }) }).then((x) => x.json());
+      body: JSON.stringify({ kind }) }).then((x) => x.json());
     if (r.fallback) { download(r.href); statusEl.replaceChildren(h("span", { class: "muted" }, r.error)); return; }
     if (!r.ok) throw new Error(r.error);
     if (r.cancelled) { statusEl.replaceChildren(h("span", { class: "muted" }, "השמירה בוטלה.")); return; }
@@ -165,7 +165,7 @@ async function saveFileOrDownload(kind, statusEl, source) {
 function saveButton(label, kind, opts = {}) {
   const status = opts.status || h("div", { class: "save-status" });
   const btn = h("button", { class: "btn " + (opts.light ? "btn-light" : ""), title: "בחירת מיקום השמירה בחלון של Windows",
-    onclick: () => { status.replaceChildren(h("span", { class: "loading" }, "נפתח חלון „שמירה בשם” של Windows…")); saveFileOrDownload(kind, status, opts.source); } }, label);
+    onclick: () => { status.replaceChildren(h("span", { class: "loading" }, "נפתח חלון „שמירה בשם” של Windows…")); saveFileOrDownload(kind, status); } }, label);
   return opts.status ? btn : [btn, status];
 }
 
@@ -181,12 +181,10 @@ async function viewHome() {
     h("p", {}, "הכלי מציג את נתוני העבודה הסמינריונית: ערעורים פליליים (ע\"פ) של נאשמים בעבירות רצח והמתה שהוכרעו בבית המשפט העליון בשנים 2010–2020 ",
       `(${fmtInt(INFO.n_main)} ערעורים במדגם הניתוח, ${fmtInt(INFO.n_cases)} בקורפוס המלא). `,
       "המשתנה הבלתי תלוי: האם התפרסמה ידיעה ב-Google News לפני פסק הדין; המשתנה התלוי: האם בית המשפט העליון שינה את תוצאת בית המשפט המחוזי."),
-    helpLine("ארבע אפשרויות עבודה. בחרו אחת מהן — אפשר לחזור לכאן בכל רגע דרך „בית” בסרגל העליון."),
+    helpLine("שתי אפשרויות עבודה. בחרו אחת מהן — אפשר לחזור לכאן בכל רגע דרך „בית” בסרגל העליון."),
     h("div", { class: "home-grid" },
       tile("א", "צפייה בנתוני המחקר", "טבלת כל התיקים עם סינון, וכרטיס מלא לכל תיק: תוצאה, ידיעות, שאילתות וטקסט פסק הדין.", "#cases", false),
-      tile("ב", "שחזור הניתוח הסטטיסטי", "לחיצה אחת מריצה את כל טבלאות העבודה ובודקת שהן זהות למספרים שבעבודה. ייצוא ל-Excel ול-SPSS.", "#stats", false),
-      tile("ג", "ייבוא הנתונים מחדש מהמקורות", "הורדת מאגר פסקי הדין ובניית האוכלוסייה מחדש, וחיפוש חוזר של ידיעות ב-Google News לתיקים נבחרים.", "#reimport", true),
-      tile("ד", "ייבוא קובץ נתונים משלך", "הורדת תבנית Excel, העלאת קובץ משלכם, בדיקת תקינות והרצת אותם ניתוחים על הנתונים שלכם.", "#upload", false),
+      tile("ב", "שחזור שיטת איסוף הנתונים", "הורדת מאגר פסקי הדין ובניית אוכלוסיית המחקר, חיפוש ב-Google News עם הסיווג האוטומטי של הכתבות, וחישוב מדדי הטקסט של פסקי הדין — בכל שלב עם השוואה למחקר.", "#reimport", true),
     ),
     INFO.output_is_default ? null : h("div", { class: "banner warn", id: "fallbackNotice" }, "⚠ ", INFO.output_reason, " ",
       h("strong", {}, "התיקייה החלופית: "), pathEl(INFO.output_dir)),
@@ -320,93 +318,19 @@ async function viewCase(caseId) {
   );
 }
 
-// ------------------------------------------------------------------ ב. statistics
-const SECTION_OF = { desc: "desc", balance: "desc", main: "main", logit: "logit", rob: "robust", attempt: "robust", dose: "dose", ref: "refs", cx: "complexity", mw: "complexity", holm: "holm", power: "power", quality: "quality" };
-async function viewStats(_arg, name) {
-  const source = name === "stats-upload" ? "upload" : "study";
-  view().replaceChildren(h("h1", {}, source === "study" ? "שחזור הניתוח הסטטיסטי" : "ניתוח הקובץ שהעליתם"),
-    h("p", { class: "loading" }, "מחשב את כל הניתוחים… (כמה שניות)"));
-  const data = await api("/api/stats?source=" + source);
-  const res = data.result, gold = data.golden;
-  const bySection = {};
-  if (gold) for (const it of gold.items) {
-    const s = SECTION_OF[it.key.split(".")[0]] || "other";
-    (bySection[s] = bySection[s] || []).push(it);
-  }
-  const goldBanner = gold ? h("div", { class: "banner " + (gold.all_ok ? "ok" : "bad") },
-    h("span", { class: "check" }, gold.all_ok ? "✓" : "✗"),
-    h("span", { class: "big" }, gold.all_ok ? "זהה לנתוני העבודה" : "יש הבדלים מנתוני העבודה"),
-    h("span", {}, `${gold.matched} מתוך ${gold.checked} ערכים זהים לגיליון המספרים המאושר של העבודה (פלט SPSS 27).`),
-    h("span", { class: "spacer" }),
-    h("button", { class: "btn btn-light", onclick: () => $("#goldTable").classList.toggle("hidden") }, "הצגת ההשוואה המלאה"))
-    : h("div", { class: "banner info" }, "ℹ הניתוח הורץ על הקובץ שהעליתם (", data.source_label, "). אין השוואה לנתוני העבודה כי אלה נתונים אחרים.");
-  const goldTable = gold ? h("div", { id: "goldTable", class: "hidden" },
-    table(["ערך", "בעבודה (SPSS)", "חושב עכשיו", "זהה?"], gold.items.map((i) => [i.label, i.expected, i.got, i.ok ? "✓" : "✗"]))) : null;
-  const statsSaveStatus = h("div", { class: "save-status" });
-  const spssPanel = h("div", { class: "card hidden", id: "spssPanel" },
-    h("h3", {}, "ייצוא ל-SPSS"),
-    h("p", {}, "הכלי שומר בתיקייה שתבחרו את קובץ הנתונים (CSV) ואת שני קובצי התחביר של העבודה (‎.sps), כשהנתיבים בתוכם כבר מותאמים לתיקייה. אחר כך פותחים ב-SPSS את 01_import_and_labels.sps ומריצים Run > All, ואז את 02_analysis.sps."),
-    h("label", { class: "field" }, "תיקיית היעד",
-      h("div", { class: "row" }, h("input", { type: "text", class: "wide grow", dir: "ltr", id: "spssFolder", value: INFO.spss_default }),
-        h("button", { class: "btn btn-light", onclick: chooseSpssFolder }, "בחירת תיקייה…"))),
-    h("div", { class: "row", style: "margin-top:.6rem" },
-      h("button", { class: "btn btn-green", onclick: doSpss }, "שמירת הקבצים לתיקייה"), h("span", { id: "spssMsg" })));
-  async function chooseSpssFolder() {
-    const msg = $("#spssMsg");
-    msg.replaceChildren(h("span", { class: "loading" }, "נפתח חלון בחירת תיקייה של Windows…"));
-    try {
-      const r = await post("/api/choose", { what: "spss_folder" });
-      if (r.fallback) { msg.replaceChildren(h("span", { class: "muted" }, r.error)); return; }
-      if (r.cancelled) { msg.replaceChildren(h("span", { class: "muted" }, "הבחירה בוטלה.")); return; }
-      $("#spssFolder").value = r.path;
-      msg.replaceChildren(h("span", { class: "muted" }, "נבחרה תיקייה. לחצו „שמירת הקבצים לתיקייה”."));
-    } catch (e) { msg.replaceChildren(errorBox(e)); }
-  }
-  async function doSpss() {
-    const msg = $("#spssMsg");
-    msg.replaceChildren(h("span", { class: "loading" }, "שומר…"));
-    try {
-      const r = await post("/api/spss_export", { folder: $("#spssFolder").value, source });
-      msg.replaceChildren(savedLine(r.folder, true), h("div", { class: "muted small" }, "קבצים: " + r.files.join(", ")));
-    } catch (e) { msg.replaceChildren(errorBox(e)); }
-  }
-  const toc = h("div", { class: "toc" }, res.sections.map((s) => h("a", { href: "#", onclick: (e) => { e.preventDefault(); document.getElementById("sec-" + s.id).scrollIntoView({ behavior: "smooth" }); } }, s.title)));
-  const sections = res.sections.map((s) => {
-    const items = bySection[s.id] || [];
-    const ok = items.filter((i) => i.ok).length;
-    const badge = items.length ? h("span", { class: "sec-badge " + (ok === items.length ? "ok" : "bad") },
-      ok === items.length ? `✓ זהה לנתוני העבודה (${ok}/${items.length})` : `✗ ${items.length - ok} ערכים שונים`) : null;
-    return h("section", { class: "card", id: "sec-" + s.id },
-      h("div", { class: "row" }, h("h2", {}, s.title), h("span", { class: "spacer" }), badge),
-      helpLine(s.help),
-      s.blocks.map((b) => b.type === "note" ? h("div", { class: "note " + (b.kind === "warn" ? "warn" : "") }, b.text)
-        : table(b.columns, b.rows, { caption: b.caption, cls: "stats" })));
-  });
-  view().replaceChildren(
-    h("h1", {}, source === "study" ? "שחזור הניתוח הסטטיסטי" : "ניתוח הקובץ שהעליתם"),
-    helpLine(source === "study"
-      ? `כל הטבלאות של פרק הממצאים, מחושבות עכשיו מקובץ הנתונים (מדגם ניתוח N=${res.n_main}, קורפוס מלא N=${res.n_full}). הסימון הירוק מאשר שכל מספר זהה למספר שבעבודה.`
-      : `אותם ניתוחים של העבודה, על הקובץ שהעליתם (${res.n_main} שורות במדגם הניתוח, ${res.n_full} בסך הכול).`),
-    goldBanner, goldTable,
-    h("div", { class: "row" },
-      saveButton("ייצוא התוצאות ל-Excel…", "stats_xlsx", { source, status: statsSaveStatus }),
-      h("button", { class: "btn btn-light", onclick: () => $("#spssPanel").classList.toggle("hidden") }, "ייצוא ל-SPSS"),
-      source === "upload" ? h("a", { class: "btn btn-light", href: "#upload" }, "חזרה להעלאת קובץ") : null),
-    statsSaveStatus, spssPanel, toc, ...sections);
-}
-
-// ------------------------------------------------------------------ ג. re-import wizard
+// ------------------------------------------------------------------ ב. method wizard
 let WIZ_STEP = 1;
 async function viewReimport() {
   const steps = h("div", { class: "steps" },
-    [[1, "שלב 1 · נתוני בית המשפט"], [2, "שלב 2 · ידיעות Google News"], [3, "שלב 3 · ייצוא"]].map(([n, t]) =>
+    [[1, "שלב 1 · נתוני בית המשפט"], [2, "שלב 2 · Google News וסיווג הכתבות"], [3, "שלב 3 · מדדי הטקסט"], [4, "שלב 4 · ייצוא"]].map(([n, t]) =>
       h("button", { class: WIZ_STEP === n ? "active" : "", onclick: () => { WIZ_STEP = n; route(); } }, t)));
   const body = h("div");
-  view().replaceChildren(h("h1", {}, "ייבוא הנתונים מחדש מהמקורות"),
-    helpLine("שחזור איסוף הנתונים מהמקור: בניית רשימת התיקים מתוך מאגר פסקי הדין, וחיפוש חוזר של ידיעות. מסך זה דורש חיבור לאינטרנט (חוץ מבנייה מעותק מקומי)."),
+  view().replaceChildren(h("h1", {}, "שחזור שיטת איסוף הנתונים"),
+    helpLine("החלק האוטומטי של שיטת המחקר, בכללים של תוכנת האיסוף המקורית: בניית רשימת התיקים מתוך מאגר פסקי הדין, חיפוש הידיעות ב-Google News וסיווגן האוטומטי, וחישוב מדדי הטקסט של פסקי הדין. בכל שלב מוצגת השוואה למחקר. שלבים 1 ו-2 דורשים חיבור לאינטרנט (חוץ מבנייה מעותק מקומי)."),
     steps, body);
   if (WIZ_STEP === 1) await wizCourt(body);
   else if (WIZ_STEP === 2) await wizMedia(body);
+  else if (WIZ_STEP === 3) await wizText(body);
   else await wizExport(body);
 }
 
@@ -536,12 +460,14 @@ async function wizMedia(body) {
     return st;
   }
   body.replaceChildren(
-    h("div", { class: "banner warn" }, "⚠ ", "תוצאות Google News משתנות עם הזמן (ידיעות נמחקות, מתווספות או מקבלות תאריך אחר), והרשימה שמתקבלת כאן לא עברה את הסינון הידני של המחקר (למשל אדם אחר עם אותו שם). ",
-      h("strong", {}, "תמונת המצב המקורית של המחקר היא נקודת הייחוס"), " — החיפוש כאן נועד לבדיקה מדגמית בלבד, ואינו משנה את נתוני המחקר."),
+    h("div", { class: "banner warn" }, "⚠ ", "תוצאות Google News משתנות עם הזמן (ידיעות נמחקות, מתווספות או מקבלות תאריך אחר). כל ידיעה מסווגת בכללים האוטומטיים של המחקר; ידיעות שהכללים לא הכריעו בהן („לבדיקה ידנית”) נבדקו במחקר ביד, ושלב זה אינו משוחזר בכלי. ",
+      h("strong", {}, "תמונת המצב המקורית של המחקר היא נקודת הייחוס"), " — החיפוש כאן אינו משנה את נתוני המחקר."),
     h("div", { class: "card" },
       h("h2", {}, "בחירת תיקים"),
       h("p", {}, "לכל תיק מופעלת אותה שאילתת „שם מדויק” של העבודה, בשני חלונות הזמן (שלב הערכאה הדיונית ושלב הערעור). נשמרות רק ידיעות שתאריכן בתוך החלון. ",
-        "כדי לא להעמיס על Google, הבקשות נשלחות אחת-אחת עם השהיה, והריצה נעצרת אם Google מבקש להאט. מומלץ להתחיל בשנה אחת או בכמה תיקים."),
+        "כדי לא להעמיס על Google, הבקשות נשלחות אחת-אחת עם השהיה, והריצה נעצרת אם Google מבקש להאט. אפשר עד " + mc.max_cases + " תיקים בכל ריצה; ריצה שנעצרה ממשיכה מאותה נקודה."),
+      h("p", {}, h("strong", {}, "הסיווג האוטומטי: "), "כפילות (אותו קישור, או אותו כלי תקשורת, כותרת ותאריך) ← הוחרג; מונחים שאינם קשורים (למשל ספורט, מוזיקה) ← הוחרג; ",
+        "מונחי הקשר משפטי (למשל ערעור, רצח, בית המשפט) ← נכלל; אף אחד מאלה ← לבדיקה ידנית."),
       h("div", { class: "row" },
         h("label", { class: "field" }, "שנה", h("select", { onchange: (e) => { MEDIA_YEAR = e.target.value; renderList(); } },
           h("option", { value: "" }, "כל השנים"), years.map((y) => h("option", { value: y, selected: y === MEDIA_YEAR }, y)))),
@@ -557,10 +483,7 @@ async function wizMedia(body) {
     statusEl,
     h("div", { class: "card" }, h("div", { class: "row" }, h("h2", {}, "תוצאות"), h("span", { class: "spacer" }),
       h("button", { class: "btn btn-light", onclick: async () => { if (confirm("למחוק את תוצאות החיפוש החוזר שנשמרו? (נתוני המחקר לא ישתנו)")) { try { await post("/api/media/reset", {}); refresh(); } catch (e) { alert(e.message); } } } }, "ניקוי תוצאות")),
-      resultsEl),
-    h("div", { class: "card" }, h("h2", {}, "מאגר העיתונות Primo"),
-      h("p", {}, "חיפוש במאגר העיתונות של הספרייה (Primo) דורש כניסה עם שם המשתמש של הספרייה, ולכן ", h("strong", {}, "אינו מבוצע אוטומטית בכלי הזה"),
-        ". הרשומות שנאספו במחקר מוצגות בכרטיס כל תיק (מסך א), והשאילתה ששימשה מופיעה שם.")));
+      resultsEl));
   delayInput.addEventListener("input", updateSel);
   renderList();
   const st = await refresh();
@@ -576,18 +499,57 @@ function mediaResults(list) {
   if (!list.length) return h("p", { class: "muted" }, "עדיין אין תוצאות. בחרו תיקים ולחצו „התחלת החיפוש”.");
   const itemLi = (it, badge) => h("li", {}, it.published_date, " · ", it.url ? h("a", { href: it.url, target: "_blank", rel: "noopener noreferrer" }, it.title) : it.title,
     it.source ? h("span", { class: "muted" }, " (" + it.source + ")") : null, badge ? [" ", badge] : null);
+  const autoBadge = (it) => h("span", { class: "badge " + ({ included: "yes", pending_review: "warn" }[it.auto_status] || "no"),
+    title: it.auto_terms ? "מונחים שנמצאו: " + it.auto_terms : "" }, it.auto_label + (it.auto_terms ? " · " + it.auto_terms.split("; ").slice(0, 3).join(", ") : ""));
   return list.map((c) => h("details", { class: "card" },
     h("summary", {}, h("strong", {}, c.case_number), " · ", h("span", { class: "q" }, c.query), " · ",
-      `עכשיו בחלון: ${c.now_count} (מתוכן ${c.overlap} גם במקור) · במחקר המקורי: ${c.original_count}`,
+      `עכשיו בחלון: ${c.now_count} (נכללו אוטומטית ${c.auto_counts.included}, לבדיקה ידנית ${c.auto_counts.pending_review}, הוחרגו ${c.auto_counts.excluded_wrong_case + c.auto_counts.excluded_duplicate}; ${c.overlap} גם במקור) · במחקר המקורי: ${c.original_count}`,
       c.errors.length ? h("span", { class: "badge bad" }, " שגיאות: " + c.errors.length) : null),
     h("div", { class: "compare" },
-      h("div", {}, h("h3", {}, "נמצא עכשיו (בתוך החלון)"), c.now_items.length ? h("ul", {}, c.now_items.map((it) => itemLi(it, it.also_in_original ? h("span", { class: "badge yes" }, "גם במקור") : null))) : h("p", { class: "muted" }, "לא נמצאו ידיעות.")),
+      h("div", {}, h("h3", {}, "נמצא עכשיו (בתוך החלון)"), c.now_items.length ? h("ul", {}, c.now_items.map((it) => itemLi(it, [autoBadge(it), it.also_in_original ? [" ", h("span", { class: "badge yes" }, "גם במקור")] : null]))) : h("p", { class: "muted" }, "לא נמצאו ידיעות.")),
       h("div", {}, h("h3", {}, "תמונת המצב המקורית (נכללו)"), c.original_items.length ? h("ul", {}, c.original_items.map((it) => itemLi(it))) : h("p", { class: "muted" }, "אין ידיעות במקור.")))));
+}
+
+async function wizText(body) {
+  const out = h("div");
+  const run = async () => {
+    out.replaceChildren(h("p", { class: "loading" }, "מחשב את המדדים של 497 פסקי הדין… (כמה שניות)"));
+    try {
+      const r = await api("/api/text/measures");
+      const same = (x) => x.equal === x.n ? h("span", { class: "badge yes" }, "✓ זהה") : h("span", { class: "badge warn" }, `${x.n - x.equal} שונים`);
+      const m = r.mentions, a = r.attempt;
+      out.replaceChildren(
+        h("div", { class: "banner " + (r.all_ok ? "ok" : "bad") }, h("span", { class: "check" }, r.all_ok ? "✓" : "✗"),
+          h("span", { class: "big" }, r.all_ok ? "זהה לנתוני המחקר" : "יש הבדלים מנתוני המחקר"),
+          h("span", {}, `כל המדדים חושבו עכשיו מטקסט ${fmtInt(r.n_cases)} פסקי הדין והושוו לערכים שבנתוני המחקר.`)),
+        h("div", { class: "card" }, h("h2", {}, "מדדי הטקסט לכל פסק דין"),
+          table(["מדד", "זהה למחקר", "מתוך", ""], r.rows.map((x) => [x.measure, fmtInt(x.equal), fmtInt(x.n), same(x)]))),
+        h("div", { class: "card" }, h("h2", {}, "אזכורי תקשורת בפסקי הדין — השלב האוטומטי"),
+          helpLine("המילון מחפש מונחי תקשורת בטקסט, והכללים האוטומטיים מחריגים הקשרים שאינם תקשורת (למשל „נתוני תקשורת” של טלפונים, „פורסם בנבו”). המופעים שנשארו נבדקו במחקר ביד בהקשרם; הבדיקה הידנית אינה משוחזרת בכלי."),
+          table(["", "עכשיו", "במחקר"], [
+            ["מופעים שנמצאו במילון", fmtInt(m.found_now), fmtInt(m.found_study)],
+            ["הוחרגו אוטומטית", fmtInt(m.auto_excluded_now), fmtInt(m.auto_excluded_study)],
+            ["נשארו לבדיקה ידנית (מדגם הניתוח)", fmtInt(m.checked_now), fmtInt(m.checked_study)],
+            ["מופעים זהים (מיקום, מונח וסיווג)", fmtInt(m.identical), "—"]])),
+        h("div", { class: "card" }, h("h2", {}, "ערעורים על ניסיון לרצח בלבד"),
+          helpLine("פסק דין שמזכיר ניסיון לרצח ואין בו אף ביטוי שמעיד על מוות. שימש לבדיקת חוסן שמוציאה את הערעורים האלה."),
+          table(["", "עכשיו", "במחקר"], [["מדגם הניתוח (478)", fmtInt(a.now), fmtInt(a.study)], ["כל הקורפוס (497)", fmtInt(a.now_all), fmtInt(a.study_all)]])),
+        h("p", { class: "muted small" }, "את המדדים לכל פסק דין אפשר לשמור בשלב 4 (ייצוא)."));
+    } catch (e) { out.replaceChildren(errorBox(e)); }
+  };
+  body.replaceChildren(
+    h("div", { class: "card" },
+      h("h2", {}, "מדדי הטקסט של פסקי הדין"),
+      h("p", {}, "הכלי מחשב מחדש, בכללים של המחקר, את כל המדדים האוטומטיים מטקסט פסקי הדין: תחילת פרק ההנמקה, אורך פסק הדין וההנמקה, ששת רכיבי המורכבות הטקסטואלית, ",
+        "מופעי מילון התקשורת וההחרגה האוטומטית שלהם, וסימון „ניסיון לרצח בלבד”. כל ערך מושווה לנתוני המחקר. עובד ללא אינטרנט."),
+      h("button", { class: "btn btn-green btn-big", onclick: run }, "חישוב המדדים והשוואה למחקר")),
+    out);
 }
 
 async function wizExport(body) {
   const exportStatus1 = h("div", { class: "save-status" });
   const exportStatus2 = h("div", { class: "save-status" });
+  const exportStatus3 = h("div", { class: "save-status" });
   const court = await api("/api/court/status");
   const media = await api("/api/media/status");
   body.replaceChildren(
@@ -598,52 +560,17 @@ async function wizExport(body) {
         saveButton("Excel…", "court_xlsx", { status: exportStatus1 }), saveButton("CSV…", "court_csv", { light: true, status: exportStatus1 }),
         h("span", { class: "muted" }, `${court.result.found} מתוך ${court.result.study_n} תיקי מחקר שוחזרו`), exportStatus1)
         : h("p", { class: "muted" }, "עדיין לא נבנתה אוכלוסייה בהפעלה הנוכחית — חזרו לשלב 1."),
-      h("h3", {}, "ידיעות Google News (שלב 2)"),
+      h("h3", {}, "ידיעות Google News וסיווגן (שלב 2)"),
       media.cases.length ? h("div", { class: "row" },
         saveButton("Excel…", "media_xlsx", { status: exportStatus2 }), saveButton("CSV…", "media_csv", { light: true, status: exportStatus2 }),
         h("span", { class: "muted" }, `${media.cases.length} תיקים נבדקו`), exportStatus2)
         : h("p", { class: "muted" }, "עדיין אין תוצאות חיפוש — חזרו לשלב 2."),
+      h("h3", {}, "מדדי הטקסט (שלב 3)"),
+      h("div", { class: "row" },
+        saveButton("Excel…", "text_xlsx", { status: exportStatus3 }), saveButton("CSV…", "text_csv", { light: true, status: exportStatus3 }),
+        h("span", { class: "muted" }, "המדדים של 497 פסקי הדין, ההשוואה למחקר ואזכורי התקשורת בשלב האוטומטי"), exportStatus3),
       h("h3", {}, "תיקיית ברירת המחדל"),
       h("div", { class: "row" }, pathEl(INFO.output_dir), h("button", { class: "btn btn-light", onclick: () => openFolder(INFO.output_dir) }, "פתיחה"))));
-}
-
-// ------------------------------------------------------------------ ד. upload your own file
-async function viewUpload() {
-  const tplStatus = h("div", { class: "save-status" });
-  const st = await api("/api/upload/status");
-  const reportEl = h("div");
-  const fileInput = h("input", { type: "file", accept: ".xlsx,.xls,.csv", id: "fileInput" });
-  function renderReport(name, rep) {
-    if (!rep) { reportEl.replaceChildren(); return; }
-    reportEl.replaceChildren(h("div", { class: "card" },
-      h("h2", {}, "בדיקת הקובץ: ", name),
-      rep.ok ? h("div", { class: "banner ok" }, h("span", { class: "check" }, "✓"), h("span", { class: "big" }, "הקובץ תקין"),
-        h("span", {}, `${fmtInt(rep.n_rows)} שורות, מתוכן ${fmtInt(rep.n_main)} במדגם הניתוח.`))
-        : h("div", { class: "banner bad" }, h("span", { class: "check" }, "✗"), h("span", { class: "big" }, "יש לתקן את הקובץ לפני הניתוח")),
-      rep.errors && rep.errors.length ? h("ul", { class: "errors" }, rep.errors.map((e) => h("li", {}, e))) : null,
-      rep.warnings && rep.warnings.length ? [h("h3", {}, "הערות"), h("ul", { class: "warnings" }, rep.warnings.map((e) => h("li", {}, e)))] : null,
-      rep.ok ? h("a", { class: "btn btn-green btn-big", href: "#stats-upload" }, "הרצת הניתוחים על הקובץ") : null));
-  }
-  view().replaceChildren(
-    h("h1", {}, "ייבוא קובץ נתונים משלך"),
-    helpLine("אפשר להריץ את אותם ניתוחים של העבודה על נתונים אחרים — למשל אחרי תיקון קידוד ידני. מורידים תבנית, ממלאים, מעלים, והכלי בודק שהקובץ תקין."),
-    h("div", { class: "card" }, h("h2", {}, "1. תבנית"),
-      h("p", {}, "שורה לכל תיק; שמות העמודות בשורה הראשונה חייבים להישאר כמו בתבנית. חובה: media_any (בולטות 0/1) ו-intervention (התערבות 0/1). הסבר לכל עמודה נמצא בגיליון „הסבר העמודות”."),
-      h("div", { class: "row" },
-        saveButton("שמירת תבנית Excel…", "template_xlsx", { status: tplStatus }),
-        saveButton("שמירת נתוני המחקר כדוגמה מלאה…", "study_xlsx", { light: true, status: tplStatus })),
-      tplStatus),
-    h("div", { class: "card" }, h("h2", {}, "2. העלאת הקובץ"),
-      h("p", {}, "קובץ Excel ‏(‎.xlsx‏) או CSV. הקובץ נשאר במחשב — הוא נקרא על ידי התוכנה המקומית בלבד."),
-      h("div", { class: "row" }, fileInput,
-        h("button", { class: "btn btn-green", onclick: async () => {
-          const f = fileInput.files[0];
-          if (!f) return alert("בחרו קובץ.");
-          reportEl.replaceChildren(h("p", { class: "loading" }, "בודק את הקובץ…"));
-          try { const r = await post("/api/upload", { filename: f.name }, await f.arrayBuffer()); renderReport(f.name, r.report); }
-          catch (e) { reportEl.replaceChildren(errorBox(e)); } } }, "העלאה ובדיקה"))),
-    reportEl);
-  if (st.report) renderReport(st.name, st.report);
 }
 
 // ------------------------------------------------------------------ start

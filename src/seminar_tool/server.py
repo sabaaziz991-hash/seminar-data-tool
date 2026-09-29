@@ -20,7 +20,7 @@ from typing import Any
 
 import pandas as pd
 
-from . import dialogs, exports, paths, reimport_court, reimport_media, study_stats
+from . import dialogs, exports, paths, reimport_court, reimport_media, text_measures
 from .data_access import StudyData
 from .jobs import Job
 
@@ -37,29 +37,32 @@ XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 CSV = "text/csv; charset=utf-8"
 # kind -> (GET path used for the browser-download fallback, Hebrew dialog title)
 EXPORT_KINDS = {
-    "stats_xlsx": ("/api/stats.xlsx", "שמירת תוצאות הניתוח"),
     "study_xlsx": ("/api/study.xlsx", "שמירת נתוני המחקר"),
-    "template_xlsx": ("/api/template.xlsx", "שמירת תבנית קובץ הנתונים"),
     "court_xlsx": ("/api/court/result.xlsx", "שמירת האוכלוסייה המשוחזרת"),
     "court_csv": ("/api/court/result.csv", "שמירת האוכלוסייה המשוחזרת"),
     "media_xlsx": ("/api/media/export.xlsx", "שמירת ידיעות Google News"),
     "media_csv": ("/api/media/export.csv", "שמירת ידיעות Google News"),
+    "text_xlsx": ("/api/text/result.xlsx", "שמירת מדדי הטקסט"),
+    "text_csv": ("/api/text/result.csv", "שמירת מדדי הטקסט"),
     "log_txt": ("/api/log.txt", "שמירת עותק של יומן התוכנה"),
 }
 
 
-def build_export(kind: str, source: str = "study") -> tuple[bytes, str, str]:
+def build_export(kind: str) -> tuple[bytes, str, str]:
     """(file bytes, suggested Hebrew file name, content type) for every export of the tool."""
     st = STATE
     assert st is not None
-    if kind == "stats_xlsx":
-        s = st.stats(source)
-        name = "תוצאות_הניתוח_" + ("נתוני_המחקר" if s["source"] == "study" else "קובץ_שהועלה") + ".xlsx"
-        return exports.stats_to_excel(s["result"], s["golden"], s["source_label"]), name, XLSX
     if kind == "study_xlsx":
         return exports.frames_to_excel([("נתונים", st.sd.df)]), "נתוני_המחקר_497_תיקים.xlsx", XLSX
-    if kind == "template_xlsx":
-        return exports.template_excel(), "תבנית_קובץ_נתונים.xlsx", XLSX
+    if kind in ("text_xlsx", "text_csv"):
+        res = st.text()
+        if kind == "text_csv":
+            return res["table"].to_csv(index=False).encode("utf-8-sig"), "מדדי_טקסט_497_פסקי_דין.csv", CSV
+        cmp = pd.DataFrame(res["rows"]).rename(columns={"measure": "מדד", "equal": "זהה למחקר", "n": "פסקי דין",
+                                                        "max_diff": "הפרש מרבי"})
+        data = exports.frames_to_excel([("השוואה למחקר", cmp), ("מדדים לכל פסק דין", res["table"]),
+                                        ("אזכורי תקשורת - שלב אוטומטי", res["candidates"])])
+        return data, "מדדי_טקסט_497_פסקי_דין.xlsx", XLSX
     if kind in ("court_xlsx", "court_csv"):
         res = st.jobs["build"].result
         if not res:
@@ -96,11 +99,8 @@ class AppState:
     def __init__(self) -> None:
         self.sd = StudyData()
         self.paper_flow = json.loads((self.sd.dir / "flow_reference.json").read_text(encoding="utf-8"))
-        self._stats_lock = threading.Lock()
-        self.stats_cache: dict[str, dict[str, Any]] = {}
-        self.upload_df: pd.DataFrame | None = None
-        self.upload_name = ""
-        self.upload_report: dict[str, Any] | None = None
+        self._text_lock = threading.Lock()
+        self.text_result: dict[str, Any] | None = None
         self.jobs = {"download": Job("download"), "build": Job("build"), "media": Job("media")}
         self.court_result: dict[str, Any] | None = None
         self.opened_dirs: set[str] = {str(paths.OUTPUT_DIR), str(paths.DATA_DIR)}
@@ -115,23 +115,12 @@ class AppState:
         self.url_box_open = False              # the "open this address in a browser" window is showing
         self.run_id = uuid.uuid4().hex[:12]    # pages of an earlier run (old tabs) are told to reload
 
-    # ---------------------------------------------------------------- statistics
-    def stats(self, source: str) -> dict[str, Any]:
-        with self._stats_lock:
-            if source == "upload":
-                if self.upload_df is None or not (self.upload_report or {}).get("ok"):
-                    raise ValueError("לא הועלה קובץ תקין. חזרו למסך 'ייבוא קובץ נתונים משלך'.")
-                if "upload" not in self.stats_cache:
-                    res = study_stats.run_all(self.upload_df)
-                    self.stats_cache["upload"] = {"result": res, "golden": None, "source": "upload",
-                                                  "source_label": f"קובץ שהועלה: {self.upload_name}"}
-                return self.stats_cache["upload"]
-            if "study" not in self.stats_cache:
-                res = study_stats.run_all(self.sd.df, self.sd.extras())
-                gold = study_stats.compare_golden(res["values"], self.sd.dir / "golden_values.json")
-                self.stats_cache["study"] = {"result": res, "golden": gold, "source": "study",
-                                             "source_label": "נתוני המחקר (study_dataset_final.csv)"}
-            return self.stats_cache["study"]
+    # ---------------------------------------------------------------- text measures (step 3)
+    def text(self) -> dict[str, Any]:
+        with self._text_lock:
+            if self.text_result is None:
+                self.text_result = text_measures.compute(self.sd)
+            return self.text_result
 
     # ---------------------------------------------------------------- lifetime
     def heartbeat(self, client: str) -> None:
@@ -248,22 +237,19 @@ class Handler(BaseHTTPRequestHandler):
                               "output_reason": paths.OUTPUT_REASON, "root_dir": str(paths.ROOT_DIR),
                               "app_dir": str(paths.APP_DIR), "frozen": paths.FROZEN, "log_file": str(paths.LOG_FILE),
                               "last_dir": str(paths.last_dir()), "clients": len(st.clients), "run_id": st.run_id,
-                              "n_cases": int(len(st.sd.df)), "n_main": int((st.sd.df.merits_appeal == 1).sum()),
-                              "spss_default": str(paths.get_setting("spss_dir") or (paths.OUTPUT_DIR / "SPSS"))})
+                              "n_cases": int(len(st.sd.df)), "n_main": int((st.sd.df.merits_appeal == 1).sum())})
         if path == "/api/cases":
             return self.json({"ok": True, "cases": st.sd.case_list()})
         if path == "/api/case":
             card = st.sd.case_card(q.get("id", ""))
             return self.json({"ok": True, "card": card}) if card else self.error("התיק לא נמצא", 404)
-        if path == "/api/stats":
-            s = st.stats(q.get("source", "study"))
-            return self.json({"ok": True, **s})
+        if path == "/api/text/measures":
+            res = st.text()
+            return self.json({"ok": True, **{k: res[k] for k in ("rows", "mentions", "attempt", "all_ok", "n_cases")}})
         for kind, (get_path, _) in EXPORT_KINDS.items():
             if path == get_path:
-                data, name, ctype = build_export(kind, q.get("source", "study"))
+                data, name, ctype = build_export(kind)
                 return self.file_download(data, name, ctype)
-        if path == "/api/upload/status":
-            return self.json({"ok": True, "name": st.upload_name, "report": st.upload_report})
         if path == "/api/court/status":
             return self.json({"ok": True, "local_copies": reimport_court.find_local_copies(),
                               "default_path": str(reimport_court.default_download_path()),
@@ -325,14 +311,14 @@ class Handler(BaseHTTPRequestHandler):
             kind = b.get("kind", "")
             if kind not in EXPORT_KINDS:
                 return self.error("סוג ייצוא לא מוכר")
-            data, name, _ = build_export(kind, b.get("source", "study"))
+            data, name, _ = build_export(kind)
             ext = Path(name).suffix
             label = {".xlsx": "קובץ Excel", ".csv": "קובץ CSV", ".txt": "קובץ טקסט"}.get(ext, "קובץ")
             try:
                 target = dialogs.save_file(EXPORT_KINDS[kind][1], paths.last_dir(), name, ext, label)
             except dialogs.DialogUnavailable as exc:
                 log.warning("save dialog unavailable: %s", exc)
-                return self.json({"ok": False, "fallback": True, "href": EXPORT_KINDS[kind][0] + "?source=" + b.get("source", "study"),
+                return self.json({"ok": False, "fallback": True, "href": EXPORT_KINDS[kind][0],
                                   "error": "חלון הבחירה של Windows אינו זמין — הקובץ יורד לתיקיית ההורדות של הדפדפן."})
             if target is None:
                 return self.json({"ok": True, "cancelled": True})
@@ -350,9 +336,7 @@ class Handler(BaseHTTPRequestHandler):
             b = self.body_json()
             what = b.get("what", "")
             try:
-                if what == "spss_folder":
-                    res = dialogs.choose_folder("בחירת תיקייה לקובצי SPSS", paths.get_setting("spss_dir") or paths.last_dir())
-                elif what == "hf_folder":
+                if what == "hf_folder":
                     res = dialogs.choose_folder("בחירת תיקייה להורדת מאגר פסקי הדין (כ-1.5 GB)", reimport_court.download_dir())
                 elif what == "parquet_file":
                     res = dialogs.open_file("בחירת הקובץ cases_all.parquet", paths.get_setting("hf_dir") or Path.home(),
@@ -387,40 +371,6 @@ class Handler(BaseHTTPRequestHandler):
                 return self.error("אפשר לפתוח רק תיקיות שהכלי יצר.")
             os.startfile(str(p))  # noqa: S606 - local folder chosen by the tool itself
             return self.json({"ok": True})
-        if path == "/api/spss_export":
-            b = self.body_json()
-            folder = (b.get("folder") or "").strip() or str(paths.OUTPUT_DIR / "SPSS")
-            df = None
-            if b.get("source") == "upload":
-                if st.upload_df is None:
-                    return self.error("לא הועלה קובץ.")
-                df = st.upload_df
-            try:
-                res = exports.spss_export(folder, df)
-            except OSError as exc:
-                return self.error(f"לא ניתן לשמור בתיקייה שנבחרה ({exc.strerror or exc}). בחרו תיקייה אחרת.")
-            st.opened_dirs.add(res["folder"])
-            st.saved.add(res["folder"])
-            paths.set_setting("spss_dir", res["folder"])
-            paths.set_setting("last_dir", res["folder"])
-            return self.json({"ok": True, **res})
-        if path == "/api/upload":
-            name = urllib.parse.unquote(self.headers.get("X-Filename", "file.xlsx"))
-            raw = self.body()
-            try:
-                df = exports.read_table(name, raw)
-            except ValueError as exc:
-                st.upload_df, st.upload_name, st.upload_report = None, name, {"ok": False, "errors": [str(exc)], "warnings": []}
-                return self.json({"ok": True, "report": st.upload_report})
-            except Exception as exc:  # noqa: BLE001
-                log.warning("upload parse failed: %s", exc)
-                st.upload_df, st.upload_name = None, name
-                st.upload_report = {"ok": False, "errors": ["לא ניתן לקרוא את הקובץ. ודאו שזה קובץ Excel או CSV תקין."], "warnings": []}
-                return self.json({"ok": True, "report": st.upload_report})
-            report = exports.validate_upload(df)
-            st.upload_df, st.upload_name, st.upload_report = df, name, report
-            st.stats_cache.pop("upload", None)
-            return self.json({"ok": True, "report": report})
         if path == "/api/court/download":
             dest = reimport_court.default_download_path()
             if not paths.writable(dest.parent):

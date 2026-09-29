@@ -17,11 +17,15 @@ OUT = Path(__file__).resolve().parent / "seminar_tool" / "court_rules.py"
 SCM_FUNCS = ["compact_spaces", "dedupe_keep_order", "quote_phrase", "infer_case_party_names",
              "google_news_date_operators", "parse_rfc822_date"]
 SCM_RENAMES = {"is_institutional_party_name": "_scm_is_institutional_party_name"}
-AMS_CONSTS = ["HE_STATE", "HE_MURDER", "HE_APPEAL", "INSTITUTIONAL_PARTY_MARKERS"]
+AMS_CONSTS = ["HE_STATE", "HE_MURDER", "HE_APPEAL", "INSTITUTIONAL_PARTY_MARKERS",
+              # automatic relevance rules for Google News items found by the exact-name query
+              "HE_AP", "HE_AP_UNQUOTED", "HE_SUPREME_COURT", "ARTICLE_CASE_CONTEXT_TERMS", "ARTICLE_STRONG_OFF_TOPIC_TERMS"]
 AMS_FUNCS = ["excerpt", "find_first_context", "is_offense_citation_context", "is_reduced_from_murder_to_homicide_context",
              "is_prior_criminal_history_context", "find_first_non_citation_context", "find_first_term_context",
              "classify_offense", "final_disposition_segment", "classify_appellant_type", "classify_outcome",
-             "is_anonymous_name", "is_institutional_party_name", "primo_case_party_name"]
+             "is_anonymous_name", "is_institutional_party_name", "primo_case_party_name",
+             "clean_cell", "normalize_title", "canonicalize_url", "article_context_haystack", "article_case_context_hits",
+             "article_strong_off_topic_hits", "article_is_name_only_study_query", "suggested_name_only_article_status"]
 
 
 def segments(path: Path, names: list[str], consts: list[str] = ()) -> dict[str, str]:
@@ -46,7 +50,8 @@ def main() -> None:
         f'src/extract_court_rules.py on {dt.date.today().isoformat()}) from:',
         "  audit_scripts/search_case_media.py   (helpers, party names) of the original study pipeline",
         "  audit_scripts/appeals_media_study.py (classify_offense, classify_appellant_type,",
-        "                                                     classify_outcome, is_anonymous_name, ...)",
+        "                                                     classify_outcome, is_anonymous_name, ...,",
+        "                                                     the article relevance rules suggested_name_only_article_status ...)",
         'Do not edit by hand; re-run the generator instead."""',
         "# ruff: noqa",
         "from __future__ import annotations",
@@ -55,6 +60,7 @@ def main() -> None:
         "import email.utils",
         "import re",
         "from typing import Any, Callable, Iterable",
+        "from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse",
         "",
         "# ---- from search_case_media.py",
     ]

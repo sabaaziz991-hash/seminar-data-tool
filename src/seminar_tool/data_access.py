@@ -1,4 +1,4 @@
-"""Read-only access to the bundled study data (case table, case card, analysis extras)."""
+"""Read-only access to the bundled study data (case table, case card, inputs of the method screens)."""
 from __future__ import annotations
 
 import math
@@ -66,10 +66,10 @@ class StudyData:
         self._judgments: pd.DataFrame | None = None
         self._lock = threading.Lock()
 
-    # ---------------------------------------------------------------- analysis inputs
-    def extras(self) -> dict[str, pd.DataFrame]:
-        return {"refs": self.refs, "google": self.google, "queries": self.queries, "primo": self.primo,
-                "outcome_review": self.outcome_review}
+    # ---------------------------------------------------------------- text inputs
+    def mention_reference(self) -> pd.DataFrame:
+        """The study's automatic stage of the media dictionary (every match and its automatic exclusion)."""
+        return pd.read_csv(self.dir / "mention_candidates_reference.csv", encoding="utf-8-sig")
 
     def judgments(self) -> pd.DataFrame:
         with self._lock:

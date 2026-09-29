@@ -22,7 +22,7 @@ from pathlib import Path
 from typing import Any
 
 APP_NAME = "SeminarDataTool"
-VERSION = "1.1.0"
+VERSION = "2.0.0"
 FROZEN = bool(getattr(sys, "frozen", False))
 OUT_NAME = "תוצרים"
 

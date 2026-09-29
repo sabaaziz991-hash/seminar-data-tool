@@ -22,6 +22,12 @@ ANALYSIS = ROOT / "03_ניתוח"
 OUT = TOOL / "data"
 
 
+# Articles that the manual review found unrelated to the case (mostly a namesake) stay in the data with their status,
+# so every count is complete, but their title, link and note are not published.
+HIDDEN_TITLE = "(הכותרת הוסתרה: הכתבה אינה עוסקת בתיק)"
+HIDDEN_NOTE = "הוחרג בבדיקה ידנית: הכתבה אינה עוסקת בתיק (אדם אחר בעל אותו שם או עניין אחר)"
+
+
 def sha256(path: Path) -> str:
     h = hashlib.sha256()
     with open(path, "rb") as f:
@@ -33,10 +39,9 @@ def sha256(path: Path) -> str:
 def main() -> None:
     sys.stdout.reconfigure(encoding="utf-8")
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "spss").mkdir(exist_ok=True)
     sources: dict[str, str] = {}
 
-    # 1. final analysis file (byte-for-byte copy, it is also the SPSS input)
+    # 1. final study data (byte-for-byte copy)
     src = DATA_IN / "study_dataset_final.csv"
     shutil.copyfile(src, OUT / "study_dataset_final.csv")
     sources["study_dataset_final.csv"] = str(src.relative_to(ROOT))
@@ -52,7 +57,9 @@ def main() -> None:
     # 3. Google News items (district + appeal windows, with curation status) and the exact queries
     g = pd.read_csv(EXPORT / "selected_google_articles_district_plus_appeal_and_appeal_only.csv")
     g = g[["article_id", "case_id", "window_type", "window_start", "window_end", "query_text", "title", "source",
-           "published_date", "url", "curation_status", "curator_note"]]
+           "published_date", "url", "curation_status", "curator_note"]].copy()
+    hide = g.curation_status == "excluded_wrong_case"
+    g.loc[hide, ["title", "url", "curator_note"]] = [HIDDEN_TITLE, "", HIDDEN_NOTE]
     g.to_csv(OUT / "media_google.csv", index=False, encoding="utf-8-sig")
     sources["media_google.csv"] = str((EXPORT / "selected_google_articles_district_plus_appeal_and_appeal_only.csv").relative_to(ROOT))
     q = pd.read_csv(EXPORT / "selected_google_queries_district_plus_appeal_and_appeal_only.csv")
@@ -63,7 +70,9 @@ def main() -> None:
     # 4. Primo newspaper records (robustness source)
     p = pd.read_csv(EXPORT / "primo_advanced_api_articles_2010_2020_manual_reviewed.csv")
     p = p[["article_id", "case_id", "query_text", "window_start", "window_end", "title", "newspaper_source",
-           "published_date", "source_collection", "curation_status", "curator_note"]]
+           "published_date", "source_collection", "curation_status", "curator_note"]].copy()
+    hide = p.curation_status.isin(["excluded_wrong_case", "excluded_false_positive"])
+    p.loc[hide, ["title", "curator_note"]] = [HIDDEN_TITLE, HIDDEN_NOTE]
     p.to_csv(OUT / "media_primo.csv", index=False, encoding="utf-8-sig")
     sources["media_primo.csv"] = str((EXPORT / "primo_advanced_api_articles_2010_2020_manual_reviewed.csv").relative_to(ROOT))
 
@@ -75,6 +84,11 @@ def main() -> None:
     c = c[c.manual_decision == "include"][["case_id", "term", "match", "position", "in_reasoning", "manual_reason", "context"]]
     c.to_csv(OUT / "media_refs_verified.csv", index=False, encoding="utf-8-sig")
     sources["media_refs_verified.csv"] = str((DATA_IN / "media_mention_candidates.csv").relative_to(ROOT))
+    # the automatic stage of the media dictionary (every match + automatic exclusion), for the comparison in step 3
+    c_all = pd.read_csv(DATA_IN / "media_mention_candidates.csv")
+    c_all[["case_id", "position", "term", "auto_excluded", "in_reasoning"]].to_csv(
+        OUT / "mention_candidates_reference.csv", index=False, encoding="utf-8-sig")
+    sources["mention_candidates_reference.csv"] = str((DATA_IN / "media_mention_candidates.csv").relative_to(ROOT))
 
     # 5b. manual review of the outcome coding (117 cases; how each outcome was coded is shown on the case card)
     o = pd.read_csv(DATA_IN / "outcome_manual_review_117.csv")
@@ -82,30 +96,11 @@ def main() -> None:
     o.to_csv(OUT / "outcome_manual_review.csv", index=False, encoding="utf-8-sig")
     sources["outcome_manual_review.csv"] = str((DATA_IN / "outcome_manual_review_117.csv").relative_to(ROOT))
 
-    # 6. SPSS syntax as templates: the project path is replaced by a placeholder (filled in at export time with the
-    #    folder the user chooses) and the project sub-folders are flattened, so no machine path is bundled.
-    import re
-    for name in ("01_import_and_labels.sps", "02_analysis.sps"):
-        txt = (ANALYSIS / "spss" / name).read_text(encoding="utf-8-sig")
-        txt, n = re.subn(r"FILE HANDLE root /NAME='[^']*'\.", "FILE HANDLE root /NAME='{{SPSS_FOLDER}}'.", txt)
-        assert n == 1, name
-        txt = txt.replace("root/02_נתונים/", "root/").replace("root/03_ניתוח/spss/output/", "root/output/")
-        (OUT / "spss" / name).write_text(txt, encoding="utf-8")
-        sources[f"spss/{name}"] = str((ANALYSIS / "spss" / name).relative_to(ROOT)) + " (paths -> placeholder)"
-
-    # 7. flow counts of the paper (for comparison in the re-import wizard)
+    # 6. flow counts of the paper (for comparison in the re-import wizard)
     flow = json.loads((ANALYSIS / "flow_counts.json").read_text(encoding="utf-8"))
     flow["paper_table"] = {"anonymous_excluded": 85, "study_corpus": 497, "non_merits_excluded": 19, "analysis_sample": 478}
     (OUT / "flow_reference.json").write_text(json.dumps(flow, ensure_ascii=False, indent=2), encoding="utf-8")
     sources["flow_reference.json"] = str((ANALYSIS / "flow_counts.json").relative_to(ROOT)) + " + results_master.md"
-
-    # the paper's approved list of numbers (the source of golden_values.json), for reference inside the package
-    shutil.copyfile(ANALYSIS / "results_master.md", OUT / "results_master.md")
-    sources["results_master.md"] = str((ANALYSIS / "results_master.md").relative_to(ROOT))
-
-    # golden_values.json is maintained by hand (from results_master.md) in src/golden_values.json
-    shutil.copyfile(TOOL / "src" / "golden_values.json", OUT / "golden_values.json")
-    sources["golden_values.json"] = "03_ניתוח/results_master.md (SPSS 27 output)"
 
     manifest = {"built_at": dt.datetime.now().isoformat(timespec="seconds"), "files": {}}
     for rel, origin in sources.items():

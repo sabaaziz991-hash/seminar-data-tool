@@ -17,8 +17,10 @@ EXCLUDES = [
     "huggingface_hub", "datasets", "fsspec", "sqlalchemy", "lxml", "jinja2", "bokeh", "plotly", "dask", "xarray",
     "tables", "h5py", "numexpr", "bottleneck", "pdfminer", "docx", "requests", "urllib3", "certifi",
     "setuptools", "pkg_resources",
+    # the statistical screens were removed in version 2 (the tool replicates the method only)
+    "scipy", "statsmodels", "patsy",
     # test suites shipped inside libraries
-    "pandas.tests", "numpy.tests", "scipy.tests", "statsmodels.tests", "pyarrow.tests",
+    "pandas.tests", "numpy.tests", "pyarrow.tests",
 ]
 
 a = Analysis(
@@ -27,9 +29,7 @@ a = Analysis(
     binaries=[],
     datas=[("seminar_tool/web", "web")],
     hiddenimports=[
-        "statsmodels.stats.contingency_tables", "statsmodels.stats.power", "statsmodels.stats.proportion",
         "pyarrow.parquet", "openpyxl", "openpyxl.cell._writer",
-        "scipy._cyutility",           # shared Cython utility module of scipy >= 1.16 (imported from C)
         "tkinter", "tkinter.filedialog",
     ] + NUMPY_CORE,
     hookspath=[],

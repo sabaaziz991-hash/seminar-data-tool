@@ -160,7 +160,7 @@ def main(argv: list[str] | None = None) -> int:
             message_box(f"התוכנה כבר פועלת. פתחו דפדפן והקלידו:\n‎{existing}‎", TITLE, MB_ICONINFO)
         return 0
 
-    from .server import make_server  # heavy imports (pandas, scipy) only after the checks above
+    from .server import make_server  # heavy imports (pandas) only after the checks above
 
     port = free_port(args.port)
     try:

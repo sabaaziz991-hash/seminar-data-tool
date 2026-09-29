@@ -1,6 +1,6 @@
 """The packaged tool (dist\\SeminarDataTool) must start from a path with Hebrew letters and spaces and from a plain
-ASCII path — through the launcher, the app EXE and הפעלה.bat — serve the UI, reproduce the paper's numbers, save
-files where the user chooses, and stop cleanly (button or closed tab).
+ASCII path — through the launcher, the app EXE and הפעלה.bat — serve the UI, reproduce the automatic results of the
+method (text measures), save files where the user chooses, and stop cleanly (button or closed tab).
 Run after build.py:  python -m pytest tests/test_packaged_exe.py -q
 """
 from __future__ import annotations
@@ -32,11 +32,11 @@ def test_exe_starts_serves_and_stops(folder_name: str, how: str) -> None:
         assert info["output_is_default"] is True
         with urllib.request.urlopen(base + "/", timeout=30) as r:
             assert "כלי נתוני הסמינריון" in r.read().decode("utf-8")
-        stats = get_json(base + "/api/stats?source=study")
-        assert stats["golden"]["all_ok"], [i for i in stats["golden"]["items"] if not i["ok"]][:5]
+        tm = get_json(base + "/api/text/measures")
+        assert tm["all_ok"], [r for r in tm["rows"] if r["equal"] != r["n"]][:5]
         card = get_json(base + "/api/case?id=HUGGINGFACE-00ab1bad61ad")["card"]
         assert card["judgment"]["available"]                              # parquet (pyarrow) works in the EXE
-        assert get_bytes(base + "/api/stats.xlsx?source=study")[:2] == b"PK"   # openpyxl works in the EXE
+        assert get_bytes(base + "/api/text/result.xlsx")[:2] == b"PK"         # openpyxl works in the EXE
         assert stop_tool(base, pid) == 0
         assert (dest / "תוצרים" / "log.txt").exists()
         log = (dest / "תוצרים" / "log.txt").read_text(encoding="utf-8")
@@ -68,13 +68,11 @@ def test_save_anywhere_in_frozen_app() -> None:
     target.mkdir()
     try:
         base, pid = start_tool(dest, "launcher", env=clean_env(SEMINAR_TOOL_DIALOG_STUB=str(target)))
-        for kind in ("stats_xlsx", "study_xlsx", "template_xlsx", "media_csv", "log_txt"):
+        for kind in ("study_xlsx", "text_xlsx", "text_csv", "media_csv", "log_txt"):
             res = post(base + "/api/save", {"kind": kind})
             assert res["ok"] and Path(res["path"]).parent == target and Path(res["path"]).stat().st_size > 0, res
-        res = post(base + "/api/spss_export", {"folder": str(target / "SPSS")})
-        assert (target / "SPSS" / "01_import_and_labels.sps").exists()
-        assert get_json(base + "/api/info")["last_dir"] == str(target / "SPSS")      # remembered for the next dialog
-        assert json.loads((dest / "תוצרים" / "settings.json").read_text(encoding="utf-8"))["last_dir"] == str(target / "SPSS")
+        assert get_json(base + "/api/info")["last_dir"] == str(target)                # remembered for the next dialog
+        assert json.loads((dest / "תוצרים" / "settings.json").read_text(encoding="utf-8"))["last_dir"] == str(target)
         assert stop_tool(base, pid) == 0
     finally:
         shutil.rmtree(root.parent, ignore_errors=True)
@@ -87,9 +85,9 @@ def test_real_native_dialogs_open_on_top_and_cancel() -> None:
     dest = copy_package(root)
     try:
         base, pid = start_tool(dest, "launcher")
-        for kind, title, what in (("template_xlsx", "שמירת תבנית קובץ הנתונים", None),
+        for kind, title, what in (("text_xlsx", "שמירת מדדי הטקסט", None),
                                   ("study_xlsx", "שמירת נתוני המחקר", None),
-                                  (None, "בחירת תיקייה לקובצי SPSS", "spss_folder")):
+                                  (None, "בחירת תיקייה להורדת מאגר פסקי הדין", "hf_folder")):
             result: dict = {}
 
             def call() -> None:

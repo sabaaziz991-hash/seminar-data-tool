@@ -79,13 +79,18 @@ def test_info_cases_and_card(base):
     assert get(b + "/api/case?id=nope")[0] == 404
 
 
-def test_stats_and_exports(base):
+def test_text_measures_and_exports(base):
     b, _, _ = base
-    st = json.loads(get(b + "/api/stats?source=study")[1])
-    assert st["golden"]["all_ok"], [i for i in st["golden"]["items"] if not i["ok"]]
-    for path in ("/api/stats.xlsx?source=study", "/api/study.xlsx", "/api/template.xlsx"):
+    tm = json.loads(get(b + "/api/text/measures")[1])
+    assert tm["all_ok"] and tm["n_cases"] == 497, tm["rows"]
+    assert tm["mentions"]["checked_now"] == 412 and tm["attempt"]["now"] == 31
+    for path in ("/api/study.xlsx", "/api/text/result.xlsx"):
         code, body, hdr = get(b + path)
         assert code == 200 and body[:2] == b"PK" and "filename*=UTF-8''" in hdr["Content-Disposition"]
+    code, body, _ = get(b + "/api/text/result.csv")
+    assert code == 200 and body.startswith(b"\xef\xbb\xbf") and body.count(b"\n") == 498
+    for gone in ("/api/stats", "/api/stats.xlsx", "/api/template.xlsx", "/api/upload/status"):
+        assert get(b + gone)[0] == 404                                      # the statistics screens were removed
 
 
 def test_save_dialog_flow(base, monkeypatch):
@@ -95,47 +100,19 @@ def test_save_dialog_flow(base, monkeypatch):
     target = Path(tempfile.mkdtemp(prefix="sdt_save_")) / "תיקייה שנבחרה"
     target.mkdir()
     monkeypatch.setenv("SEMINAR_TOOL_DIALOG_STUB", str(target))
-    for kind in ("stats_xlsx", "study_xlsx", "template_xlsx", "media_xlsx", "media_csv", "log_txt"):
+    for kind in ("study_xlsx", "text_xlsx", "text_csv", "media_xlsx", "media_csv", "log_txt"):
         code, res = post(b + "/api/save", {"kind": kind})
         assert code == 200 and res["ok"] and Path(res["path"]).exists(), (kind, res)
         assert Path(res["folder"]) == target
     assert json.loads(get(b + "/api/info")[1])["last_dir"] == str(target)           # remembered
     code, res = post(b + "/api/save", {"kind": "court_xlsx"})                       # nothing built yet
     assert code == 500 and "עדיין" in res["error"]
-    code, res = post(b + "/api/choose", {"what": "spss_folder"})
+    code, res = post(b + "/api/choose", {"what": "hf_folder"})
     assert code == 200 and res["path"] == str(target)
     monkeypatch.setenv("SEMINAR_TOOL_DIALOG_STUB", "cancel")
     code, res = post(b + "/api/save", {"kind": "study_xlsx"})
     assert code == 200 and res.get("cancelled")
     assert post(b + "/api/reveal", {"path": "C:/Windows/notepad.exe"})[0] == 400    # only files the tool saved
-
-
-def test_spss_export(base):
-    b, _, _ = base
-    folder = Path(tempfile.mkdtemp(prefix="sdt_spss_")) / "ייצוא SPSS"
-    code, res = post(b + "/api/spss_export", {"folder": str(folder)})
-    assert code == 200, res
-    names = set(res["files"])
-    assert {"study_dataset_final.csv", "01_import_and_labels.sps", "02_analysis.sps", "output"} <= names
-    sps = (folder / "01_import_and_labels.sps").read_text(encoding="utf-8")
-    assert f"FILE HANDLE root /NAME='{folder.as_posix()}'." in sps
-    assert "root/study_dataset_final.csv" in sps and "02_נתונים" not in sps
-    assert "root/output/" in (folder / "02_analysis.sps").read_text(encoding="utf-8")
-    assert (folder / "study_dataset_final.csv").read_bytes() == (paths.DATA_DIR / "study_dataset_final.csv").read_bytes()
-
-
-def test_upload_flow(base):
-    b, _, _ = base
-    buf = io.BytesIO()
-    pd.read_csv(paths.DATA_DIR / "study_dataset_final.csv").to_excel(buf, index=False)
-    code, res = post(b + "/api/upload", buf.getvalue(), {**TOKEN, "X-Filename": "my%20data.xlsx"})
-    assert code == 200 and res["report"]["ok"], res
-    up = json.loads(get(b + "/api/stats?source=upload")[1])
-    assert up["golden"] is None and up["result"]["n_main"] == 478
-    assert abs(up["result"]["values"]["main.chi2"] - 1.690) < 5e-4
-    code, res = post(b + "/api/upload", b"a,b\n1,2\n", {**TOKEN, "X-Filename": "bad.csv"})
-    assert code == 200 and not res["report"]["ok"]
-    assert json.loads(get(b + "/api/stats?source=upload")[1])["ok"] is False
 
 
 def test_reimport_endpoints_offline(base):
