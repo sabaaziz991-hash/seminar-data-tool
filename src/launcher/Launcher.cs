@@ -21,7 +21,7 @@ static class Launcher
     const string ExtractMsg =
         "יש לחלץ את כל תוכן קובץ ה-ZIP לתיקייה (לחצן ימני ← חלץ הכל) ורק אז להפעיל.\n\n" +
         "נראה שהתוכנה הופעלה מתוך קובץ ה-ZIP, או שחסרים קבצים (התיקיות app או data).\n" +
-        "לאחר החילוץ: לחצו פעמיים על „הפעלה.bat” או על SeminarDataTool.exe שבתיקייה שחולצה.";
+        "לאחר החילוץ: היכנסו לתיקייה SeminarDataTool שחולצה ולחצו פעמיים על הקובץ „הפעלה” (או על SeminarDataTool).";
 
     static void Show(string text, MessageBoxIcon icon)
     {

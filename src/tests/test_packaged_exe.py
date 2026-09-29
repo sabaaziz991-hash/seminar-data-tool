@@ -87,7 +87,7 @@ def test_real_native_dialogs_open_on_top_and_cancel() -> None:
         base, pid = start_tool(dest, "launcher")
         for kind, title, what in (("text_xlsx", "שמירת מדדי הטקסט", None),
                                   ("study_xlsx", "שמירת נתוני המחקר", None),
-                                  (None, "בחירת תיקייה להורדת מאגר פסקי הדין", "hf_folder")):
+                                  (None, "בחירת תיקייה להורדת מאגר פסקי הדין (כ-1.5 GB)", "hf_folder")):
             result: dict = {}
 
             def call() -> None:

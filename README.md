@@ -19,8 +19,8 @@
 
 ## הפעלה
 1. להוריד את `SeminarDataTool.zip` ולחלץ את כל התוכן לתיקייה (לחצן ימני ← „חלץ הכל”).
-2. ללחוץ פעמיים על `הפעלה.bat` או על `SeminarDataTool.exe`. הכלי נפתח בדפדפן.
-3. אם Windows מציג את ההודעה „Windows protected your PC”, ללחוץ „More info” ואז „Run anyway”. ההודעה מופיעה כי התוכנה אינה חתומה דיגיטלית.
+2. להיכנס לתיקייה `SeminarDataTool` שחולצה, וללחוץ פעמיים על הקובץ „הפעלה” (או על `SeminarDataTool`). הכלי נפתח בדפדפן.
+3. אם מופיע חלון כחול „Windows protected your PC”, ללחוץ „More info” ואז „Run anyway”. זה צפוי, כי התוכנה הורדה מהאינטרנט ואינה חתומה דיגיטלית.
 
 מדריך מלא: [docs/user-guide.pdf](docs/user-guide.pdf).
 

@@ -93,7 +93,7 @@ async function heartbeat() {
     if (!r.ok) throw new Error("heartbeat " + r.status);
     hbFailures = 0;
   } catch (e) {
-    if (++hbFailures >= 3) showOverlay("התוכנה אינה פועלת", "החיבור לתוכנה נותק. אם סגרתם אותה — אפשר לסגור את הלשונית. כדי לפתוח שוב: לחצו פעמיים על „הפעלה.bat”.");
+    if (++hbFailures >= 3) showOverlay("התוכנה אינה פועלת", "החיבור לתוכנה נותק. אם סגרתם אותה — אפשר לסגור את הלשונית. כדי לפתוח שוב: לחצו פעמיים על הקובץ „הפעלה” בתיקיית התוכנה.");
   }
 }
 function showOverlay(title, text) {
@@ -107,7 +107,7 @@ window.addEventListener("pagehide", () => { try { navigator.sendBeacon("/api/bye
 $("#closeApp").addEventListener("click", async () => {
   if (!confirm("לסגור את התוכנה? (פעולות שרצות ברקע, כמו הורדה, ייעצרו)")) return;
   try { await post("/api/shutdown", {}); } catch (e) { /* already closed */ }
-  showOverlay("התוכנה נסגרה", "אפשר לסגור את הלשונית הזו. כדי לפתוח שוב — לחצו פעמיים על „הפעלה.bat”.");
+  showOverlay("התוכנה נסגרה", "אפשר לסגור את הלשונית הזו. כדי לפתוח שוב — לחצו פעמיים על הקובץ „הפעלה” בתיקיית התוכנה.");
   setTimeout(() => window.close(), 400);
 });
 
@@ -579,7 +579,7 @@ async function wizExport(body) {
     INFO = await api("/api/info");
     renderFooter();
   } catch (e) {
-    view().replaceChildren(errorBox("לא ניתן להתחבר לתוכנה המקומית. הפעילו אותה מחדש דרך „הפעלה.bat”."));
+    view().replaceChildren(errorBox("לא ניתן להתחבר לתוכנה המקומית. הפעילו אותה מחדש דרך הקובץ „הפעלה” בתיקיית התוכנה."));
     return;
   }
   heartbeat();
